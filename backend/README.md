@@ -1,35 +1,19 @@
-# Initiative Tracker API (Node.js + MongoDB)
+# Initiative Tracker API
 
-Express API with MongoDB Atlas. PI-360 JWT auth preserved.
+Express + MongoDB API for the Initiative Tracker.
 
-## Local setup
+For full setup, environment variables, and production deploy, see the **[root README](../README.md)**.
 
-1. Copy root `.env.example` to `.env` and set `MONGODB_URI`.
-2. Install deps:
-   ```bash
-   npm install
-   cd backend && npm install
-   ```
-3. Seed areas (once):
-   ```bash
-   npm run seed
-   ```
-4. Optional — demo tasks, KPIs, and activity:
-   ```bash
-   npm run seed:demo
-   ```
-   Remove demo data anytime:
-   ```bash
-   npm run clear:demo
-   ```
-5. Start API (port 3001):
-   ```bash
-   npm run dev:api
-   ```
-5. Start frontend (port 5174, proxies `/api` to backend):
-   ```bash
-   npm run dev
-   ```
+## Quick start
+
+From the repo root:
+
+```bash
+cp .env.example .env   # set MONGODB_URI
+npm install && cd backend && npm install && cd ..
+npm run seed
+npm run dev:api        # http://localhost:3001
+```
 
 ## Health check
 
