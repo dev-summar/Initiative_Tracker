@@ -43,21 +43,21 @@ export function Topbar({
   return (
     <>
       <header className="sticky top-0 z-20 border-b border-border bg-white/95 backdrop-blur-sm">
-        <div className="flex items-center justify-between gap-4 px-4 py-3.5 md:px-8">
-          <div className="flex min-w-0 items-center gap-3">
+        <div className="flex items-center justify-between gap-2 px-3 py-3 sm:gap-4 sm:px-4 sm:py-3.5 md:px-8">
+          <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">
             <MobileMenuButton onClick={onMobileMenu} />
             <div className="min-w-0">
-              <p className="text-xs text-ink-muted">{formatHeaderDate()}</p>
-              <h1 className="truncate text-xl font-bold tracking-tight text-ink md:text-2xl">
+              <p className="text-[11px] text-ink-muted sm:text-xs">{formatHeaderDate()}</p>
+              <h1 className="truncate text-lg font-bold tracking-tight text-ink sm:text-xl md:text-2xl">
                 {title}
               </h1>
               {subtitle && (
-                <p className="mt-0.5 hidden truncate text-sm text-ink-muted lg:block">{subtitle}</p>
+                <p className="mt-0.5 truncate text-xs text-ink-muted sm:text-sm">{subtitle}</p>
               )}
             </div>
           </div>
 
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
             <button
               type="button"
               onClick={() => setSearchOpen(true)}

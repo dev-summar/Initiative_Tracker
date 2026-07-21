@@ -52,7 +52,8 @@ export function Modal({
           'animate-fade-up',
           size === 'sm' && 'sm:max-w-md',
           size === 'md' && 'sm:max-w-lg',
-          size === 'lg' && 'sm:max-w-xl',
+          size === 'lg' && 'sm:max-w-xl md:max-w-2xl',
+          'max-w-[100vw]',
         )}
       >
         <div className="flex shrink-0 items-start justify-between gap-4 border-b border-border px-5 py-3.5 sm:px-6">

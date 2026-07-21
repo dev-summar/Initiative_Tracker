@@ -4,7 +4,6 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
-  Legend,
   Pie,
   PieChart,
   ResponsiveContainer,
@@ -39,12 +38,12 @@ function ChartCard({
   className?: string
 }) {
   return (
-    <div className={`${cardClass} p-5 md:p-6 ${className ?? ''}`}>
-      <div className="mb-4">
-        <h2 className="text-base font-bold text-ink md:text-lg">{title}</h2>
-        <p className="text-xs text-ink-muted md:text-sm">{subtitle}</p>
+    <div className={`${cardClass} p-4 sm:p-5 md:p-6 ${className ?? ''}`}>
+      <div className="mb-3 sm:mb-4">
+        <h2 className="text-sm font-bold text-ink sm:text-base md:text-lg">{title}</h2>
+        <p className="text-[11px] text-ink-muted sm:text-xs md:text-sm">{subtitle}</p>
       </div>
-      {children}
+      <div className="min-w-0">{children}</div>
     </div>
   )
 }
@@ -64,14 +63,11 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
       high: 0,
       critical: 0,
     }
-    const phaseCounts: Record<string, number> = {}
     const ownerCounts: Record<string, number> = {}
 
     for (const item of items) {
       statusCounts[item.status]++
       priorityCounts[item.priority] = (priorityCounts[item.priority] ?? 0) + 1
-      const phaseKey = item.phase?.trim() || 'Unassigned'
-      phaseCounts[phaseKey] = (phaseCounts[phaseKey] ?? 0) + 1
       const owner = item.processOwner?.trim() || 'Unassigned'
       ownerCounts[owner] = (ownerCounts[owner] ?? 0) + 1
     }
@@ -92,15 +88,6 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
       color: PRIORITY_CHART_COLORS[p],
     }))
 
-    const phaseData = Object.entries(phaseCounts)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 6)
-      .map(([phase, count], i) => ({
-        phase: phase.length > 28 ? `${phase.slice(0, 26)}…` : phase,
-        count,
-        fill: [accent, '#8B5CF6', '#60A5FA', '#34D399', '#FBBF24', '#FB7185'][i % 6],
-      }))
-
     const ownerData = Object.entries(ownerCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 6)
@@ -109,22 +96,6 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
         count,
         fill: [accent, '#8B5CF6', '#60A5FA', '#34D399', '#FBBF24', '#FB7185'][i % 6],
       }))
-
-    const keyAreaProgress = items
-      .filter((item) => !(item.progressSource && item.title.length > 50))
-      .slice(0, 10)
-      .map((item) => {
-        const short =
-          item.title.length > 26 ? `${item.title.slice(0, 24)}…` : item.title
-        return {
-          name: short,
-          fullName: item.title,
-          done: item.status === 'done' ? 1 : 0,
-          inProgress: item.status === 'in_progress' ? 1 : 0,
-          todo: item.status === 'todo' ? 1 : 0,
-          blocked: item.status === 'blocked' ? 1 : 0,
-        }
-      })
 
     const done = statusCounts.done
     const total = items.length
@@ -136,9 +107,7 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
     return {
       statusData,
       priorityData,
-      phaseData,
       ownerData,
-      keyAreaProgress,
       done,
       total,
       pct,
@@ -177,9 +146,9 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
         </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ChartCard title="Status breakdown" subtitle="Implementation items by current status">
-          <div className="h-52">
+          <div className="h-44 sm:h-52">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -210,7 +179,7 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
         </ChartCard>
 
         <ChartCard title="Priority distribution" subtitle="Phase 1 → High · Phase 2 → Medium · Phase 3 → Low">
-          <div className="h-52">
+          <div className="h-44 sm:h-52">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -237,16 +206,16 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
         </ChartCard>
 
         <ChartCard title="By owner" subtitle="Items assigned per process owner">
-          <div className="h-52">
+          <div className="h-44 sm:h-52">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={analytics.ownerData} layout="vertical" margin={{ left: 4, right: 8 }}>
+              <BarChart data={analytics.ownerData} layout="vertical" margin={{ left: 0, right: 8 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
                 <XAxis type="number" tick={{ fontSize: 10, fill: '#a1a1aa' }} axisLine={false} />
                 <YAxis
                   type="category"
                   dataKey="owner"
-                  width={96}
-                  tick={{ fontSize: 9, fill: '#71717a' }}
+                  width={72}
+                  tick={{ fontSize: 8, fill: '#71717a' }}
                   axisLine={false}
                   tickLine={false}
                 />
@@ -256,69 +225,6 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
                     <Cell key={entry.owner} fill={entry.fill} />
                   ))}
                 </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </ChartCard>
-      </div>
-
-      <div className="grid gap-4 lg:grid-cols-2">
-        <ChartCard title="Phase timeline" subtitle="Items grouped by implementation phase">
-          <div className="h-56">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={analytics.phaseData} margin={{ top: 8, right: 8, left: -16, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
-                <XAxis
-                  dataKey="phase"
-                  tick={{ fontSize: 9, fill: '#a1a1aa' }}
-                  axisLine={false}
-                  tickLine={false}
-                  interval={0}
-                  angle={-12}
-                  textAnchor="end"
-                  height={64}
-                />
-                <YAxis tick={{ fontSize: 11, fill: '#a1a1aa' }} axisLine={false} tickLine={false} />
-                <Tooltip contentStyle={tooltipStyle} />
-                <Bar dataKey="count" name="Items" radius={[6, 6, 0, 0]}>
-                  {analytics.phaseData.map((entry) => (
-                    <Cell key={entry.phase} fill={entry.fill} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </ChartCard>
-
-        <ChartCard title="Key area status" subtitle="Status per implementation table row">
-          <div className="h-56">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={analytics.keyAreaProgress}
-                layout="vertical"
-                margin={{ left: 4, right: 8, top: 4 }}
-              >
-                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
-                <XAxis type="number" domain={[0, 1]} hide />
-                <YAxis
-                  type="category"
-                  dataKey="name"
-                  width={108}
-                  tick={{ fontSize: 9, fill: '#71717a' }}
-                  axisLine={false}
-                  tickLine={false}
-                />
-                <Tooltip
-                  contentStyle={tooltipStyle}
-                  labelFormatter={(_, payload) =>
-                    payload?.[0]?.payload?.fullName ? String(payload[0].payload.fullName) : ''
-                  }
-                />
-                <Legend wrapperStyle={{ fontSize: 10 }} />
-                <Bar dataKey="done" name="Done" stackId="a" fill="#10B981" />
-                <Bar dataKey="inProgress" name="In progress" stackId="a" fill="#3B82F6" />
-                <Bar dataKey="todo" name="To do" stackId="a" fill="#D4D4D8" />
-                <Bar dataKey="blocked" name="Blocked" stackId="a" fill="#EF4444" radius={[0, 4, 4, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>

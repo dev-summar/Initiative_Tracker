@@ -83,7 +83,7 @@ export function AreaDetailsPage() {
         onImported={load}
       />
 
-      <main className="space-y-6 p-4 md:p-6 lg:p-8">
+      <main className="space-y-6 overflow-x-hidden p-3 sm:p-4 md:p-6 lg:p-8">
         {area && (
           <section className="rounded-2xl border border-border bg-zinc-50/60 p-4 md:p-5">
             <div className="flex flex-wrap items-center gap-3">

@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 import type { PlanItem, PlanItemStatus, TaskPriority } from '../../api/types'
 import { planItemService } from '../../services/planItemService'
 import { Modal } from '../common/Modal'
-import { StatusBadge, PriorityBadge } from '../common/StatusBadge'
+import { StatusBadge, PriorityBadge, ProcessOwnerVerifiedBadge } from '../common/StatusBadge'
 import { cn } from '../../lib/utils'
 
 const STATUS_OPTIONS: { value: PlanItemStatus; label: string }[] = [
@@ -42,11 +42,12 @@ export function PlanItemList({ items, accent, onChanged }: PlanItemListProps) {
                 key={item.id}
                 className="rounded-xl border border-border bg-white p-4 shadow-sm transition hover:border-zinc-300"
               >
-                <div className="flex flex-wrap items-start justify-between gap-3">
+                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
                       <StatusBadge status={item.status} />
                       <PriorityBadge priority={item.priority} />
+                      <ProcessOwnerVerifiedBadge item={item} />
                       {item.phase && (
                         <span className="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-ink-muted">
                           {item.phase}
@@ -57,11 +58,11 @@ export function PlanItemList({ items, accent, onChanged }: PlanItemListProps) {
                     {item.description && (
                       <p className="mt-2 text-sm text-ink-muted line-clamp-3">{item.description}</p>
                     )}
-                    <div className="mt-3 flex flex-wrap gap-4 text-xs text-ink-muted">
+                    <div className="mt-3 flex flex-wrap gap-3 text-xs text-ink-muted sm:gap-4">
                       {item.processOwner && (
-                        <span className="inline-flex items-center gap-1">
-                          <User className="h-3.5 w-3.5" />
-                          {item.processOwner}
+                        <span className="inline-flex max-w-full items-center gap-1">
+                          <User className="h-3.5 w-3.5 shrink-0" />
+                          <span className="truncate">{item.processOwner}</span>
                         </span>
                       )}
                       {item.lastReviewDate && (
@@ -74,14 +75,11 @@ export function PlanItemList({ items, accent, onChanged }: PlanItemListProps) {
                     {item.progressSource && (
                       <p className="mt-2 text-[11px] text-ink-muted">Source: {item.progressSource}</p>
                     )}
-                    {item.documentRef && (
-                      <p className="mt-1 text-[11px] text-ink-muted">Ref: {item.documentRef}</p>
-                    )}
                   </div>
                   <button
                     type="button"
                     onClick={() => setSelected(item)}
-                    className="rounded-lg px-3 py-1.5 text-sm font-medium text-white"
+                    className="w-full rounded-lg px-3 py-2 text-sm font-medium text-white sm:w-auto sm:py-1.5"
                     style={{ backgroundColor: accent }}
                   >
                     Update
@@ -108,7 +106,7 @@ export function PlanItemList({ items, accent, onChanged }: PlanItemListProps) {
   )
 }
 
-function UpdatePlanItemModal({
+export function UpdatePlanItemModal({
   item,
   accent,
   onClose,
@@ -169,13 +167,13 @@ function UpdatePlanItemModal({
           <p className="mt-1 text-xs text-ink-muted">Update status, checklist, and review date.</p>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-3">
-          <label className="block text-sm">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+          <label className="block text-sm sm:col-span-1">
             <span className="mb-1 block font-medium text-ink">Status</span>
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value as PlanItemStatus)}
-              className="w-full rounded-lg border border-border bg-white px-3 py-2 text-sm"
+              className="w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm sm:py-2"
             >
               {STATUS_OPTIONS.map((o) => (
                 <option key={o.value} value={o.value}>
@@ -189,7 +187,7 @@ function UpdatePlanItemModal({
             <select
               value={priority}
               onChange={(e) => setPriority(e.target.value as TaskPriority)}
-              className="w-full rounded-lg border border-border bg-white px-3 py-2 text-sm"
+              className="w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm sm:py-2"
             >
               <option value="critical">Critical</option>
               <option value="high">High</option>
@@ -197,13 +195,13 @@ function UpdatePlanItemModal({
               <option value="low">Low</option>
             </select>
           </label>
-          <label className="block text-sm">
+          <label className="block text-sm sm:col-span-2 lg:col-span-1">
             <span className="mb-1 block font-medium text-ink">Review date</span>
             <input
               type="date"
               value={meetingDate}
               onChange={(e) => setMeetingDate(e.target.value)}
-              className="w-full rounded-lg border border-border bg-white px-3 py-2 text-sm"
+              className="w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm sm:py-2"
             />
           </label>
         </div>
@@ -254,11 +252,11 @@ function UpdatePlanItemModal({
           />
         </label>
 
-        <div className="flex justify-end gap-2 border-t border-border pt-4">
+        <div className="flex flex-col-reverse justify-end gap-2 border-t border-border pt-4 sm:flex-row">
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-ink-muted hover:bg-zinc-50"
+            className="rounded-lg border border-border px-4 py-2.5 text-sm font-medium text-ink-muted hover:bg-zinc-50 sm:py-2"
           >
             Cancel
           </button>
@@ -266,7 +264,7 @@ function UpdatePlanItemModal({
             type="button"
             disabled={saving}
             onClick={() => void handleSave()}
-            className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white disabled:opacity-60"
+            className="inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium text-white disabled:opacity-60 sm:py-2"
             style={{ backgroundColor: accent }}
           >
             {saving && <Loader2 className="h-4 w-4 animate-spin" />}

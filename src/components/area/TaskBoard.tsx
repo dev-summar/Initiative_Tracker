@@ -42,7 +42,9 @@ const statusAccent: Record<TaskStatus, string> = {
 }
 
 export function TaskBoard({ areaId, tasks, accent: _accent, onChanged }: TaskBoardProps) {
-  const [view, setView] = useState<'table' | 'cards'>('table')
+  const [view, setView] = useState<'table' | 'cards'>(() =>
+    typeof window !== 'undefined' && window.innerWidth < 768 ? 'cards' : 'table',
+  )
   const [modalOpen, setModalOpen] = useState(false)
   const [editing, setEditing] = useState<Task | null>(null)
   const [form, setForm] = useState(emptyForm)

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, FileText } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import type { SubArea } from '../../api/types'
 import { getAreaIcon } from '../../lib/icons'
 
@@ -13,7 +13,7 @@ export function StrategyPlanGrid({ plans }: { plans: SubArea[] }) {
           <Link
             key={plan.id}
             to={`/area/strategy/${plan.slug}`}
-            className="group flex flex-col rounded-2xl border border-border bg-white p-5 shadow-sm transition hover:border-zinc-300 hover:shadow-md"
+            className="group flex min-w-0 flex-col rounded-2xl border border-border bg-white p-4 shadow-sm transition hover:border-zinc-300 hover:shadow-md sm:p-5"
           >
             <div className="flex items-start justify-between gap-3">
               <span
@@ -26,12 +26,6 @@ export function StrategyPlanGrid({ plans }: { plans: SubArea[] }) {
             </div>
             <h3 className="mt-4 text-base font-semibold text-ink">{plan.name}</h3>
             <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-ink-muted">{plan.description}</p>
-            {plan.documentRef && (
-              <p className="mt-3 flex items-center gap-1.5 text-[11px] text-ink-muted">
-                <FileText className="h-3.5 w-3.5 shrink-0" />
-                <span className="line-clamp-1">{plan.documentRef}</span>
-              </p>
-            )}
             <div className="mt-4">
               <div className="mb-1.5 flex justify-between text-[11px] text-ink-muted">
                 <span>

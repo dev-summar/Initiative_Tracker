@@ -10,11 +10,11 @@ export function AppLayout() {
   const collapsed = useTrackerStore((s) => s.sidebarCollapsed)
 
   return (
-    <div className="min-h-full bg-white">
+    <div className="min-h-full overflow-x-hidden bg-white">
       <Sidebar mobileOpen={mobileOpen} onMobileClose={() => setMobileOpen(false)} />
       <div
         className={cn(
-          'min-h-full transition-[padding] duration-200',
+          'min-h-full min-w-0 transition-[padding] duration-200',
           collapsed ? 'md:pl-[60px]' : 'md:pl-60',
         )}
       >

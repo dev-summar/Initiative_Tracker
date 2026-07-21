@@ -20,13 +20,13 @@ export function ChartCard({
 }) {
   return (
     <div
-      className={`rounded-[1.25rem] border border-border bg-white p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)] md:p-6 ${className ?? ''}`}
+      className={`rounded-[1.25rem] border border-border bg-white p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:p-5 md:p-6 ${className ?? ''}`}
     >
-      <div className="mb-4">
-        <h2 className="text-base font-bold text-ink md:text-lg">{title}</h2>
-        <p className="text-xs text-ink-muted md:text-sm">{subtitle}</p>
+      <div className="mb-3 sm:mb-4">
+        <h2 className="text-sm font-bold text-ink sm:text-base md:text-lg">{title}</h2>
+        <p className="text-[11px] text-ink-muted sm:text-xs md:text-sm">{subtitle}</p>
       </div>
-      {children}
+      <div className="min-w-0 overflow-x-auto">{children}</div>
     </div>
   )
 }

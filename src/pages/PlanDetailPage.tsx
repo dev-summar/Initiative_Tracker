@@ -39,11 +39,11 @@ export function PlanDetailPage() {
     <div className="min-h-full">
       <Topbar
         title={plan?.name ?? 'Implementation plan'}
-        subtitle={plan?.documentRef}
+        subtitle="MIET Strategic Plan 2024–2030"
         onMobileMenu={openMobileMenu}
       />
 
-      <main className="space-y-6 p-4 md:p-6 lg:p-8">
+      <main className="space-y-6 overflow-x-hidden p-3 sm:p-4 md:p-6 lg:p-8">
         <Link
           to="/area/strategy"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-muted hover:text-ink"
@@ -57,23 +57,24 @@ export function PlanDetailPage() {
         ) : (
           <>
             <section
-              className="rounded-2xl border border-border bg-white p-5"
+              className="rounded-2xl border border-border bg-white p-4 sm:p-5"
               style={{ borderTopColor: plan.color, borderTopWidth: 3 }}
             >
-              <div className="flex flex-wrap items-start gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-start">
                 <span
-                  className="flex h-12 w-12 items-center justify-center rounded-xl"
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl sm:h-12 sm:w-12"
                   style={{ backgroundColor: `${plan.color}18`, color: plan.color }}
                 >
-                  <Icon className="h-6 w-6" />
+                  <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <h1 className="text-xl font-semibold text-ink">{plan.name}</h1>
+                  <h1 className="text-lg font-semibold text-ink sm:text-xl">{plan.name}</h1>
                   <p className="mt-1 text-sm text-ink-muted">{plan.description}</p>
-                  <p className="mt-2 text-xs text-ink-muted">{plan.documentRef}</p>
                 </div>
-                <div className="text-right">
-                  <p className="text-3xl font-bold tabular-nums text-ink">{plan.stats.progressPct}%</p>
+                <div className="text-left sm:ml-auto sm:text-right">
+                  <p className="text-2xl font-bold tabular-nums text-ink sm:text-3xl">
+                    {plan.stats.progressPct}%
+                  </p>
                   <p className="text-xs text-ink-muted">
                     {plan.stats.done}/{plan.stats.total} done
                   </p>

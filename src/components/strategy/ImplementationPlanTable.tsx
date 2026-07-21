@@ -3,8 +3,8 @@ import { Loader2 } from 'lucide-react'
 import { toast } from 'sonner'
 import type { PlanItem, PlanItemStatus } from '../../api/types'
 import { planItemService } from '../../services/planItemService'
-import { PlanItemList } from './PlanItemList'
-import { PriorityBadge } from '../common/StatusBadge'
+import { PlanItemList, UpdatePlanItemModal } from './PlanItemList'
+import { PriorityBadge, ProcessOwnerVerifiedBadge } from '../common/StatusBadge'
 import { cn, statusLabel } from '../../lib/utils'
 
 const STATUS_OPTIONS: { value: PlanItemStatus; label: string }[] = [
@@ -97,39 +97,42 @@ interface ImplementationPlanTableProps {
 }
 
 export function ImplementationPlanTable({ items, accent, onChanged }: ImplementationPlanTableProps) {
-  const [view, setView] = useState<'table' | 'cards'>('table')
+  const [view, setView] = useState<'table' | 'cards'>(() =>
+    typeof window !== 'undefined' && window.innerWidth < 768 ? 'cards' : 'table',
+  )
+  const [selected, setSelected] = useState<PlanItem | null>(null)
   const progressItems = items.filter((item) => item.progressSource && item.title.length > 50)
   const tableItems = items.filter((item) => !progressItems.some((p) => p.id === item.id))
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h2 className="text-lg font-semibold text-ink">Implementation Plan</h2>
-          <p className="text-sm text-ink-muted">
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+        <div className="min-w-0">
+          <h2 className="text-base font-semibold text-ink sm:text-lg">Implementation Plan</h2>
+          <p className="text-xs text-ink-muted sm:text-sm">
             Key areas from the strategic plan table — deliverables, owner, and timelines.
           </p>
         </div>
-        <div className="flex rounded-lg border border-border bg-zinc-50 p-0.5 text-sm">
+        <div className="flex w-full rounded-lg border border-border bg-zinc-50 p-0.5 text-sm sm:w-auto">
           <button
             type="button"
             onClick={() => setView('table')}
             className={cn(
-              'rounded-md px-3 py-1.5 font-medium transition',
+              'flex-1 rounded-md px-3 py-1.5 font-medium transition sm:flex-none',
               view === 'table' ? 'bg-white text-ink shadow-sm' : 'text-ink-muted hover:text-ink',
             )}
           >
-            Table view
+            Table
           </button>
           <button
             type="button"
             onClick={() => setView('cards')}
             className={cn(
-              'rounded-md px-3 py-1.5 font-medium transition',
+              'flex-1 rounded-md px-3 py-1.5 font-medium transition sm:flex-none',
               view === 'cards' ? 'bg-white text-ink shadow-sm' : 'text-ink-muted hover:text-ink',
             )}
           >
-            Card view
+            Cards
           </button>
         </div>
       </div>
@@ -138,39 +141,74 @@ export function ImplementationPlanTable({ items, accent, onChanged }: Implementa
         <PlanItemList items={items} accent={accent} onChanged={onChanged} />
       ) : (
         <>
-          <div className="overflow-x-auto rounded-xl border border-border bg-white shadow-sm">
-            <table className="min-w-full text-left text-sm">
+          <div className="-mx-1 overflow-x-auto rounded-xl border border-border bg-white shadow-sm scrollbar-thin sm:mx-0">
+            <table className="min-w-[880px] w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-border bg-zinc-50/80">
-                  <th className="px-4 py-3 font-semibold text-ink">Key Area</th>
-                  <th className="min-w-[220px] px-4 py-3 font-semibold text-ink">Deliverables</th>
-                  <th className="px-4 py-3 font-semibold text-ink">Owner</th>
-                  <th className="min-w-[160px] px-4 py-3 font-semibold text-ink">Timelines</th>
-                  <th className="px-4 py-3 font-semibold text-ink">Priority</th>
-                  <th className="px-4 py-3 font-semibold text-ink">
-                    Status
-                    <span className="ml-1 text-[10px] font-normal text-ink-muted">(editable)</span>
+                  <th className="sticky left-0 z-[1] bg-zinc-50 px-3 py-3 font-semibold text-ink sm:px-4">
+                    Key Area
                   </th>
+                  <th className="min-w-[200px] px-3 py-3 font-semibold text-ink sm:px-4">Deliverables</th>
+                  <th className="px-3 py-3 font-semibold text-ink sm:px-4">Owner</th>
+                  <th className="min-w-[140px] px-3 py-3 font-semibold text-ink sm:px-4">Timelines</th>
+                  <th className="px-3 py-3 font-semibold text-ink sm:px-4">Priority</th>
+                  <th className="px-3 py-3 font-semibold text-ink sm:px-4">
+                    Status
+                    <span className="ml-1 hidden text-[10px] font-normal text-ink-muted sm:inline">
+                      (editable)
+                    </span>
+                  </th>
+                  <th className="px-3 py-3 font-semibold text-ink sm:px-4">Verified</th>
+                  <th className="px-3 py-3 font-semibold text-ink sm:px-4" />
                 </tr>
               </thead>
               <tbody>
                 {(tableItems.length > 0 ? tableItems : items).map((item) => (
                   <tr key={item.id} className="border-b border-border/70 align-top last:border-0">
-                    <td className="px-4 py-3 font-medium text-ink">{item.title}</td>
-                    <td className="px-4 py-3 text-ink-muted">{item.description || '—'}</td>
-                    <td className="px-4 py-3 text-ink-muted">{item.processOwner || '—'}</td>
-                    <td className="px-4 py-3 text-ink-muted">{item.phase || '—'}</td>
-                    <td className="px-4 py-3">
+                    <td className="sticky left-0 z-[1] max-w-[140px] bg-white px-3 py-3 font-medium text-ink sm:max-w-none sm:px-4">
+                      {item.title}
+                    </td>
+                    <td className="px-3 py-3 text-ink-muted sm:px-4">{item.description || '—'}</td>
+                    <td className="whitespace-nowrap px-3 py-3 text-ink-muted sm:px-4">
+                      {item.processOwner || '—'}
+                    </td>
+                    <td className="px-3 py-3 text-ink-muted sm:px-4">{item.phase || '—'}</td>
+                    <td className="px-3 py-3 sm:px-4">
                       <PriorityBadge priority={item.priority} />
                     </td>
-                    <td className="px-4 py-3">
+                    <td className="px-3 py-3 sm:px-4">
                       <TableStatusSelect item={item} onChanged={onChanged} />
+                    </td>
+                    <td className="px-3 py-3 sm:px-4">
+                      <ProcessOwnerVerifiedBadge item={item} />
+                    </td>
+                    <td className="px-3 py-3 sm:px-4">
+                      <button
+                        type="button"
+                        onClick={() => setSelected(item)}
+                        className="rounded-lg px-2.5 py-1 text-xs font-medium text-white"
+                        style={{ backgroundColor: accent }}
+                      >
+                        Update
+                      </button>
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+
+          {selected && (
+            <UpdatePlanItemModal
+              item={selected}
+              accent={accent}
+              onClose={() => setSelected(null)}
+              onSaved={() => {
+                setSelected(null)
+                onChanged()
+              }}
+            />
+          )}
 
           {progressItems.length > 0 && (
             <section className="space-y-3">

@@ -90,7 +90,10 @@ function MultiRingChart({ rings }: { rings: ReturnType<typeof buildPlanRings> })
 
   return (
     <div className="flex flex-col items-center gap-4 lg:flex-row">
-      <svg viewBox={`0 0 ${size} ${size}`} className="h-[280px] w-[280px] shrink-0">
+      <svg
+        viewBox={`0 0 ${size} ${size}`}
+        className="aspect-square h-auto w-full max-w-[220px] shrink-0 sm:max-w-[260px] lg:max-w-[280px]"
+      >
         {rings.map((ring, i) => {
           const radius = center - 16 - i * (ringWidth + gap)
           const circumference = 2 * Math.PI * radius
@@ -145,8 +148,8 @@ function MultiRingChart({ rings }: { rings: ReturnType<typeof buildPlanRings> })
 
 function BubbleMatrix({ bubbles }: { bubbles: ReturnType<typeof buildBubbleData> }) {
   return (
-    <div className="relative h-[300px] w-full">
-      <svg viewBox="0 0 100 80" className="h-full w-full">
+    <div className="relative h-[220px] w-full sm:h-[280px] md:h-[300px]">
+      <svg viewBox="0 0 100 80" className="h-full w-full" preserveAspectRatio="xMidYMid meet">
         {bubbles.map((b) => {
           const radius = Math.sqrt(b.size) / 3.2
           return (
@@ -189,11 +192,13 @@ function ProgressHeatmap({ rows }: { rows: ReturnType<typeof buildHeatmapData> }
   }
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full text-xs">
+    <div className="-mx-1 overflow-x-auto scrollbar-thin">
+      <table className="min-w-[520px] w-full text-xs">
         <thead>
           <tr>
-            <th className="px-2 py-2 text-left font-semibold text-ink">Plan</th>
+            <th className="sticky left-0 z-[1] bg-white px-2 py-2 text-left font-semibold text-ink">
+              Plan
+            </th>
             {years.map((y) => (
               <th key={y} className="px-2 py-2 text-center font-medium text-ink-muted">
                 {y}
@@ -204,11 +209,13 @@ function ProgressHeatmap({ rows }: { rows: ReturnType<typeof buildHeatmapData> }
         <tbody>
           {rows.map((row) => (
             <tr key={row.planId} className="border-t border-border/60">
-              <td className="max-w-[120px] truncate px-2 py-2 font-medium text-ink">{row.planName}</td>
+              <td className="sticky left-0 z-[1] max-w-[100px] truncate bg-white px-2 py-2 font-medium text-ink sm:max-w-[140px]">
+                {row.planName}
+              </td>
               {row.cells.map((cell) => (
                 <td key={cell.year} className="px-1 py-1">
                   <div
-                    className="flex h-9 min-w-[44px] items-center justify-center rounded-md text-[10px] font-semibold text-white/90"
+                    className="flex h-8 min-w-[36px] items-center justify-center rounded-md text-[10px] font-semibold text-white/90 sm:h-9 sm:min-w-[44px]"
                     style={{ backgroundColor: cellColor(cell.pct) }}
                     title={
                       cell.pct === null

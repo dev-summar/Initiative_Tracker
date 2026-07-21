@@ -52,13 +52,13 @@ export function StrategyPage() {
         onMobileMenu={openMobileMenu}
       />
 
-      <main className="space-y-6 p-4 md:p-6 lg:p-8">
-        <section className="rounded-2xl border border-border bg-gradient-to-br from-violet-50/80 via-sky-50/40 to-white p-5 md:p-6">
+      <main className="space-y-6 overflow-x-hidden p-3 sm:p-4 md:p-6 lg:p-8">
+        <section className="rounded-2xl border border-border bg-gradient-to-br from-violet-50/80 via-sky-50/40 to-white p-4 sm:p-5 md:p-6">
           <p className="text-sm text-ink-muted">
             Eight implementation plans from the strategic document. Progress is updated from governing body
             reviews and process-owner submissions.
           </p>
-          <div className="mt-4 flex flex-wrap items-center gap-4">
+          <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <div>
               <p className="text-3xl font-bold tabular-nums text-ink">{overallPct}%</p>
               <p className="text-xs text-ink-muted">Overall completion</p>
@@ -66,23 +66,23 @@ export function StrategyPage() {
             <p className="text-sm text-ink-muted">
               {totalDone} of {totalItems} items completed across {plans.length} plans
             </p>
-            <div className="ml-auto flex flex-wrap gap-2">
+            <div className="flex w-full flex-col gap-2 sm:ml-auto sm:w-auto sm:flex-row sm:flex-wrap">
               <a
                 href="/MIET STRATEGIC PLAN (2024-30) (1).pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-white px-3 py-1.5 text-xs font-medium text-ink hover:bg-zinc-50"
+                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-white px-3 py-2 text-xs font-medium text-ink hover:bg-zinc-50 sm:py-1.5"
               >
-                <FileText className="h-3.5 w-3.5" />
+                <FileText className="h-3.5 w-3.5 shrink-0" />
                 Strategic Plan PDF
               </a>
               <a
                 href="/8th Governing Body Agenda Points.docx.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-white px-3 py-1.5 text-xs font-medium text-ink hover:bg-zinc-50"
+                className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-border bg-white px-3 py-2 text-xs font-medium text-ink hover:bg-zinc-50 sm:py-1.5"
               >
-                <FileText className="h-3.5 w-3.5" />
+                <FileText className="h-3.5 w-3.5 shrink-0" />
                 GB Minutes PDF
               </a>
             </div>

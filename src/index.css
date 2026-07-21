@@ -35,6 +35,12 @@ html,
 body,
 #root {
   height: 100%;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -43,6 +49,7 @@ body {
   color: var(--color-ink);
   background: var(--color-surface);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .font-display {

@@ -63,9 +63,9 @@ export function DashboardPage() {
         onMobileMenu={openMobileMenu}
       />
 
-      <main className="space-y-8 p-4 md:p-6 lg:p-8">
+      <main className="space-y-6 overflow-x-hidden p-3 sm:space-y-8 sm:p-4 md:p-6 lg:p-8">
         <section>
-          <h2 className="text-2xl font-bold tracking-tight text-ink">{getGreeting()}</h2>
+          <h2 className="text-xl font-bold tracking-tight text-ink sm:text-2xl">{getGreeting()}</h2>
           <p className="mt-1 text-sm text-ink-muted">
             MIET Strategic Plan 2024–2030 plus day-to-day initiative tracking by area.
           </p>

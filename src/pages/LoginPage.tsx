@@ -98,13 +98,13 @@ export function LoginPage() {
       </aside>
 
       {/* Right — sign in */}
-      <main className="flex min-h-screen items-center justify-center bg-[#F3F4F6] px-6 py-12">
+      <main className="flex min-h-screen items-center justify-center bg-[#F3F4F6] px-4 py-8 sm:px-6 sm:py-12">
         <div className="w-full max-w-[420px]">
           <div className="mb-8 rounded-2xl bg-[#0f0f0f] p-4 lg:hidden">
             <BrandLogo size="md" />
           </div>
-          <div className="mb-10">
-            <h1 className="text-[2rem] font-bold leading-tight tracking-tight text-[#0f0f0f]">
+          <div className="mb-8 sm:mb-10">
+            <h1 className="text-[1.75rem] font-bold leading-tight tracking-tight text-[#0f0f0f] sm:text-[2rem]">
               Sign in
             </h1>
             <p className="mt-2 text-[0.9375rem] text-[#71717a]">
