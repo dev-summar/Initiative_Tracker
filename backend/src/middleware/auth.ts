@@ -75,6 +75,11 @@ export function requireAuth(req: Request, res: Response, next: NextFunction) {
       batch: data.batch ?? null,
     }
 
+    const loginEmail = (req.user.username ?? '').trim().toLowerCase()
+    if (!loginEmail || !env.allowedLoginEmails.has(loginEmail)) {
+      return sendError(res, 403, 'Access is restricted to authorized accounts only.')
+    }
+
     maybeRefreshToken(res, decoded, match[1])
     next()
   } catch (err) {

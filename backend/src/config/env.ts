@@ -16,6 +16,20 @@ function resolveJwtSecret(): string {
   return fromEnv.replace(/^["']|["']$/g, '')
 }
 
+const DEFAULT_ALLOWED_EMAILS = [
+  'sahil@mietjammu.in',
+  'rohin.adm@mietjammu.in',
+  'summar.adm@mietjammu.in',
+]
+
+function resolveAllowedEmails(): Set<string> {
+  const raw = process.env.ALLOWED_LOGIN_EMAILS?.trim()
+  const list = raw
+    ? raw.split(/[,;\s]+/).map((e) => e.trim().toLowerCase()).filter(Boolean)
+    : DEFAULT_ALLOWED_EMAILS
+  return new Set(list)
+}
+
 export const env = {
   port: Number(process.env.PORT ?? 3001),
   mongodbUri: process.env.MONGODB_URI ?? '',
@@ -23,4 +37,5 @@ export const env = {
   jwtIssuer: process.env.JWT_ISSUER ?? 'https://pi360.net',
   jwtAudience: process.env.JWT_AUDIENCE ?? 'Pi360-User',
   nodeEnv: process.env.NODE_ENV ?? 'development',
+  allowedLoginEmails: resolveAllowedEmails(),
 }

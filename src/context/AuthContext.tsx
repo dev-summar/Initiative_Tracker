@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { clearToken, fetchAuthMeWithRetry, getToken, loginPi360 } from '../api/client'
 import type { AuthMeData } from '../api/types'
+import { isAllowedLoginEmail } from '../lib/allowedEmails'
 
 interface AuthContextValue {
   user: AuthMeData | null
@@ -37,8 +38,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [refresh])
 
   const login = useCallback(async (email: string, password: string) => {
-    await loginPi360(email, password)
+    const normalized = email.trim()
+    if (!isAllowedLoginEmail(normalized)) {
+      throw new Error('Access is restricted to authorized accounts only.')
+    }
+    await loginPi360(normalized, password)
     const data = await fetchAuthMeWithRetry()
+    if (!isAllowedLoginEmail(data.email || normalized)) {
+      clearToken()
+      setUser(null)
+      throw new Error('Access is restricted to authorized accounts only.')
+    }
     setUser(data)
     return data
   }, [])

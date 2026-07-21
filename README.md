@@ -28,7 +28,7 @@ Frontend and backend live in **separate folders** and run as **two processes**. 
 
 ## Features
 
-- Login via PI-360 credentials (JWT stored and validated by the API)
+- Login via PI-360 credentials (JWT), restricted to an email allowlist
 - Dashboard: overview stats, charts, areas, needs-attention, recent activity
 - Area detail pages with task board and KPI cards
 - Task CRUD, status updates, CSV import
@@ -109,6 +109,8 @@ Edit `.env`. Never commit `.env`.
 | `JWT_AUDIENCE` | Backend | Expected JWT `aud` (default `Pi360-User`) |
 | `PORT` | Backend | API listen port (default `3001`) |
 | `NODE_ENV` | Backend | Set `production` on the server |
+| `ALLOWED_LOGIN_EMAILS` | Backend | Comma-separated emails allowed to use the API |
+| `VITE_ALLOWED_LOGIN_EMAILS` | Frontend | Same allowlist for the login screen (build-time) |
 
 **Notes**
 
