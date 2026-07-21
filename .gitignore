@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment & secrets (keep .env.example)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+**/dist/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Test / coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.local
+.vite/
+.turbo/
+.npm/
+.yarn/
+.pnpm-store/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors / IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# Runtime / process managers
+pids/
+*.pid
+*.seed
+*.pid.lock
+.pm2/
+
+# Optional tooling
+.vercel/
+.netlify/
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Debug / temp
+tmp/
+temp/
+*.tmp
+*.temp
+.temp/
