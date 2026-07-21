@@ -71,7 +71,6 @@ pids/
 .pm2/
 
 # Optional tooling
-.vercel/
 .netlify/
 *.pem
 *.key

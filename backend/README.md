@@ -36,9 +36,3 @@ Express API with MongoDB Atlas. PI-360 JWT auth preserved.
 ```
 GET http://localhost:3001/api/health
 ```
-
-## Vercel
-
-- `api/index.ts` wraps the Express app as a serverless function.
-- Set env vars in Vercel: `MONGODB_URI`, `JWT_SECRET`, `VITE_*`.
-- Frontend uses `VITE_API_BASE=/api`.
