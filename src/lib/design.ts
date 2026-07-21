@@ -13,6 +13,20 @@ export function formatHeaderDate(date = new Date()) {
   })
 }
 
+export const PRIORITY_CHART_COLORS: Record<string, string> = {
+  low: '#94A3B8',
+  medium: '#FBBF24',
+  high: '#F97316',
+  critical: '#EF4444',
+}
+
+export const STATUS_CHART_COLORS: Record<string, string> = {
+  todo: '#A1A1AA',
+  in_progress: '#3B82F6',
+  done: '#10B981',
+  blocked: '#EF4444',
+}
+
 export const CHART_COLORS = {
   lavender: '#A78BFA',
   sky: '#60A5FA',

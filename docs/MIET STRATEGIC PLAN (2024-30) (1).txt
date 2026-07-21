@@ -1,0 +1,3490 @@
+Model Institute of Engineering
+& Technology (Autonomous)
+NAAC “A” Grade Accredited
+STRATEGIC
+PLAN 2024-30
+
+-- 1 of 96 --
+
+
+
+-- 2 of 96 --
+
+MIET Strategic Plan
+2024-2030
+A Comprehensive Vision for
+Sustenance and Growth.
+1
+
+-- 3 of 96 --
+
+2
+
+-- 4 of 96 --
+
+TABLE OF CONTENTS
+Title
+Dedication
+Message from the Chairperson
+Message from the Director
+Executive Summary
+Enhancing Academic and Research Excellence
+Technological Advancement and Digital Infrastructure
+Developing State-of-the-Art Infrastructure
+Enhancing Quality Assurance and Stakeholder Experience
+Promoting Sustainability and Social Impact
+Implementation, Monitoring and Governance
+Appendix:
+I. Strategy Planning Dossier
+II. Learning and Development Plan
+III. Research, Development & Innovation Plan
+IV. Digital Transformation Plan
+V. Infrastructure Development Plan
+VI. IQAC Plan
+VII. Brand Enhancement Plan
+VIII. Sustainability Development Plan
+3
+Page
+04
+05
+06
+07
+17
+21
+25
+29
+33
+39
+
+-- 5 of 96 --
+
+The MIET Strategic Plan (2024-2030) is dedicated to the memory of Late Dr. Arun K. Gupta, a
+visionary leader and the esteemed Chairman of the MIER Group of Institutions. As an ardent advocate of
+education and innovation, Dr. Gupta's mission was to create a world-class institution in Jammu and
+Kashmir that contributes meaningfully to society by empowering students with knowledge, skills, and
+values that transcend the classroom.
+Under his leadership, MIET grew into a beacon of academic excellence and research innovation, setting
+benchmarks in education and industry collaboration since 1999. Dr. Gupta's emphasis on academic
+rigor, research-driven teaching, and his commitment to social responsibility are reflected in every aspect
+of MIET's functioning today.
+A true educationist, Dr. Gupta believed in nurturing not only the intellectual capabilities of students but
+also their character and moral compass, ensuring they emerge as responsible global citizens. His legacy
+continues to inspire MIET's vision of excellence, diligence, and innovation, guiding the institution's
+journey toward becoming a leading force in higher education in the region and beyond.
+This strategic plan is dedicated to his vision for the MIER group and his belief in the transformative
+power of education. We honour his contributions and remain committed to fulfilling his vision for MIET,
+by effectively implementing this strategic plan at MIET.
+Dedication
+Dr. Arun K. Gupta
+4
+Founder, MIET
+(1943 - 2021)
+
+-- 6 of 96 --
+
+Message from the Chairperson, MIER
+As the Chairperson of the Model Institute of Engineering and Technology (MIET), it is with immense
+pride that I present our Strategic Plan for 2024-2030. MIET has always stood for academic excellence,
+innovation, and the holistic development of our students. Over the years, we have nurtured countless
+young minds, equipping them with the knowledge, skills, and values to succeed in a rapidly changing
+world.
+Our institution's journey is guided by a deep-rooted commitment to delivering quality education,
+fostering research, and serving our society. The strategic objectives laid out in this document reflect our
+vision to enhance the impact of our academic programs, drive technological advancements, and
+contribute to sustainable development. We are continuously aligning ourselves with global standards,
+expanding our research capabilities, and strengthening our industry partnerships, while remaining true
+to our core values of excellence, diligence and innovation.
+This plan is the result of collective efforts and inputs from all important stakeholders. As we step into this
+new chapter of growth, I am confident that MIET will continue to scale new heights and set benchmarks
+in the education sector, not just regionally but nationally.
+Our commitment to sustainability, inclusion, and community engagement underscores our pledge to
+contribute positively to society and the environment. We are not only focused on the academic
+achievements of our students but also on their development as responsible global citizens.
+I would like to express my heartfelt gratitude to all those who have supported MIET's mission and vision
+over the years. Together, we will forge a bright and promising future for our institution, our students, and
+the broader community.
+Dr. Renu Gupta
+5
+
+-- 7 of 96 --
+
+Message from the Director, MIET
+It gives me great pleasure to share the MIET Strategic Plan for 2024-2030, a comprehensive roadmap
+that will guide our institution towards continued sustenance & growth. At MIET, we are dedicated to
+creating an environment where academic excellence, research innovation, and technological
+advancement go hand in hand with societal impact.
+This plan represents our collective ambition to strengthen our academic programs, expand our research
+horizons, and develop state-of-the-art infrastructure while maintaining a firm commitment to
+sustainability and community engagement. Over the next five years, we will work diligently to enhance
+the educational experiences of our students, elevate the capabilities of our faculty, and build partnerships
+that further our mission of producing graduates who are not only highly skilled but also socially
+responsible.
+The future holds significant challenges, but also immense opportunities. The global educational
+landscape is evolving rapidly, and MIET is fully prepared to adapt, innovate, and lead. By focusing on
+key areas such as academic excellence, digital transformation, infrastructure development, and
+sustainability, we are confident that MIET will continue to make a significant impact locally, nationally,
+and globally.
+Our success, however, is not solely measured by academic metrics, but by the lives we touch and the
+difference we make in society. MIET is committed to evolving into a University which becomes a focal
+point for driving transformation, growth and development in the Jammu and Kashmir region, which is
+much needed.
+I extend my sincere thanks to our faculty, staff, students, alumni, and partners for their unwavering
+dedication and support. The present strategic plan encapsulates our shared vision, lofty ambitions and
+steely resolve to create a higher education institution, which evokes pride among all in the region.
+As we embark on this strategic journey, I invite all our stakeholders to join hands with us in realizing our
+shared vision for a brighter future.
+Prof. Ankur Gupta
+6
+
+-- 8 of 96 --
+
+Section-1
+EXECUTIVE SUMMARY
+7
+
+-- 9 of 96 --
+
+8
+Executive Summary
+The Model Institute of Engineering and Technology (MIET) envisions transforming into a world-class
+institution that delivers exceptional value to its students, industry partners, and society. This strategic
+plan for 2024-2030 outlines MIET's approach to navigating the rapidly changing landscape of higher
+education while addressing the disruptions in the global economy and job markets caused by
+technological advancements.
+Over the next five years, MIET will focus on key areas, including enhancing academic excellence,
+advancing technological innovation, expanding infrastructure, and promoting sustainability. The
+institution will leverage its core values of Excellence, Diligence, and Innovation to maintain its
+leadership in higher education, ensuring that it not only adapts to future challenges but also contributes
+actively to shaping them.
+MIET's strategic plan revolves around Core Values, Key Focus Areas, Transformational Strategies,
+Enabling Strategies, and the in-house developed SOUL (Strategy, Operations, Urgency and Leadership)
+framework for institutional transformation. SOUL further encompasses the Simplified Strategic
+Management Framework (SSMF) a 5-dimensional model outlining key focus areas and specific
+interventions leading to increasing maturity levels indicative of stakeholder delight, higher order
+outcomes and sustained brand strengthening. Detailed descriptions of these strategic elements are
+provided below.
+Core Values
+MIET's core values of “Shreshtha” (Excellence), “Shram” (Diligence), and “Navinta” (Innovation)
+form the foundation of its mission and strategic approach. Excellence drives the pursuit of high
+standards, Diligence emphasizes commitment and consistency of execution, and Innovation encourages
+forward-thinking solutions to evolving challenges. These values have remained unchanged over the 90
+year existence of the MIER group and continue to inspire the next leg of transformative development of
+MIET and other group institutions.
+Key Focus Areas
+Enhance Student Achievement: MIET aims to equip students with industry-relevant skills and
+knowledge, delivering a world-class educational experience. The focus will be on supporting
+students in gaining admissions to prestigious institutions and securing placements in top
+companies, thus aligning with the institution's commitment to excellence.
+Build Networks and Partnerships: Strategic partnerships with industry and like-minded
+institutions will be developed to create more training, research, and employment opportunities.
+Strengthening the alumni network will also be crucial for ongoing engagement and support.
+Promote Local Innovation: MIET will institutionalize a culture of innovation with a focus on
+addressing real-world problems, particularly those relevant to the local context. By enhancing
+research capabilities and encouraging student-driven innovation, MIET will position itself as a
+hub for inventive solutions.
+
+-- 10 of 96 --
+
+Champion IT Adoption: To drive operational efficiency and improve the student experience,
+MIET will advance its IT infrastructure and develop innovative in-house solutions. The
+institution will also foster a technologically advanced culture, supporting faculty and student
+research and innovation through targeted initiatives.
+Transformational Strategies
+MIET's approach to transformation includes four key strategies: Quality, Innovation, Blue Ocean, and
+Customer Experience.
+Quality: A commitment to high standards will be reinforced through continuous improvement,
+accreditation, and quality certifications, ensuring transparency and alignment with institutional
+goals.
+Innovation: MIET will promote a culture of innovation, encouraging student-driven projects
+and enhancing research capabilities to address real-world challenges.
+Customer Experience: Creating a world-class experience for students through engagement and
+satisfaction-focused initiatives will be a priority, ensuring MIET stands out as a leader in student
+services.
+Blue Ocean: By embracing non-traditional approaches and creating new opportunities, MIET
+will differentiate itself within the higher education sector.
+Enabling Strategies
+To support its transformational goals, MIET will focus on Professionalism, Performance, and
+Responsiveness:
+Professionalism: Sustained training and modern management techniques will foster
+professionalism across the institution.
+Responsiveness: MIET will cultivate an agile, stakeholder-focused environment, ensuring the
+institution remains adaptable and proactive in meeting the needs of its community.
+Performance: A data-driven approach will enhance organizational performance, aligning staff
+and student capabilities with strategic objectives.
+Institutional Transformation
+Around 10 years ago, the institutional leadership recognized large trends playing out in the Indian Higher
+Education space, namely, increased student expectations, regulatory changes necessitating urgent
+transformation, focus on accreditation and rankings, heightened competition and existential concerns
+for private affiliated colleges. Recognizing these trends, the institution decided to adopt a proactive
+approach focusing on “student value creation” and emerging as the de facto leader in the region. This
+9
+
+-- 11 of 96 --
+
+required a significant pivot for MIET, requiring a new culture of performance and excellence to
+be ingrained. The institutional leadership formulated a framework for this critical institutional
+transformation; SOUL (Strategy, Operations, Urgency and Leadership).
+SOUL Framework
+The (Strategy, Operations, Urgency, Leadership) as depicted below in Figure 1 is a	SOUL Framework
+change and transformation management model developed by the leadership team at MIET to address
+the urgent need for transformation and ensuring long-term sustainability. The SOUL Framework is
+intended to provide a broad framework for MIET to navigate existing and emerging challenges, initiate
+meaningful change, and ensure sustainable growth.
+Fig 1. SOUL Framework
+Transformational Leadership
+Mentoring and Coaching
+Creating Learning Institutions
+Incentives and Rewards
+Specialised Positions / Strategic
+Recruitment
+Leadership
+Urgency
+1.
+2.
+3.
+4.
+5.
+Establish Need for Change / Urgency
+SMART Goals
+Focused / Frequent Commission
+Crack-Teams and Quick Wins
+IT Adoption and Tracking
+1.
+2.
+3.
+4.
+5.
+Clarify Core Values and Philosophy
+Simplified SM Framework
+Transformational and Enabling Strategies
+Performance Analytics and Benchmarking
+Resource Provisioning
+1.
+2.
+3.
+4.
+5.
+Define Operational Outcomes / KRAs
+Process Reengineering / Simplification
+Operational Dashboard
+Spending for Operational Excellence
+Stakeholder Delight
+1.
+2.
+3.
+4.
+5.
+Strategy
+Operations
+S
+L O
+U
+SOUL
+Key Components of the SOUL Framework are
+Strategy(S): Strategy is central to the SOUL Framework, aligning the institution's vision and
+mission with its strategic goals. This component emphasizes creating a clear and adaptable plan
+that addresses both immediate and long-term challenges while integrating global best practices.
+Operations(O): Operational excellence is vital for enhancing stakeholder experience and
+institutional efficiency. This involves optimizing processes, leveraging technology, and building
+strong support systems to ensure seamless operations. Improving operational efficiency at MIET
+shall empower faculty and staff to deliver high-quality education and services.
+Urgency(U): A sense of urgency is crucial for driving timely change within MIET. By fostering a
+culture of urgency, MIET must accelerate decision-making and execution, achieve quick wins,
+and maintain momentum in its transformation journey. This component is essential for
+overcoming resistance to change and ensuring sustained progress.
+Leadership(L): Transformational leadership is required to guide MIET through change
+effectively. This involves developing strong leaders at all levels who can articulate a clear vision,
+10
+
+-- 12 of 96 --
+
+inspire stakeholders, and drive strategic initiatives. Leadership at MIET shall play a critical role in
+building a culture of continuous improvement and achieving long-term institutional goals. Mentoring
+young leaders and home-grown talent to be change agents will be a critical aspect of the MIET strategy.
+The Simplified Strategic Management Framework (SSMF)
+The Simplified Strategic Management Framework (SSMF) is a comprehensive model for implementing
+strategic management at MIET. It is designed to be action-oriented and easily assimilated at all levels in
+the organization. The SSMF depicted below in Figure 2 is structured around five key dimensions:
+Students, Faculty, Information Technology, Resources, and Outreach & Branding. Each dimension has
+four maturity levels, which shall help MIET track its progress and gauge the maturity of different
+strategic management initiatives.
+Fig 2. Simplified Strategic Management Framework
+Dimensions and Maturity Levels of SSMF
+Students:
+Level 1: Engagement - Focuses on building deep and meaningful engagement with
+students.
+11
+
+-- 13 of 96 --
+
+Level 2: Satisfaction - Aims to enhance student satisfaction through feedback,
+mentoring, and improved services.
+Level 3: Delight - Seeks to exceed student expectations by providing world-class
+opportunities and experiences.
+Level 4: High Performance and Achievement - Emphasizes consistently attaining high
+performance and enhancing achievement levels.
+Faculty
+Level 1: Development - Involves faculty development initiatives such as training and
+mentoring.
+Level 2: Engagement - Focuses on binding faculty to their roles and enhancing their
+involvement in institutional processes.
+Level 3: Delight - Aims to exceed faculty expectations through rewards, recognition, and
+advanced opportunities.
+Level 4: High Performance and Achievement - Cultivates a high-performance culture
+with empowered and highly competent faculty.
+Information Technology
+Level 1: Adoption - Involves the basic implementation of IT tools and infrastructure.
+Level 2: Integration - Ensures deep integration of IT with institutional processes and
+operations.
+Level 3: Driver - IT begins to drive operational efficiencies and strategic decision-
+making.
+Level 4: Enabler - IT acts as a key enabler for achieving strategic objectives and
+outcomes.
+Resources
+Level 1: Planning - Focuses on understanding the financial health and planning for
+stabilization.
+Level 2: Allocation - Aligns resource allocation with strategic objectives and operational
+needs.
+Level 3: Spend for Excellence - Allocates funds strategically to achieve excellence in
+key areas.
+Level 4: Generation and Surplus Management - Manages reserves and surplus
+effectively while exploring new resource generation avenues.
+Outreach and Branding
+Level 1: Internal Communication - Emphasizes internal branding and stakeholder
+communication.
+Level 2: External Engagement - Focuses on engaging external stakeholders through
+various channels.
+12
+
+-- 14 of 96 --
+
+Level 3: Brand Amplification - Strategically promotes the institution to increase
+visibility and engagement.
+Level 4: Reputation Management - Manages the institution's reputation through
+strategic initiatives like SEO, PR, and feedback management.
+Building on the foundations of previous strategic plans, annual objectives, and the strategy document,
+MIET embarked on a collaborative journey to define its path for the next five years. A series of in-depth
+discussions were conducted, engaging stakeholders from various levels of the institution to ensure a
+comprehensive approach resulting in the Strategic Planning Dossier (Appendix I).These
+conversations culminated in a strategic retreat where the core leadership group came together to
+contribute their insights and expertise. This collective effort allowed MIET to align its vision with
+actionable steps, laying the groundwork for a transformative strategy roadmap that addresses both
+current and future challenges.
+The strategic plan has been designed to attain the most important strategic outcome for MIET,
+which is “to evolve into a Private University” over the next 5 years.
+As a result of these discussions, the MIET Strategic Plan 2024-2030 emerged, focusing on five key
+objectives that will elevate the stature of the institution. These objectives target critical areas: academic
+and research excellence, technological innovation, infrastructure development, sustainability, and
+enhancing the holistic experience of students, faculty, and stakeholders. By centring on these priorities,
+MIET intends not only expand its impact but also help drive socio-economic progress in the region and
+contribute to national development. The five strategic objectives, along with their corresponding SSMF
+dimensions and intended maturity levels to be achieved over the next five years, are outlined in Table 1.
+Strategic Objectives Corresponding SSMF
+Dimensions
+Intended Maturity Levels
+to be achieved by 2030
+Enhancing Academic and
+Research Excellence
+Student
+Faculty Level 3
+Advancing Technological
+Innovation and Digital
+Transformation
+Information Technology
+Outreach and Branding Level 4
+Developing State-of-the-
+Art Infrastructure
+Resources
+Outreach and Branding Level 3
+Enhancing Quality
+Assurance and Stakeholder
+Experience
+Student
+Faculty
+Outreach and Branding
+Level 4
+Promoting Sustainability
+and Social Responsibility Outreach and Branding Level 3
+Table 1: Strategic Focus Areas and Corresponding SSMF Dimensions with Target Maturity Levels by 2030
+13
+
+-- 15 of 96 --
+
+A brief overview of each strategic objective is provided below, with detailed explanations available
+in the corresponding sections.
+Enhancing Academic and Research Excellence
+MIET is committed to providing high quality education at par with the best institutions in the country
+and focusing on developing research capabilities in emerging domains. By offering highly flexible
+academic programs with relevant specializations offering holistic development and life skills, MIET
+aims to prepare students for exciting global careers and success in their chosen domains.
+Academic Programs: MIET intends to offer programs in emerging fields such as AI/ML,
+Cybersecurity, Quantum Computing, Data Science, Industry 4.0, Electric Vehicles and other
+frontier technologies, with plans to introduce interdisciplinary & integrated programs. The
+institution also intends to introduce courses which are currently not offered within the region in
+the private sector such as Hotel Management & Catering Technology, Journalism & Mass
+Communication, M.Tech in all Engineering Programs, LLM (Hons.), and integrated programs
+which reflect the needs of the market/society. Finally, starting PhD programs in all disciplines
+will remain a priority area for MIET to truly transform into a research-driven institution.
+Faculty Development: MIET will implement a comprehensive Learning and Development
+(L&D) Plan for faculty training in emerging technologies, research methodologies, and
+innovative teaching practices. The intent is to significantly enhance the faculty's ability to deliver
+high-quality education through continuous development, mentoring and industry certifications.
+Research Innovation: Establish Centers of Excellence in high-impact areas like AI and Frontier
+Technologies.. Focus on industry-academic partnerships, driving innovation, and translating
+research into practical applications, intellectual property and startups.
+Advancing Technological Innovation and Digital Transformation
+MIET aims to create a digitally advanced ecosystem to support education, foster innovation, and
+enhance operational efficiency.
+Digital Infrastructure: Upgrade to 1 Gbps campus-wide internet and adopt a cloud-first strategy
+for enhanced data accessibility and security. Modernize digital infrastructure with a focus on
+seamless connectivity and operational efficiency.
+Smart Classrooms and Labs: Equip classrooms with advanced technologies, including smart
+boards and state-of-the-art computing facilities, to support emerging technologies and provide a
+hands-on learning experience. Make latest tools and technology stacks available for use by the
+stakeholders.
+Automation and Operational Efficiency: Invest in automating institutional processes to
+streamline operations and enhance stakeholder experience across various departments to drive
+operational efficiency. Be a leader in adopting new technologies, software tools to manage all
+aspects from admissions to student life-cycle management to alumni management.
+14
+
+-- 16 of 96 --
+
+Developing State-of-the-Art Infrastructure
+MIET's infrastructure strategy aims to foster academic excellence, research, and holistic student
+development with a focus on sustainability.
+Academic and Residential Facilities: Develop new academic buildings, IT Park, hostels, and
+faculty housing to accommodate growth. Enhance learning spaces offer a modern infrastructure
+offering comfort, safety and convenience to all stakeholders.
+Recreational Spaces: Create modern amenities such as rooftop cafes, gyms, and sports
+complexes, along with a new cafeteria, cultural activity centre, and amphitheatre to promote
+well-being and develop an enriching campus culture.
+Sustainability Initiatives: Develop infrastructure which is energy efficient, ergonomically
+designed while offering comfort and convenience. The infrastructure should help enhance the
+productivity of the stakeholders.
+Barrier-Free Environment: Offer a barrier-free environment for the specially-abled including
+lifts, ramps, barrier-free toilets, resource/learning materials and supporting policies for the
+specially-abled.
+Enhancing Quality Assurance and Stakeholder Experience
+MIET prioritizes stakeholder satisfaction by creating a supportive campus environment that
+addresses the needs of students, faculty, staff, and external partners.
+Consistent Quality Enhancement: Achieve continuous quality improvement by adopting global
+best practices, processes, and systems across all institutional activities.
+Excellence in Rankings and Accreditations: Perform consistently in national and international
+rankings and accreditations, demonstrating excellence across all aspects of institutional
+performance.
+Student Experience: Improve the student experience through modern classrooms, expanded
+support services, learning and development initiatives, IT systems for seamless services, mental
+health resources, and comprehensive career counselling.
+Faculty Development and Engagement: Foster a culture of mentorship, collaboration, and
+continuous improvement among faculty, linking performance appraisals to research output and
+development goals.
+Digital Engagement: Develop platforms to improve communication, feedback, and
+performance tracking, ensuring responsiveness to stakeholder needs. Appoint a dedicated
+Experience Manager to manage interactions with stakeholders and improve satisfaction.
+Implement regular feedback loops and satisfaction surveys.
+15
+
+-- 17 of 96 --
+
+Alumni Engagement: Strengthen connections through regular updates, reunions, and
+networking events. Showcase alumni success stories in branded communications.
+Promoting Sustainability and Social Responsibility
+MIET's objective is to align with the United Nations Sustainable Development Goals (UNSDGs) to
+foster a sustainable and socially responsible environment.
+Clean Energy and Water Conservation: Implement green practices including rainwater
+harvesting, ground-water recharge, Sewage Treatment Plants and utilize solar energy to meet
+atleast 50% of campus needs, besides promoting eco-friendly transportation with EVs within
+campus including provisioning Charging stations.
+Gender Equality and Social Equity: Increase female enrolment through scholarships and
+establish a centre for women's development to support female students and faculty.
+Community Engagement: Enhance community outreach programs aligned with UNSDGs,
+focusing on education access, gender equality, and social responsibility.
+Equal-opportunity employer: MIET intends to be an equal-opportunity employer focusing on
+providing employment and growth opportunities to prospective employees irrespective of their
+gender, religion, background, orientation and preferences. The MIET organizational culture
+intends to encourage and reward meritocracy and performance.
+16
+
+-- 18 of 96 --
+
+Section-2
+ENHANCING ACADEMIC AND
+RESEARCH EXCELLENCE
+17
+
+-- 19 of 96 --
+
+18
+Model Institute of Engineering and Technology (MIET) is committed to fostering a culture of
+academic excellence and research innovation that aligns with its strategic vision of becoming a world-
+class institution. This section outlines the key initiatives that will guide MIET over the next five years
+(2024-2030) in enhancing the quality of its academic programs and advancing its research capabilities.
+Academic Programs
+Blue Ocean Approach: MIET aims to launch new programs which are a first in the region,
+retaining its pioneer status. These programs will align with international trends, national and
+regional requirements. Starting PhD programs in broad subject areas will remain a priority along
+with focusing on programs in hospitality management, media and journalism and masters
+programs in engineering. Interdisciplinary and innovative programs shall be subsequently
+launched upon attaining the University status, which is the stated strategic outcome for MIET.
+MIET will partner with foreign universities to enable international career	Internationalization:
+paths for its students, contributing to internationalization efforts in the region.
+Faculty Development and Learning Ecosystem
+MIET aims to transform its faculty into global thought leaders through	Faculty Upskilling:
+continuous professional development in emerging and frontier technologies such as AI,
+Quantum Computing, Data Analytics, Cybersecurity, Industry 4.0, Renewable Energy and EVs.
+This will be achieved through partnerships with industry, world-class learning platforms,
+curated faculty development programs and industry certifications for individual faculty under a
+comprehensive Learning and Development plan.
+MIET will implement faculty mentorship initiatives, pairing senior	Mentorship Programs:
+faculty with younger members to promote knowledge exchange and support research and
+teaching excellence.
+Curriculum Innovation and Interdisciplinary Education
+MIET will revise its curriculum continuously to include interdisciplinary	Curriculum Design:
+courses, specializations in emerging domains, industry-relevant curriculum and enhanced
+flexibility for students.
+MIET plans to establish Centers of Excellence in emerging and frontier	Centers of Excellence:
+technologies such as EVs, Drone Technology, IoT, AI among others with industry collaboration.
+These centers will provide students with hands-on experience in state-of-the-art technologies,
+and deliver a modern curriculum to the students.
+Enhancing Academic & Research Excellence
+
+-- 20 of 96 --
+
+19
+Research Infrastructure and Resources
+Investment in state-of-the-art research labs with modern tools and resources	Research Labs:
+will provide the necessary infrastructure for advanced experimentation and data analysis.
+Upgrades to existing labs will be undertaken in a phased manner to ensure the research
+infrastructure remains relevant at all times.
+The establishment of an IPR Cell will assist faculty and students	Intellectual Property Support:
+in securing patents and commercializing research, aiming to increase annual patent filings and
+bolster MIET's innovation leadership in the region.
+Research and Innovation Outcomes
+Research Publications: MIET aims to increase the visibility and impact of its research through
+high-quality publications in international journals. Support for faculty attending global
+conferences will further promote MIET's research outputs on the world stage.
+MIET will strengthen partnership and linkages to secure research	Partnerships and linkages:
+funding and demonstrate impact. Joint research initiatives will be encouraged to enhance the
+visibility of the institution at the national and international levels.
+Innovation and Entrepreneurship: MIET will dedicate resources to innovate consistently
+building innovative products, solutions and prototypes solving real-world problems. These will
+result in patents, commercial products, licensing of technology and potential startups.
+MIET will offer rewards and incentives to faculty members in attaining	Rewards and Incentives:
+stated research objectives and championing the culture of research and innovation at MIET.
+To implement the strategies laid out in this plan, the Learning and Development Plan and the Research,
+Development & Innovation Plan have been prepared. (Appendix II and III)
+
+-- 21 of 96 --
+
+20
+
+-- 22 of 96 --
+
+21
+Section-3
+TECHNOLOGICAL ADVANCEMENT AND
+DIGITAL TRANSFORMATION
+
+-- 23 of 96 --
+
+22
+Technological Advancement and Digital Transformation
+MIET is committed to enhancing its digital infrastructure to support its strategic goals of becoming a
+world-class institution. The upcoming five years will focus on accelerating MIET's technology adpotion
+through modernized infrastructure, implementation of emerging technologies, and creating a digital-
+first operational model. These efforts aim to elevate academic delivery, institutional efficiency, and foster
+innovation, making MIET a leader in technology adoption and advancement.
+Digital Infrastructure Modernization
+Upgrading Network Capabilities: MIET will invest in high-speed internet, upgrading to 1 Gbps
+bandwidth to support data-intensive research and remote learning. High-density Wi-Fi networks
+will ensure seamless connectivity across academic buildings, residential areas, and public
+spaces. A redundant network architecture will minimize downtime, ensuring uninterrupted
+connectivity.
+Cloud-First Strategy: The adoption of a cloud-first strategy will enhance data management and
+scalability. Cloud platforms like AWS or Microsoft Azure will host institutional data and digital
+resources. Tools like Google Workspace and Microsoft 365 will facilitate real-time
+collaboration, while virtual labs will provide remote access to high-performance computing
+resources.
+Enhancing Academic Delivery through Technology
+Smart Classrooms: MIET will transform its classrooms into smart learning environments
+equipped with interactive displays and AI-powered tools. Lecture capture systems will enable
+recording and streaming of lectures, creating a repository for review. AI tools will provide
+personalized feedback and support to students.
+Learning Management System (LMS) Enhancement: The LMS will be upgraded to offer a
+user-friendly interface and mobile access, supporting all academic activities. Integrated
+assessment tools will track student progress, providing analytics to help faculty address learning
+gaps effectively.
+Virtual and Augmented Reality in Education: MIET will incorporate VR and AR technologies
+for immersive learning where applicable.
+
+-- 24 of 96 --
+
+23
+Automation of Institutional Operations
+Automation of Administrative Processes: MIET aims to automate key administrative processes,
+including admissions, records management, and financial operations, reducing manual tasks and
+enhancing efficiency. An automated CRM system will streamline alumni management, while
+performance analytics will support data-driven decision-making.
+Student Support and Engagement Tools: AI-driven chatbots and virtual assistants will provide
+24/7 support for student queries. MIET will also enhance its mental health services with online
+counselling and AI-based tools for early intervention.
+Cybersecurity and Data Protection
+Strengthening Cybersecurity Infrastructure: MIET will adopt a comprehensive cybersecurity
+framework, including firewalls, intrusion detection systems, and secure access protocols to
+protect sensitive data. Regular security audits and compliance with data protection regulations
+will be conducted to maintain a secure digital environment.
+Cybersecurity Education and Awareness: Specialized cybersecurity courses and certifications
+will be offered in partnership with industry leaders. Awareness campaigns will educate the
+community on best practices for online safety and data privacy.
+Sustainability through Digital Innovation
+Green IT Initiatives: MIET is committed to sustainability through energy-efficient data centers
+and virtualization technologies. A shift to paperless operations will further reduce the
+institution's carbon footprint.
+Leveraging Digital Tools for Environmental Impact: Smart energy management systems will
+track energy usage, optimizing consumption to reduce MIET's carbon footprint. IoT-enabled
+water conservation tools will monitor water usage and detect leaks, contributing to the
+institution's sustainability goals.
+To implement the strategies outlined in this plan, the Digital Transformation Plan has been prepared
+(Appendix IV).
+
+-- 25 of 96 --
+
+24
+
+-- 26 of 96 --
+
+25
+Section-4
+DEVELOPING STATE-OF-THE-ART
+INFRASTRUCTURE
+
+-- 27 of 96 --
+
+26
+Developing State-of-the-Art Infrastructure
+MIET is committed to expanding and modernizing its campus facilities to accommodate a growing
+student population, create a world-class learning environment and elevate stakeholder experience. The
+development plan encompasses academic, residential, and recreational facilities with a focus on
+institutional needs, functionality, aesthetics, safety, comfort, sustainability and barrier-free access.
+Expansion of Academic Facilities
+IT Park and Academic Block: MIET proposes to construct an IT Park and Academic Blocks E
+and F, serving as a hub for teaching, research, and industry collaboration. Key features include:
+Incubation Center: A space dedicated to fostering entrepreneurship and innovation,
+offering resources such as mentorship and seed funding.
+Co-Working Spaces: Providing young startups from J&K with an environment to
+innovate and grow.
+Data Centre: State-of-the-art computing facilities to support startups, innovation, and
+research across the region.
+Centres of Excellence: Industry-partnered centers offering access to cutting-edge tools
+and frameworks to accelerate innovation and prototyping.
+Convention Centre: A venue for hosting world-class events focused on technology,
+innovation, and entrepreneurship.
+Development of Residential and Recreational Facilities
+Student Hostels and Faculty Housing: Over the next five years, MIET plans to expand its
+residential offerings by constructing student hostels and faculty housing. This initiative aims to
+enhance academic impact and institutional outcomes through community building.
+Recreational Spaces: MIET is committed to creating spaces that promote physical health,
+mental well-being, and a vibrant campus life. Planned facilities include an indoor sports center
+offering racquet sports, athletic track, gym, multi-purpose spaces for allied activities such as
+yoga, zumba etc. A full-fledged cricket stadium is also proposed.
+Cafeteria and Social Spaces: A new cafeteria with the capacity of 500 seats is intended to be
+provisioned. Additionally, rooftop cafes on new buildings are proposed to be created as inviting
+spaces where students and staff can relax, socialize, and enjoy a range of food options.
+
+-- 28 of 96 --
+
+27
+Campus Beautification and Branding
+Landscaping and Green Spaces Development: Transform the campus into a green,
+environmentally friendly space by planting native trees, shrubs, and themed gardens to promote
+biodiversity. Shaded pathways and outdoor seating areas integrated with rainwater harvesting
+will enhance sustainability and foster community interaction.
+Art Installations and Sculptures: Enrich campus culture and identity by collaborating with
+regional and national artists to create sculptures, murals, and other art installations that reflect
+MIETs values and vision.
+Upgraded Interiors for Seminar Rooms and Central Meeting Spaces: Modernize seminar and
+meeting spaces to facilitate effective learning and collaboration through ergonomic furniture,
+state-of-the-art audiovisual systems, improved lighting, and adaptable configurations for diverse
+events and meetings.
+Secure and Aesthetic Gate Complex Construction: Establish a visually appealing and secure
+main entrance to the campus, featuring security checkpoints, landscaping, welcoming signage,
+and reliable access control systems for enhanced campus safety.
+Campus Branding and Signage Improvements: Reinforce MIET’s brand identity and improve
+campus navigation through the development and installation of consistent directional signage,
+building labels, and campus maps, creating a cohesive and user-friendly environment.
+Smart Campus Initiatives
+MIET is committed to transforming into a smart campus by focusing on the automation of key areas to
+enhance operational efficiency and overall campus experience. Key initiatives include:
+Smart Metering: Implementing efficient energy monitoring and management systems.
+Surveillance System: Enhancing campus security with advanced surveillance technologies.
+Attendance Management System: Streamlining the attendance process through automation for
+accuracy and convenience.
+Campus Automation: Integrating solutions to simplify and improve day-to-day campus
+operations.
+Data-Driven Decision Making: Utilizing data insights for strategic planning and optimal
+resource allocation.
+To implement the strategies outlined in this plan, a comprehensive Infrastructure Development Plan has
+been prepared (Appendix V).
+
+-- 29 of 96 --
+
+28
+
+-- 30 of 96 --
+
+29
+Section-5
+ENHANCING QUALITY ASSURANCE
+AND STAKEHOLDER EXPERIENCE
+
+-- 31 of 96 --
+
+30
+Enhancing Quality Assurnce and Stakeholder Experience
+MIET's quality assurance framework emphasizes continuous improvement and stakeholder
+engagement, facilitated by the Internal Quality Assurance Cell (IQAC). The IQAC oversees quality
+enhancement activities to ensure that academic, administrative, and operational processes align with
+national and international standards.
+Quality Assurance
+Accreditation and Benchmarking: MIET is committed to achieving and maintaining high-
+quality standards through national and international accreditations.
+NAAC and NBA Accreditation: MIET will pursue top grades in NAAC and NBA
+accreditations, ensuring its programs meet the highest quality standards.
+International Accreditation: Efforts will be made to secure international accreditations
+such as ABET and AACSB to enhance MIET's global reputation and attract
+collaborations.
+Data-Driven Decision Making: MIET will adopt a data-driven approach, utilizing analytics to
+guide decision-making and monitor performance.
+Key Performance Indicators (KPIs): MIET will track KPIs related to academic
+performance, research output, student satisfaction, and faculty development to evaluate
+program effectiveness and drive strategic decisions.
+Continuous Monitoring and Improvement: A system for ongoing data collection and
+analysis will be established to quickly address issues and implement necessary
+adjustments.
+Enhancing Stakeholder Experience: MIET aims to enhance the experiences of students,
+faculty, staff, alumni, and industry partners by fostering a supportive and engaging environment.
+Student-Centred Learning Environment: MIET is dedicated to creating a personalized and
+supportive learning environment for students.
+Personalized Learning Paths: Adaptive learning technologies will tailor educational
+experiences to individual student needs, enhancing learning outcomes across various
+fields.
+Programs including mentorship, internships,	Holistic Development Programs:
+extracurricular activities, and soft skills training will ensure students are well-rounded
+and workforce ready.
+
+-- 32 of 96 --
+
+31
+Student Support Services: Student well-being is a priority, with comprehensive support
+services to promote academic success and personal growth.
+Academic Support Centres: These centres will offer tutoring, peer mentoring, and
+academic counselling, providing resources to help students excel.
+Career Services and Placement Support: MIET will enhance career services with
+personalized counselling, resume workshops, and strengthened industry ties for better
+job placement.
+Mental Health and Wellness Programs: Expanded mental health services, including
+counselling and wellness workshops, will support students' emotional and mental well-
+being.
+Student Feedback Mechanisms: MIET values student feedback as a tool for continuous
+improvement.
+Student Satisfaction Surveys: Annual surveys will gather insights on academic
+programs, faculty performance, and campus services, informing policy changes and
+enhancements.
+Faculty Experience and Professional Development: MIET is committed to fostering an
+environment that supports faculty development, collaboration, and recognition.
+Faculty Development Programs: Continuous professional development will be
+prioritized to keep faculty at the forefront of their fields through the following:
+Teaching Excellence Workshops: Regular workshops will cover innovative teaching
+methods, classroom management, and the integration of technology under the ambit of
+the Teaching-Learning Center.
+Research and Grant Writing Support: MIET will assist faculty with grant writing,
+proposal development, and industry collaboration, helping secure research funding and
+produce impactful publications.
+Faculty Recognition and Incentive Programs: Recognizing faculty achievements is key to
+maintaining an engaged workforce and would be ensured through following initiatives:
+Annual Faculty Awards: Awards in categories such as teaching excellence and research
+innovation will celebrate outstanding contributions.
+Incentives for Research and Publications: Financial incentives and reduced teaching
+loads will be offered to faculty who excel in research and secure external funding.
+
+-- 33 of 96 --
+
+32
+Staff Experience and Support: MIET supports its non-academic staff through professional
+development opportunities and recognition programs.
+Skill Development Programs: Tailored training programs will help administrative,
+technical, and support staff develop essential skills.
+Cross-Departmental Training: Opportunities for cross-departmental training will
+enhance staff versatility and institutional efficiency.
+Employee Engagement and Recognition: To foster a positive work environment, MIET will
+implement engagement initiatives that promote collaboration and work-life balance.
+Employee Recognition Programs: Regular recognition events will highlight the
+contributions of staff members across the institution.
+Work-Life Balance Initiatives: Flexible work hours, wellness programs, and
+recreational facilities will help staff manage their responsibilities effectively.
+Alumni Engagement and Industry Partnerships: MIET is committed to strengthening ties with
+alumni and industry partners to enhance academic programs, research, and job placement.
+Alumni Mentorship Programs: Connecting current students with successful alumni
+mentors will provide guidance on career development and networking.
+Continuous Quality Improvement: MIET will employ a Plan-Do-Check-Act (PDCA) approach
+to ensure ongoing quality improvement.
+Quality Improvement Cycles: The PDCA cycle will guide improvements in academic
+and administrative processes, supported by stakeholder feedback and quality
+improvement committees.
+Stakeholder Feedback and Involvement: Regular feedback sessions and quality
+improvement committees will ensure that stakeholders are actively engaged in MIET's
+continuous improvement efforts.
+To implement the strategies laid out in this plan, a comprehensive IQAC Plan and the Brand
+Enhancement Plan have been prepared. (Appendix VI and VII).
+
+-- 34 of 96 --
+
+33
+Section-6
+PROMOTING SUSTAINABILITY AND
+SOCIAL RESPONSIBILITY
+
+-- 35 of 96 --
+
+34
+Promoting Sustainability and Social Responsibility
+The Model Institute of Engineering and Technology (MIET) is dedicated to aligning its initiatives with
+the United Nations Sustainable Development Goals (UNSDGs) as part of its 2024-2030 strategic plan.
+This commitment aims to integrate sustainability, social equity, and community engagement across
+MIET's operations, academic programs, and research, ensuring the institution contributes positively to
+global challenges like climate change, inequality, and sustainable development.
+Sustainability in Campus Operations
+MIET integrates sustainable practices in campus operations, targeting energy usage, waste
+management, water conservation, and transportation, aligning with UNSDGs such as Affordable and
+Clean Energy (Goal 7), Responsible Consumption and Production (Goal 12), and Climate Action (Goal
+13).
+Energy Efficiency and Clean Energy Initiatives
+Solar Energy Deployment: MIET plans to meet 75% of its energy needs through solar
+power by 2030, installing solar panels across academic buildings and open spaces. On-
+campus solar farms will enhance energy generation, complemented by battery storage
+systems to manage energy use during peak times.
+Energy Efficiency Upgrades: Smart energy management systems will optimize energy
+consumption based on real-time data, while retrofitting existing buildings with LED
+lighting, improved insulation, and energy-efficient appliances will further reduce energy
+use.
+Sustainable Water Management
+Rainwater Harvesting: Systems will collect and store rainwater for irrigation and other
+non-potable uses, reducing the need for municipal water and supporting groundwater
+recharge. Greywater recycling will also be implemented to further decrease reliance on
+fresh water.
+Water-Efficient Landscaping: MIET will adopt landscaping practices that use native
+and drought-tolerant plants, alongside smart irrigation systems to minimize water waste
+and enhance campus biodiversity.
+Waste Management and Circular Economy Practices
+Zero-Waste Initiatives: MIET will promote sustainable consumption, reduce single-use
+materials, and encourage digital workflows to minimize paper use. Comprehensive
+recycling and composting programs will be established to divert waste from landfills and
+recycle organic materials for use in campus gardens.
+
+-- 36 of 96 --
+
+35
+E-Waste Management: Regular e-waste collection drives will ensure responsible
+disposal of electronics, with a focus on sustainable procurement and extending the
+lifecycle of devices through maintenance and repairs.
+Sustainable Development Education
+MIET aims to integrate sustainability across its curriculum, ensuring students gain a comprehensive
+understanding of sustainable development principles, aligning with Quality Education (Goal 4) and
+Climate Action (Goal 13).
+Sustainability in the Curriculum
+Interdisciplinary Courses: MIET will offer courses on climate change, renewable
+energy, circular economy, and sustainable urban planning, promoting cross-disciplinary
+collaboration on sustainability projects.
+Project-Based Learning: Students will engage in capstone projects focused on real-
+world sustainability challenges, such as designing renewable energy systems or
+developing waste reduction strategies.
+Sustainability Certifications and Training
+Sustainability Leadership Programs: MIET will offer certifications in sustainable
+business practices, environmental policy, and green technology, enhancing students'
+employability in sustainability-focused roles.
+Faculty and Staff Development: Workshops and training will help faculty integrate
+sustainability into their courses and research, while staff will receive training in
+sustainable campus management practices.
+Research for Sustainable Solutions
+MIET will position itself as a leader in sustainability research, focusing on developing solutions for
+environmental and social challenges, supporting Industry, Innovation, and Infrastructure (Goal 9) and
+Climate Action (Goal 13).
+Establishing Research Centers
+Center for Renewable Energy Research: This center will focus on improving solar
+energy technologies and collaborating with industry to develop scalable renewable
+energy solutions.
+Center for Sustainable Urban Development: Research will include smart city
+technologies, sustainable infrastructure, and policy analysis to support sustainable urban
+growth.
+
+-- 37 of 96 --
+
+36
+Student and Faculty Research Opportunities
+Sustainability Research Fellowships: Grants and fellowships will support research in
+renewable energy, sustainable agriculture, and climate adaptation, fostering innovation
+in sustainability.
+Social Equity and Inclusion
+MIET is committed to reducing inequalities and promoting diversity, supporting Gender Equality (Goal
+5) and Reduced Inequalities (Goal 10).
+Promoting Gender Equality
+Scholarships for Women in STEM: Financial aid and scholarships will encourage more
+women to pursue degrees in STEM fields.
+Women's Leadership and Mentorship Programs: Programs will support female
+students and faculty, offering mentorship and leadership development opportunities.
+Reducing Socioeconomic Barriers to Education
+Need-Based Scholarships: MIET will expand its scholarships to support students from
+low-income families, ensuring access to quality education.
+Support for First-Generation Students: Specialized services, including academic and
+peer mentoring, will help first-generation students navigate the academic environment.
+Community Engagement and Partnerships
+MIET will engage with local communities and form partnerships that support social and economic
+development, aligning with Sustainable Cities and Communities (Goal 11) and Partnerships for the
+Goals (Goal 17).
+Local Community Development Initiatives
+Education Outreach Programs: MIET will partner with local schools to provide STEM
+education, inspiring young students to pursue careers in science and technology.
+Health and Wellness Initiatives: Collaborations with healthcare providers will offer
+mobile health clinics to underserved areas, providing basic healthcare and education.
+
+-- 38 of 96 --
+
+37
+Partnerships with NGOs and Government Agencies
+Collaborative Social Impact Projects: MIET will work with NGOs on projects
+addressing local challenges, such as poverty and environmental degradation, promoting
+skill development and economic independence.
+Advocacy and Policy Engagement
+Sustainability Policy Development: MIET will engage in advocacy to promote
+sustainability and social equity in higher education, contributing to broader societal
+impact.
+To implement the strategies outlined in this plan, a comprehensive Sustainability Development Plan has
+been prepared. (Appendix VIII).
+
+-- 39 of 96 --
+
+38
+
+-- 40 of 96 --
+
+39
+Section-7
+IMPLEMENTATION, MONITORING,
+AND GOVERNANCE
+
+-- 41 of 96 --
+
+Implementation, Monitoring, and Governance
+MIET will use a phased approach to implement its 2024-2030 Strategic Plan, with an emphasis on
+regular monitoring by an executive committee. This section outlines the steps required to achieve
+MIET's goals, including tracking key performance indicators (KPIs) related to academic performance,
+research outputs, infrastructure development, and stakeholder satisfaction.
+Phased Implementation Overview
+MIET's implementation plan is divided into five phases, each targeting specific strategic initiatives:
+Focuses on planning and initial rollout, including obtaining approvals from the	Phase 1 (2024):
+Governing Body, communicating internally and setting up the structure to execute the relevant
+plans, allocating funding, and initiating pilot projects.
+Expand academic and research initiatives, such as launching new	Phase 2 (2025-2026):
+academic programs, enhancing research centers, and advancing digital transformation projects.
+Begins infrastructure and sustainability development, including upgrades	Phase 3 (2026-2027):
+to campus facilities and the implementation of green energy projects.
+Focuses on full implementation and partnership development, scaling	Phase 4 (2027-2028):
+industry and government partnerships, and deepening stakeholder engagement.
+Involves reviewing and evaluating strategic outcomes, ensuring the long-	Phase 5 (2028-2030):
+term sustainability of MIET's programs, leading into the strategic planning framework over the
+next 5 year cycle.
+Governance Structure
+A well-defined governance structure will oversee the execution of the strategic plan, ensuring
+accountability and effective resource management.
+Governance Bodies
+Approves all strategic plans and initiatives, including allocation of resources,	Governing Body:
+people and overseeing the effective implementation of the strategic plans.
+Provides overall decision-making	Planning and Academic Affairs Committee (P&A):
+authority, and guides strategy execution. Tracks progress through continuous monitoring,
+performance reviews, and reporting on KPIs and milestones.
+Responsible for the operational management of specific strategic projects in	Process Owners:
+academics, research, infrastructure, stakeholder engagement and sustainability.
+40
+
+-- 42 of 96 --
+
+41
+Governance Framework
+The process owners report to the Planning and Academic Affairs (P&A) Committee which then reports
+to the Governing Body. The Director of the institution shall head the P&A committee and report on the
+overall progress to the Governing Body. The Director shall nominate personnel to the different
+committees as per institutional requirements. Additional staff positions to support the effective
+implementation of the strategic plan shall be created as required from time to time.
+Monitoring and Evaluation Plan (M&E)
+The M&E Plan will track the progress and impact of MIET's strategic initiatives, using KPIs and regular
+assessments.
+Key Benchmarks
+The objective and key benchmarks are given below in the table 2.
+Objective Key Benchmarks
+Enhancing Academic and Research
+Excellence
+1. Introduction of New Innovative Programs
+2. Consistently Strong Enrolments
+3. Strong Students Outcomes
+a. Graduation Rates
+b. Placement Rates
+4. Qualitative and Quantitative Research
+Outcomes
+a. Grants and Consultancy
+b. Patents/IPR
+c. Startups/Commercialization of Technology
+Advancing Technological Innovation and
+Digital Infrastructure
+1. Extent of Digitalization and Automation
+2. External Audits and Benchmarking
+3. Resource allocation to Tech and Digital
+Developing State-of-the-Art Infrastructure
+1. Stakeholder Feedback
+2. Audits and Benchmarks
+3. 2X infrastructure in next 5 years
+4. 100% Barrier-free and enabling environment
+Enhancing Quality Assurance and
+Stakeholder Experience
+1. NIRF Ranking in next 5 years
+2. Region-leading NAAC, NBA, ABET
+accreditations to be attained.
+3. Consistently high scores in Faculty,
+Student and Stakeholder Surveys
+4. Independent audits
+Table 2 : Objectives & Key Benchmarks.
+
+-- 43 of 96 --
+
+Table 2
+Objective Key Benchmarks
+Promoting Sustainability and Social Impact
+1. Independent Audits
+2. UNSDG Dashboard – track progress on
+each goal.
+3. Stakeholder perception
+Detailed metrics/KPIs will be developed as part of individual action plans to
+attain these strategic objectives.
+Monitoring Schedule
+Monitoring activities will include quarterly progress reviews, annual review of execution efficiency and
+progress along strategic objectives, a mid-plan evaluation at the end of the third year, and a final
+evaluation at the end of Year 5. These reviews will be conducted by the relevant review committees
+comprising key personnel and leadership teams.
+Timeline and Milestones
+The strategic plan implementation will follow a structured timeline with key milestones:
+Phase 1: Planning and Initial Rollout (2024)
+Establish governance structure, secure funding, and initiate pilot projects.
+Phase 2: Academic and Research Expansion (2025-2026)
+Develop new programs, expand faculty training, and enhance research capabilities.
+Phase 3: Infrastructure and Sustainability Development (2026-2028)
+Commence green energy projects and infrastructure upgrades.
+Phase 4: Full Implementation and Partnership Development (2027-2028)
+Expand industry and government partnerships, and intensify stakeholder engagement.
+Phase 5: Review and Sustainability Planning (2027-2030)
+Conduct comprehensive reviews and ensure the sustainability of implemented programs.
+Risk Management
+Effective risk management is critical to the success of MIET's strategic plan. The following risks and
+mitigation strategies have been identified in the table 3:
+42
+
+-- 44 of 96 --
+
+43
+Risk Likelihood Impact Mitigation Strategy
+Delays in Infrastructure
+Projects Medium High Engage contractors early and conduct regular
+checks
+Funding Shortfalls Medium High Diversify funding sources and establish reserve
+funds
+Low Stakeholder
+Engagement Low Medium Enhance communication and offer participation
+incentives
+Regulatory Changes
+Affecting Accreditation Medium Medium Stay updated with regulations and develop
+proactive management approaches
+Technology Adoption
+Challenges Medium High Provide training and phase technology
+rollouts
+Table 3 : Risk Management & Mitigation Strategy
+Resource Allocation and Budgeting
+The Finance Committee will detail the financial, human, and material resources required to achieve
+MIET's strategic objectives. This includes initial investments and ongoing capital allocation.
+
+-- 45 of 96 --
+
+44
+
+-- 46 of 96 --
+
+45
+Appendix-I
+STRATEGY PLANNING DOSSIER
+
+-- 47 of 96 --
+
+46
+MIET Strategy Planning Dossier
+What?
+Ideate, debate, and come up with a shared strategic roadmap for MIET for the period 2024-2030.
+Why?
+Set the strategic framework to enable MIET to further strengthen its brand and attain higher order
+outcomes.
+When?
+Saturday, 27th July 2024
+Where?
+Radisson Blu, Jammu (Board Room)
+MIET: Current Status
+J&Ks only Autonomous Technical Institution
+Approximately 2300 students and 110 faculty, 130 staff.
+5 B.Tech Programs, 3 PG (MTech, MBA, MCA), 3 UG (BBA, B.Com, BCA), 2 Law (BBA.LLB
+and LLB) – Total 13 programs
+NAAC “A” Grade Accredited, CSE is NBA Accredited
+Vision
+To create a world-class institution
+Mission
+To deliver exceptional value to students, industry, and society
+
+-- 48 of 96 --
+
+47
+Current Strategy Plan (Attached)
+SWOT Analysis
+Table 4 : Strengths, Weakness, Opportunities & Threats (SWOT) Analysis
+Strengths
+Autonomous Status
+Financially Viable
+Good Regional Brand
+Thought Leadership
+Agility and Responsiveness
+Weaknesses
+Limited Research and its quality
+Limited Innovation
+Program-level Leadership
+Number of Professors/Associate
+Professors
+Pipeline of high-quality faculty
+Academic rigor and weak academic
+processes
+Faculty Training and monitoring
+Opportunities
+Private/Deemed University Status
+Hostel/Residential Campus
+NIRF Top 100
+Program Expansion
+5000+ students
+Threats
+Interference by Govt./University
+New Emergent Players
+No State Private University Act in J&K
+Decline in Focus and Inability to Execute
+Plans
+Leadership Vacuum
+Inability to scale-up
+Resource Constraints
+Inability to deliver higher-order outcomes
+Background Reading Material
+NAAC New Framework - Attached
+SOUL Searching Paper - Attached
+Simplified Strategic Management Framework- Attached
+Open Questions?
+I. NEW PROGRAMS
+1. Which Programs should MIET Foray in over the next year, 3 years, 5 years?
+
+-- 49 of 96 --
+
+48
+2. Which master's programs should be prioritized?
+3. What fee structures can MIET command sustainably and how can we enhance the
+value perception for the students?
+Guiding Principles: Blue Ocean (First in J&K), Innovation (Naveenta),
+Premiumisation (ability to charge fees around Rs. 1 lakh per annum and beyond)
+II. BRAND, LINKAGES, OUTREACH, MARKETING
+4. How can MIET become the number one choice of students in the J&K region?
+5. How can we attract the best faculty talent in the region?
+6. Is our current marketing enough to reinforce or elevate our brand? What else do we need
+to do?
+7. How can we extend the outreach of MIET to the society at large?
+8. What areas can MIET focus on which are critical in the regional context?
+9. What marquee events and activities can MIET initiate to strengthen our brand?
+(cultural/literary fests)
+10. Who are the prominent people who can be tapped as Professors-of-Practice, Adjunct
+Faculty to strengthen MIET's image of academic excellence?
+11. How can MIET take the lead in UN SDGs in the region? Which areas can MIET focus on?
+12. What industry alliances will make sense for MIET over the next five years?
+13. How can we successfully deliver consultancy, raise funds from philanthropists,
+Corporate CSR and donations from society.
+Guiding Principles: Innovation (Naveenta), Global best-practices
+III. EXECUTION, CAPABILITY ENHANCEMENT and PERFORMANCE
+MANAGEMENT
+14. How can research, innovation be broad-based?
+15. How can we institutionalize and sustain a culture of high-performance?
+16. Is our current administrative setup capable of supporting our expansion?
+
+-- 50 of 96 --
+
+49
+17. How can we mobilize our faculty, staff, and students towards producing outcomes
+leading to NIRF top 100 ranking?
+18. Do we need to hire external consultants, or do we have all the answers to navigate the
+future?
+19. What kind of Learning and Development plan does MIET need to ensure that all faculty
+members are prepared for the future and deliver emerging/frontier technologies?
+20. How can we significantly enhance in-class academic delivery quality and learning
+experience?
+Guiding Principles: Excellence, Diligence, Innovation (Core Values)
+IV. STAKEHOLDER EXPERIENCE
+21. How does our infrastructure need to scale up?
+22. What are the absolute necessary and desirable elements from an infrastructure
+perspective?
+23. How can MIET enhance student/faculty experience?
+24. What additional services can be provided to enhance stakeholder experience?
+Guiding Principles: Blue Ocean, Innovation, Champion IT-adoption
+V. FUTURE-ORIENTATION
+25. Is our vision and mission relevant and suitable for the future?
+26. Is the current strategic plan OK or needs to be revised?
+27. Are we on the right track?
+Guiding Principles: Introspection, Environmental Inputs, Global/National
+Trends, Envisioning the Future
+Strategy Retreat Schedule (11:00 am to 5:00 pm)
+Opening
+Remarks
+1. Overview of the retreat’s objectives and expected outcomes.
+2. Presentation of Current Status and SWOT Analysis. Quick Walkthrough
+of the dossier contents to ensure everyone is on the same page.
+15
+Minutes
+Session 1 New Programs 1 Hour
+Tea Break – 30 minutes
+Table 5 : Strategy Retreat Schedule
+
+-- 51 of 96 --
+
+50
+Table 5
+Session 2 Brand, Linkages, Outreach and Marketing 1 Hour
+Lunch Break – 45 minutes
+Session 3 Execution, Capability Enhancement and Performance Management 1 Hour
+Tea Break – 30 minutes
+Session 4 Stakeholder Experience 1 Hour
+Session 5 Future-Orientation 30 Minutes
+Session 6 Consolidation and Closure 15 Minutes
+Reference Material
+Table 6. Reference Material
+S.No. Name of the Document
+Transformative Reforms for Strengthening assessment and accreditation of
+Higher Education institutions in India
+National Credit Framework
+Academic Bank of Credit
+UGC Regulations for Autonomous Institutions
+UGC SWAYAM Regulations
+New Education Policy 2020
+UGC guidelines for Institutional Development Plan for Higher Education
+Institutions
+UGC Guidelines for Internationalization of Higher Education
+AICTE Approval handbook 2024-27
+Higher Education in India Vision 2047-EY
+Bar Council of India Guidelines	-
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+
+-- 52 of 96 --
+
+51
+Table 6
+Name of the Document
+Niti Ayog India India @75
+Transformation of Indian Higher Education - Strategies to Leapfrog
+UGC Regulations Guidelines for Innovative Pedagogical Approaches &
+Evaluation Reforms
+Draft National Higher Education
+Qualifications Framework (NHEQF)
+New NAAC Framework Guidelines
+S.No.
+12.
+13.
+14.
+15.
+16.
+
+-- 53 of 96 --
+
+52
+
+-- 54 of 96 --
+
+53
+Appendix-II
+LEARNING AND DEVELOPMENT PLAN
+
+-- 55 of 96 --
+
+54
+Learning and Development Plan for Up-Skilling Faculty on
+Emerging Technologies
+Objective
+To transform into a Learning Organization.
+To up-skill all faculty members on emerging technologies to ensure they remain at the forefront
+of their fields and can effectively educate students on cutting-edge topics.
+Key Areas and Elements
+Identify Emerging and Frontier Technologies
+Provide Access to Learning Platforms
+Coursera, Infosys SpringBoard, Nasscom Future Skills Prime.
+Build Linkages with Training Service Providers
+NVIDIA, AWS, Cisco, Palo Alto Networks, UiPath Academies for domain specific
+courses and certifications and training Companies empanelled with T&P Cell for hands-
+on training.
+Setup Comprehensive Learning and Development Function
+Identify people who can lead and drive the L&D function	i. Assign People:
+On Coursera and for departments/individuals aligned	ii. Curate Learning Paths:
+with identified emerging technologies
+Develop IDPs in PI-360 to track	iii. Individual Development Plans and Mentoring:
+learning outcomes. 1x1 meetings with faculty members to review progress and
+help them in using the acquired knowledge to produce papers, apply for grants
+and produce IPR.
+Facilitate group/peer learning for faculty undertaking	iv. Group/Team Learning:
+similar learning paths to boost success rates and confidence.
+Prepare L&D plan/calendar with detailed tracking of execution,	v. L&D Calendar:
+deliverables and timelines.
+Setup Teaching-Learning Centre with	vi. L&D Spaces and Environments:
+dedicated space to learn.
+
+-- 56 of 96 --
+
+55
+Rewards and Incentives
+Central HRD and Learning Champions to ensure success of others.
+Identify, recognize and empower learning champions who embody the spirit of learning
+organization.
+Create incentive plan for fast learners and learning champions.
+Emerging and Frontier technologies
+Computer Science
+Artificial Intelligence (AI) & Machine Learning (ML)
+Blockchain
+Cyber-security
+Cloud Computing/Fog/Edge
+Robotic Process Automation (RPA)
+Data Analytics/Data Science
+Internet of Things (IoT)
+Electronics and Electrical Engineering
+AI & ML
+Cyber-security
+IoT
+Mechatronics
+Electric Vehicles (EVs)
+Industry 4.0
+Blockchain
+Drone Technology
+Smart Cities/Smart Grids
+
+-- 57 of 96 --
+
+56
+Civil Engineering
+Remote Sensing and GIS
+Modelling and Simulation
+Data Analytics
+AI & ML
+Industry 4.0
+Cloud Computing
+Management
+Business Modelling and Simulation
+Data Analytics
+AI & ML
+Blockchain
+Cyber-security
+Industry 4.0
+Law
+Cyber-security
+AI & ML
+Blockchain
+Data Privacy and Protection
+Digital Forensics
+Arbitration and Mediation
+
+-- 58 of 96 --
+
+57
+Implementation Plan
+Table 7 : Implementation Plan
+Key Area Deliverables Owner Timelines Justification/Comments
+Identify Learning
+Platforms
+Select platforms like
+Coursera, Infosys
+SpringBoard,
+Nasscom Future Skills
+Prime
+Human
+Resources
+Department
+(HRD)
+Phase 1: 3 Months
+Research and
+Selection
+Review available platforms
+for variety and relevance to
+different departments'
+needs
+Build Linkages
+with Training
+Service Providers
+Collaborate with
+NVIDIA, AWS,
+Cisco, Palo Alto
+Networks, UiPath
+Academies, and
+empanelled training
+companies.
+Leadership
+Team, HRD
+Phase 1: 6 Months
+Build Partnerships
+Focus on domain-specific
+courses and hands-on
+training
+Curate Learning
+Paths
+Create department-
+specific and
+individual learning
+paths on Coursera
+HRD,
+Department
+Heads
+Phase 1: 6 Months
+Define Paths
+Include optional and
+mandatory courses for
+faculty, aligned with
+research and development
+goals
+Individual
+Development
+Plans (IDPs)
+Develop IDPs in PI-
+360 to track learning
+outcomes
+HRD Phase 1: 6 Months
+Setup in PI-360
+Enable continuous tracking
+of progress for
+personalized learning
+Mentoring
+1x1 faculty mentoring
+sessions to guide
+progress, assist in
+publications, grant
+applications, IPR
+Senior
+Faculty,
+HRD
+Phase 2: Ongoing
+Personalized mentoring to
+focus on real-world
+applications of knowledge
+Group/Team
+Learning
+Facilitate peer
+learning for faculty
+with similar learning
+paths
+HRD,
+Department
+Heads
+Phase 2: 6 Months
+Implement
+Encourage collaboration
+and sharing of learning
+experiences for mutual
+benefit
+L&D Calendar
+Develop a
+comprehensive L&D
+plan/calendar with
+tracking deliverables
+HRD
+Phase 1: 3 Months
+Create Initial
+Calendar
+Include timelines and
+milestones for each phase
+of the L&D plan
+L&D Spaces and
+Environments
+Setup a Teaching-
+Learning Centre with
+dedicated learning
+spaces
+Facilities
+Team, HRD
+Phase 2: 1 Year
+Setup
+Provide faculty with
+conducive learning
+environments
+
+-- 59 of 96 --
+
+58
+Table 7
+Track Progress
+Conduct half-yearly
+reviews, monthly
+progress reports, and
+performance
+appraisals
+HRD Phase 2: Ongoing
+Use IDPs and progress
+metrics to review and
+adjust learning outcomes
+Key Area Deliverables Owner Timelines Justification/Comments
+Learning Success
+Managers
+Appoint a central
+HRD and Learning
+Champions to monitor
+and ensure learning
+success
+HRD
+Phase 1: 3-6 Months
+Identify
+Key Individuals
+Provide support and
+guidance to learners,
+helping them stay on track
+Identify Learning
+Champions
+Recognize and
+empower faculty
+members who
+exemplify continuous
+learning
+HRD
+Phase 2: 1 Year
+Recognition
+Programs
+Celebrate high achievers
+and promote a culture of
+continuous learning
+Incentivize and
+Celebrate
+Learning
+Develop incentive
+plans for fast learners
+and learning
+champions
+HRD Phase 3: 2 Years
+Incentive Programs
+Create rewards for learning
+milestones and innovation
+contributions
+Remarks
+The L&D plan is critical to build the knowledge base and skills needed to stay relevant and
+competitive over the next 5 years. It is central to attainment of academic and research excellence.
+Utilize MOOCs and online platforms like Coursera, edX, and Udacity for initial training phases
+with curated learning paths for faculty members.
+Setup KRAs around attainment of learning paths and measured in hours of learning per faculty
+per year.
+Groom domain leaders/champions based on demonstrated outcomes and excellence in a
+particular domain.
+Incentivize the learning/skilling champions and nominate for high-end learning experiences at
+industry and top institutions, besides attending international conferences.
+This plan aims to systematically up-skill faculty members, ensuring they are equipped with the
+knowledge and skills required to educate students on the latest technologies and trends.
+
+-- 60 of 96 --
+
+59
+Appendix-III
+RESEARCH, DEVELOPMENT &
+INNOVATION PLAN
+
+-- 61 of 96 --
+
+60
+Research and Development Plan
+Objective
+To foster a robust research and innovation ecosystem within the institution by enhancing capabilities,
+infrastructure, and support systems.
+Key Areas and Elements
+1. Setting up a Center for AI, Quantum Computing, and Emerging Technologies
+Establish a dedicated center to explore cutting-edge research in AI, quantum computing,
+and other emerging technologies, leading to interdisciplinary research, collaborative
+projects, innovation and startups.
+2. Revise Research Budget
+Increase resource allocation to accelerate attainment of higher order research outcomes
+with well-defined KRAs for faculty and departments.
+3. Prepare L&D Plans for Individual Faculty for Domain Expertise
+Tailor development plans for faculty to enhance their domain-specific research skills.
+4. Setup IPR Center to Facilitate Local Patent Filing
+Establish a center to support faculty and students in securing intellectual property
+rights.
+5. Project Grants
+Prioritize securing external funding through grants and collaborative projects.
+6. Prioritize UNSDG Goals
+Align research initiatives with the United Nations Sustainable Development Goals
+(UNSDGs) to demonstrate institutional commitment to sustainability and social causes.
+7. Startups from Campus
+Encourage entrepreneurship and innovation among students and faculty leading to
+startups being incubated from campus.
+
+-- 62 of 96 --
+
+61
+Implementation Plan:
+Table 8 : Implementation Plan
+Key Area Deliverables Owner Timelines Justification/Comments
+Operationalise
+PhD program in
+CSE to begin
+with
+Start PhD by 2025
+August
+Leadership
+Team August 2025 Proposal awaiting approval
+from JU
+Center for AI,
+Quantum
+Computing, and
+Emerging
+Technologies
+State-of-the-art
+labs,
+interdisciplinary
+research teams,
+collaborative
+projects
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (1 Year):
+Establishment
+and Infrastructure
+Setup
+Phase 2 (2 Years):
+Recruitment and
+Research Projects
+Phase 3 (3-4 Years):
+Expansion and
+Industry Integration
+Focus on cutting-edge
+research and innovation
+Revise
+Research
+Incentives
+Revised incentive
+policies, increased
+funding for
+publications and
+patents
+HR
+Department
+Phase 1 (6 Months):
+Policy Review
+and Proposal
+Phase 2 (1 Year):
+Implementation
+Phase 3 (Ongoing):
+Regular Review
+research outputs
+Encouraging high-quality
+In-House
+Workshops for
+Faculty
+Workshops on
+research
+methodologies,
+grant writing, and
+publication
+strategies
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (6 Months):
+Curriculum
+Development
+Phase 2 (1 Year):
+Execution of
+Workshops
+Phase 3 (Ongoing):
+New Topics
+Enhancing faculty research
+capabilities
+L&D Plans for
+Faculty Domain
+Expertise
+Personalized
+L&D plans,
+mentorship
+programs
+HRD
+Phase 1 (1 Year):
+Assessment and
+Plan Development
+Phase 2 (2 Years):
+Implementation
+and Tracking
+Phase 3 (Ongoing):
+Evaluation
+Covered under L&D Plan
+
+-- 63 of 96 --
+
+62
+Table 8
+IPR Center
+IPR policies,
+patent filing
+support, legal
+assistance
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (1 Year):
+Establishment and
+Staffing
+Phase 2 (2 Years):
+Awareness and
+Training programs
+(	Phase 3 Ongoing):
+Support and Monitoring
+Facilitating intellectual
+property protection
+Tinkering
+Lab
+Project
+execution space
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (1 year):
+phase out old
+machines and shops
+and bring in new
+workspaces. Spruce up
+old workshop feel into
+a modern workspace.
+Phase 2 (2 years):
+State-of-the-art
+fabrication facilities
+Re-model and reimagine
+the workshop –
+-	IoT/Sensors, 3 D Printers,
+CNC Lathe and Cutting
+Machines, PCB
+Fabrication, Electronics
+and Electrical
+Workbenches,
+Consumables, Tool Racks
+Increase
+SEED
+Grant
+Funding
+Increased
+SEED grant
+budget,
+transparent
+application
+process
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (6 Months):
+Budget Reallocation
+Phase 2 (1 Year):
+Grant Distribution
+Phase 3 Ongoing):
+Monitoring
+Boosting initial funding for
+innovative projects
+Focus on
+Grants and
+Projects for
+Funding
+Grant
+applications,
+industry
+partnerships,
+project funding
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (6 Months):
+Identify Funding
+Opportunities
+Phase 2 (1 Year):
+Application and
+Proposals
+(	Phase 3 Ongoing):
+Project Management
+Securing external funding
+Prioritize
+UNSDG
+Goals
+UNSDG-
+aligned
+projects, social
+impact reports
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (6 Months):
+Goal Identification
+Phase 2 (1 Year):
+Initiate Projects
+Phase 3 (Ongoing):
+Monitoring
+Aligning research with
+sustainable development
+goals
+Incubator for
+Campus
+Startups
+Incubation
+space,
+mentorship,
+seed funding
+Research &
+Innovation
+Committee
+(RIC)
+Encouraging
+entrepreneurship and
+innovation
+Phase 1 (1 Year):
+Setup and Resources
+Phase 2 (2 Years):
+Support Services
+Phase 3 (Ongoing):
+Expansion
+Key Area Deliverables Owner Timelines Justification/Comments
+
+-- 64 of 96 --
+
+63
+KRAs and
+Tracking for
+Research and
+Innovation
+KRAs,
+performance
+tracking tools
+Research &
+Innovation
+Committee
+(RIC)
+Phase 1 (6 Months):
+KRA Development
+Phase 2 (1 Year):
+Implementation
+Phase 3 (Ongoing):
+Evaluation
+Establishing clear goals
+and accountability, HoDs
+accountable for
+departmental research,
+weekly research touch base
+and tracking, Appraisals
+linked to research
+outcomes.
+Table 8
+Remarks:
+Plan to emerge as a leader in R&D, Innovation, IPR and startups in the region.
+Engage with external experts and industry partners to ensure the relevance and impact of
+research initiatives.
+Regularly review the plan to incorporate new trends and technologies.
+Foster a collaborative and innovative research culture within the institution.
+This R&D plan aims to build a strong foundation for research excellence, innovation, and
+entrepreneurship, positioning the institution as a leader in cutting-edge technologies and sustainable
+development.
+Key Area Deliverables Owner Timelines Justification/Comments
+
+-- 65 of 96 --
+
+64
+
+-- 66 of 96 --
+
+65
+Appendix-IV
+DIGITAL TRANSFORMATION PLAN
+
+-- 67 of 96 --
+
+66
+IT/ICT Plan for MIET
+Objectives
+Upgrade and modernize IT infrastructure to support cutting-	Enhance Digital Infrastructure:
+edge technologies and ensure seamless operations.
+Promote Innovation and Efficiency: Leverage advanced technologies to enhance productivity,
+streamline operations, and foster innovation.
+Key Areas and Elements
+Resources: Ensure that the latest and most modern technology is adopted, assimilated and
+effectively utilized in delivering the best IT experience to the stakeholders. Continuously invest
+in enhancing IT/ICT resources, including hardware and software.
+Recruit quality people and continuously upskill them to ensure IT/ICT leadership.	People:
+Deliver the best IT/ICT services to the stakeholders through adoption of modern IT	Services:
+frameworks and tools, supported by responsive processes and people.
+Maintenance and Upkeep: Ensure consistent RoI from the IT/ICT resources through
+continuous maintenance and upkeep.
+Demonstrate thought leadership followed by agility in action to stay ahead of the	Leadership:
+technology curve.
+Aim for high-level of automation, personalization and enhanced operational	Automation:
+efficiency.
+Ensure adequate security provisions are in place along with	Security and Risk Management:
+risk mitigation mechanisms to ensure business continuity and resilience.
+Dispose E-waste with responsibility through accredited e-waste agencies.	Sustainability:
+Implementation Plan
+Table 9 : Implementation Plan
+High -Speed
+Internet
+Connectivity
+Achieve 1
+Gbps internet
+connectivity
+IT Department
+Phase 1 (6 Months): Vendor Selection Enhance
+internet speed
+and reliability
+Phase 2 (1 Year): Infrastructure Setup
+Phase 3 (2 - 3 Years):
+Full Operationalization
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 68 of 96 --
+
+67
+Table 9
+State -of-the -Art
+Computing
+Facilities
+Setup
+advanced
+computing
+facilities for AI
+and emerging
+technologies
+IT Department
+Phase 1 (6 Months):
+Planning and
+Procurement Support research
+and education in
+cutting-edge
+domains
+Phase 2 (1 Year):
+Facility Setup
+Phase 3 (2 Years): Full
+Operationalization
+Smart
+Classrooms
+Equip
+classrooms
+with smart
+boards and
+audio-video
+systems
+Facilities and
+IT Department
+Phase 1 (1 Year):
+Planning and
+Procurement Modernize
+teaching and
+learning
+environments
+Phase 2 (2 Years):
+Installation
+Phase 3 (3 Years): Full
+Deployment
+Modern
+Communication
+Backbone
+Implement
+100% Fibre
+network,
+VPNs, VoIP,
+Wi-Fi, Digital
+Display
+Systems based
+on Cloud
+IT Department
+Phase 1 (1 Year):
+Infrastructure Planning Enhance
+communication
+and network
+infrastructure
+Phase 2 (2 Years):
+Installation and Setup
+Phase 3 (3 Years): Full
+Operationalization
+Cloud -First
+Strategy
+Adopt cloud -
+based solutions
+for email and
+data
+management
+IT Department
+Phase 1 (6 Months):
+Vendor Evaluation Enhance data
+accessibility and
+management
+Phase 2 (1 Year):
+Migration Planning
+Phase 3 (1.5 Years):
+Full Migration
+Automation of
+Institutional
+Operations
+Implement IT
+systems for
+automation of
+all operations
+from
+admissions to
+alumni
+management
+Leadership
+Team and IT
+Department
+Phase 1 (6 Months):
+Requirement Analysis
+Streamline
+administrative
+processes
+Phase 2 (1 Year):
+System Selection and
+Setup
+Phase 3 (2 Years): Full
+Implementation
+Modern Lab
+Infrastructure
+Equip labs
+with modern
+computing
+infrastructure
+and access to
+latest software
+platforms
+IT Department
+and Academic
+Departments
+Phase 1 (6 Months):
+Needs Assessment Enhance
+practical
+learning and
+research
+capabilities
+Phase 2 (1 Year):
+Infrastructure Setup
+Phase 3 (2 Years): Full
+Deployment
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 69 of 96 --
+
+68
+Open -Source
+Adoption
+Champion
+open-source
+tools and
+platforms
+where feasible
+IT Department
+and Academic
+Departments
+Phase 1 (6 Months):
+Evaluation of Open-
+Source Options Reduce costs
+and promote
+collaborative
+innovation
+Phase 2 (1 Year):
+Training and
+Integration
+Phase 3 (Ongoing):
+Continuous Adoption
+Advanced
+Security
+Provisions
+Implement
+advanced
+security
+measures for
+data protection
+and seamless
+operations
+IT Department
+Phase 1 (6 Months):
+Security Assessment
+Protect
+institutional data
+and systems
+Phase 2 (1 Year):
+Security
+Implementation
+Phase 3 (Ongoing):
+Monitoring and
+Upgrades
+Bring -Your -
+Own -Device
+(BYOD) Policy
+Develop
+policies around
+BYOD for
+enhanced
+productivity of
+stakeholders
+D	HR and IT
+Department
+Phase 1 (6 Months):
+Policy Development Flexibility and
+productivity for
+staff and
+students
+Phase 2 (1 Year):
+Implementation
+Phase 3 (Ongoing):
+Monitoring and Review
+Disposal and
+Deprecation
+Dispose E-
+waste through
+registered e-
+waste recycling
+agencies and
+promote
+sustainable
+practices
+related to E-
+Waste
+IT Department
+Phase 1 (Ongoing):
+Policy Development
+and Execution
+Promote
+Sustainability
+Continuous
+Assessment and
+Upgradation
+Conduct IT
+Audits and
+Reviews to
+ensure
+seamless
+operations,
+maintenance
+and
+upgradation
+Conduct IT
+Risk Assessment
+from time to time
+IT Department
+Phase 1 (Ongoing):
+Policy Development
+and Execution
+Safety First
+Approach
+Table 9
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 70 of 96 --
+
+69
+Remarks
+IT/ICT adoption has been a key differentiator for MIET in the region and the institution should
+endeavour to maintain the perception.
+Investment in IT/ICT/processes/people should continue at a healthy pace to sustain the
+momentum.
+This IT/ICT Plan aims to modernize the technological infrastructure of MIET, enhance digital
+capabilities, and ensure a secure, efficient, and innovative environment for all stakeholders. The plan
+aligns with the institution's goals of fostering a digitally advanced and supportive educational
+ecosystem.
+
+-- 71 of 96 --
+
+70
+
+-- 72 of 96 --
+
+71
+Appendix-V
+INFRASTRUCTURE DEVELOPMENT PLAN
+
+-- 73 of 96 --
+
+72
+Infrastructure, Services, and Amenities Plan
+Objective
+To enhance the infrastructure, services, and amenities at the institution, ensuring a holistic and
+enriching environment for students, faculty, and staff.
+To offer the best infrastructure in the region to enhance stakeholder experience.
+Key Areas and Elements
+Physical Infrastructure
+Prepare a master plan for construction and development for the next 10	Master Plan:
+years.
+Construction of IT Park and Academic Building: Develop a state-of-the-art IT Park and
+Academic Building spread over 1.5 lakh sq. ft, focused on providing cutting-edge
+facilities for learning, research, and collaboration over the next 3 years.
+Construct a dedicated library building with ample study	Separate Library Building:
+spaces and resources.
+Construct Student Hostels and Faculty Housing	Student Hostels and Faculty Housing:
+in the next 5 years.
+Furniture Upgrade: Modernize classroom and office furniture with ergonomic designs
+and integrated charger points.
+Gate Complex: Construct a secure and aesthetically pleasing entrance gate complex for
+improved security and appearance.
+Pantry Area for Faculty Members: Create a comfortable pantry area equipped with
+basic amenities for faculty.
+Commission art installations to enhance the aesthetic appeal of the	Art Installations:
+campus.
+Landscaping and campus development: Beautify the campus
+Interiors Upgrade: Upgraded seminar rooms in each department, Central Meeting
+Room + General Area, Campus Branding.
+
+-- 74 of 96 --
+
+73
+Digital/Supporting Infrastructure
+Ensure campus-wide access with speeds suitable for academic and	High-Speed WiFi:
+administrative needs.
+Utilities Quality: Upgrade existing infrastructure to provide reliable electricity, water,
+and internet services.
+Student and Faculty Amenities
+Develop modern dining areas with diverse food options	New Cafeteria/Rooftop Cafes:
+and comfortable seating.
+Build a state-of-the-art gym and indoor	Sporatorium (Gym/Indoor Sports Facilities):
+sports complex for fitness and recreation.
+Construct a swimming pool for recreational and sports activities.	Swimming Pool:
+Develop a cricket ground with seating facilities for hosting	Cricket Ground - Stadium:
+matches and events.
+Establish a centre dedicated to cultural activities,	Cultural Activity Centre:
+performances, and events.
+Build an open-air amphitheatre for cultural performances and gatherings.	Amphitheatre:
+Miscellaneous/Support Services
+Parking: Provision ample parking spaces for vehicles of faculty and students as per
+prevailing standards.
+TUC Shops/Market: Set up shops and a market area for students and staff to access
+essential items conveniently.
+Sustainable development: Use renewable energy to the extent possible and aspire for
+attainment of sustainable development goals
+Upliftment of Admin Office and New Trained Administrative Staff: Renovate
+administrative offices and train staff for better service delivery.
+Modernize the reception area for a welcoming and	Upliftment of Reception Area:
+professional ambiance.
+Upgrade existing hostels and construct new ones to accommodate the growing	Hostels:
+student population.
+
+-- 75 of 96 --
+
+74
+Develop guest houses for visiting faculty, guests, and parents.	Guest Houses:
+Shuttle Service: Provide shuttle services for easy transportation within and around the
+campus.
+Battery Cars: Introduce battery-powered cars for eco-friendly on-campus transport.
+Ambulance: Ensure the availability of an ambulance for medical emergencies.
+Establish a fully equipped medical centre for healthcare services.	Medical Centre:
+Organize an annual convocation ceremony to celebrate	Convocation for Students:
+student graduation.
+Accessibility and Inclusivity
+Lifts and Ramps: Install lifts and ramps across campus buildings to ensure accessibility
+for all.
+Provide accessible washrooms equipped for	Washrooms for Differently Abled:
+differently abled individuals.
+Set up a common room for female students for rest and relaxation.	Girls Common Room:
+Provide health insurance coverage for all staff, ensuring access to	Health Insurance:
+medical care.
+Implementation Plan:
+Physical
+Infrastructure
+Master Plan, IT Park
+& Academic Building,
+Student Hostels and
+Faculty Housing,
+Furniture Upgrade,
+Gate Complex,
+Parking, Pantries in
+buildings, Art
+Installations,
+Landscaping and
+Beautification,
+Interior upgrade.
+Leadership
+Team
+IT Park and
+Academic Building,
+Seminar Rooms,
+IT Park and
+Academic Building,
+Gate Complex,
+Interiors, Student
+Hostels on Lease,
+Landscaping
+Phase 1: 1 Year
+Design and
+Planning
+Phase 2: 2 Years
+Construction
+Phase 3: 3 Years
+Completion IT Park and
+Academic Building,
+Interiors
+Table 10 : Implementation Plan
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 76 of 96 --
+
+75
+Table 10
+Digital
+Infrastructure
+Wi-Fi upgrade, Utility
+enhancements
+IT/Facilities
+Department
+Phase 1: 6-12
+months Ongoing
+Student and
+Faculty Amenities
+Cafeteria, Gym, Pool,
+Stadium, Cultural
+Centre, Amphitheatre,
+Sporatorium.
+Leadership
+Team
+Phase 1: 1 Year
+Feasibility
+Studies
+Phase 2: 2 Years
+Construction
+Phase 3: 3-4
+Years - Opening
+Support Services
+Market, Water Bodies,
+Solar Power, Admin,
+Guest Houses, Shuttle
+Service, Medical
+Centre, Convocation
+Facilities/IT
+Department
+Phase 1: 1 Year
+Infrastructure
+Planning
+Phase 2: 2 Years
+Setup and
+Installation
+Phase 3: 3-4
+Years
+Operational
+Accessibility and
+Inclusivity
+Lifts, Ramps,
+Accessible
+Washrooms, Girls
+Common Room
+Leadership
+Team/
+Facilities
+Department
+Academic and
+Support Facilities
+Library Building,
+Health Insurance,
+Stores
+Leadership
+Team
+Remarks
+Prepare detailed resource mobilization roadmap for IT Park and Academic Block over next 3
+years.
+Prioritize projects based on immediate needs and available resources.
+Key Area Deliverables Owner Timelines Justification/
+Comments
+Phase 1: 6 Months
+Accessibility
+Audit
+Phase 2: 1 Year
+Construction
+Phase 3: 2 Years
+Accessibility
+Services
+Phase 1: 1 Year
+Design and
+Planning
+Phase 2: 2 Years
+Implementation
+Phase 3: 5 Years
+Operational
+Health Insurance
+Central Stores
+Library Building
+Lift Block B,
+Washrooms
+Lift Block C, Girls
+Common Room,
+Washrooms
+Lift Block A
+Admin upgrade,
+Medical Center
+Upgrade,
+Solar Power
+expansion, Battery
+operated shuttles.
+Guest House.
+Cafeteria
+Amphitheatre
+Sporatorium, Cultural
+Center
+
+-- 77 of 96 --
+
+76
+Hire good interior designers who can undertake projects on turnkey basis and delivery high
+quality outcomes.
+Engage with stakeholders, including faculty, students, and external partners, to ensure that the
+plan meets the community's needs.
+Regularly review and adjust the plan based on progress and feedback.
+This comprehensive plan aims to significantly enhance the campus infrastructure, services, and
+amenities, fostering an environment that supports the academic, physical, and emotional well-being of
+all community members.
+
+-- 78 of 96 --
+
+77
+Appendix-VI
+IQAC PLAN
+
+-- 79 of 96 --
+
+78
+Internal Quality Assurance Plan
+Objectives
+Achieve continuous quality improvement by adopting	Consistent Quality Enhancement:
+global best practices, processes, and systems across all institutional activities.
+Perform consistently in national and international	Excellence in Rankings and Accreditations:
+rankings and accreditations, demonstrating excellence across all aspects of institutional
+performance.
+Key Areas and Elements
+Provide the best campus experience to all stakeholders in terms of safety,	Campus Experience:
+comfort and learning environment.
+Sub-Staff Training: Improve competencies of sub-staff for improved stakeholder experience
+and service delivery.
+Workplace Safety: Ensure workplace safety across all operational areas.
+Collect, analyse, take action and close – present feedback in AC/GB for closure.	Feedback:
+Constitute and external peer team for institutional audit and receiving	External Peer Team:
+expert inputs for continuous improvement.
+Regular meetings with leadership team for review and inputs.	Management Review Meetings:
+To table all IQAC activities and reports in Academic Council and	IQAC Reports in AC/GB:
+Governing Body.
+Audits: Conduct audits such as Green audits, IT audits, Academic and Administrative Audits etc.
+for continuous quality improvement and process compliance.
+Continuous faculty competency and capability enhancement – covered in	Faculty Trainings:
+detail in L&D plan.
+Continuous value-delivery and capability enhancement in key skills.	Student Trainings:
+Faculty Mentoring: Coaching and performance/impact enhancement with a 1x1 mentoring by
+Director.
+Alumni Mentoring: Successful alumni to mentor current students as an enrichment program for
+enhancing student achievement.
+
+-- 80 of 96 --
+
+79
+Championing PI-360: Evangelize PI-360 and use data analytics to drive key decision making at
+the institution level.
+Mission NAAC: Attain high maturity level in the revised NAAC framework.
+Strategy Retreats and Planning: Conduct strategy retreats leading to high-quality plans across
+all critical areas from a 3 year perspective.
+Implementation Plan
+Campus
+Experience
+Cleanliness review, waste
+segregation into coloured
+dustbins, checklists for staff,
+student services and
+amenities, False Ceilings,
+Power supply improvement,
+washrooms upgrading
+IQAC/
+IT/Facilities
+Department
+Continuous
+monitoring and
+feedback
+collection
+Waste disposal, Staff +
+Student Committee
+Feedback and action taken
+reports
+Sub -Staff
+Training
+Training on workplace
+behavior, process training and
+compliance, recognition and
+rewards IQAC/HRD
+Focus on skill
+development
+and workplace
+improvement
+Uniforms for peons, security,
+and conservancy staff
+Feedback and action taken
+reports
+Workplace
+Safety
+IQAC/
+Facilities
+Department
+Ensure a safe
+working
+environment
+Feedback
+Analysis IQAC/HRD
+Enhance quality
+through
+consistent
+feedback
+mechanisms
+Table 11 : Implementation Plan
+Key Area Deliverables Owner Timelines Justification/
+Comments
+Phase 1 (6 Months):
+Plan and implement
+Phase 2 (1 Year):
+Execution
+Phase 3 (Ongoing):
+Regular reviews
+Phase 1 (6 Months):
+Identify Needs
+Phase 2 (1 Year):
+Training Sessions
+Phase 3 (Ongoing):
+Regular Updates
+Fire safety training, fire
+extinguishers maintenance,
+safety certificates, emergency
+drills
+Medical facilities, water filter
+servicing
+Floor-wise safety champions
+Phase 1 (6 Months):
+Safety Audit
+Phase 2 (1 Year):
+Implementation
+Phase 3 (Ongoing):
+Monitoring and
+Review
+Collect feedback from all
+stakeholders, action taken
+reports, YoY analysis
+Communicate back to
+stakeholders
+Maintain reports for last 5
+years
+Phase 1 (6 Months):
+Data Collection
+Phase 2 (1 Year):
+Analysis and
+Reporting
+Phase 3 (Ongoing):
+Continuous
+Improvement
+
+-- 81 of 96 --
+
+80
+Table 11
+IQAC
+External
+Peer Team
+Constitute team, prepare for
+visit, conduct visit, prepare
+report IQAC
+Ensure
+continuous
+improvement
+through external
+reviews
+Action taken report, table in
+Academic Council/GB
+Management
+Review
+Meetings
+Set agenda, invite senior
+leadership, present reports,
+implement inputs
+IQAC
+Phase 1 (3 Months):
+Agenda Setting
+Engage
+leadership in
+quality
+assurance
+processes
+Phase 2 (Ongoing):
+Meetings and Reviews
+IQAC
+Reports in
+AC/GB
+Comprehensive report based
+on KRAs, present highlights IQAC
+Phase 1 (6 Months):
+Report Preparation
+Ensure
+accountability
+and
+transparency
+Phase 2 (Ongoing):
+Regular Presentations
+Audits IQAC
+Comprehensive
+auditing to
+ensure
+compliance
+Phase 1 (1 Year):
+Calendar and Planning
+Phase 2 (Ongoing):
+Conduct Audits
+Faculty
+Training
+Internal/external training
+calendars, measure avg. hours
+of training per faculty,
+learning paths in Coursera,
+focus on industry
+certifications, new employee
+orientation.
+Budget for FDPs
+(Summer/Winter Schools)
+HRD/IQAC
+Continuous
+faculty
+development
+Phase 1 (6 Months):
+Training Needs
+Analysis
+Phase 2 (1 Year):
+Training Execution
+Phase 3 (Ongoing):
+Monitoring and
+Reports
+Student
+Training T&P
+Focus on
+holistic student
+development
+Phase 1 (6 Months):
+Curriculum
+Development +
+Training Delivery
+Plan
+Phase 2 (1 Year):
+Implementation
+Phase 3 (Ongoing):
+Support and Tracking
+Faculty
+Mentoring IQAC/HRD Support for new
+faculty members
+Phase 1 (6 Months):
+Program Setup
+Phase 2 (1 Year):
+Mentoring Sessions
+Phase 3 (Ongoing):
+Evaluation
+Key Area Deliverables Owner Timelines Justification/
+Comments
+Phase 1 (6 Months):
+Team Formation
+Phase 2 (1 Year):
+Visit and Reporting
+Phase 3 (Ongoing):
+-	Follow up Actions
+Academic audits,
+green/energy audits, well-
+defined calendar, reports
+Table in AC/GB
+Induction/orientation, bridge
+programs, professional
+training, student support
+services including mental
+health helplines and
+counsellor availability
+Career counselling services,
+International Admissions
+Facilitation support,
+Mentoring program, track
+process and measure
+outcomes, publish reports
+
+-- 82 of 96 --
+
+81
+Alumni
+Mentoring
+Alumni
+Relations
+Cell
+Leverage alumni
+for mentoring
+current students
+Identify top students, track
+and ensure completion, gather
+feedback
+Publish report
+Phase 1 (6 Months):
+Identification
+Phase 2 (1 Year):
+Mentoring Sessions
+Phase 3 (Ongoing):
+Reporting
+Championing
+PI -360
+Align events with criteria,
+update data monthly, review
+NAAC/NBA data quarterly IQAC
+Department
+Heads
+Improve
+processes and
+institutional
+metrics
+Track KRAs on monthly
+basis, ensure indices are
+exceeded
+Phase 1 (3 Months):
+Process Setup
+Phase 2 (Ongoing):
+Data Tracking and
+Review
+Mission
+NAAC
+Leadership
+Team/
+IQAC and
+All Faculty
+Commitment to
+achieving
+NAAC
+accreditation
+with high
+maturity rating
+Ensure everyone champions
+one criterion, standardize
+processes, simplify workflow
+Shared understanding of
+quality standards, compliance
+Phase 1 (6 Months):
+Role Assignment
+Phase 2 (Ongoing):
+Implementation
+Strategy
+Retreat and
+Planning
+Strategy Refresh
+and plans for 3-
+years to be
+created for
+various critical
+aspects
+Ensure, institutional strategy
+is reviewed, revised and
+updated to reflect changing
+scenario.
+Effective implementation and
+execution on stated plans
+IQAC and
+Leadership
+Team
+IQAC,
+Assigned
+Owners and
+Leadership
+Team
+Phase 1 (6 Months):
+Retreat and Planning
+Phase 2 (Ongoing):
+Quality of Execution
+Ensure
+implementation
+of all stated
+plans and
+attainment of
+objectives.
+Remarks:
+Maintain pioneer status in the region in volunteering for accreditation, audits and quality
+improvement programs.
+Energize the IQAC function at MIET to deliver outstanding value to all stakeholders and ensure
+institutional alignment with the strategic plan and objectives.
+Key Area Deliverables Owner Timelines Justification/
+Comments
+Table 11
+
+-- 83 of 96 --
+
+82
+Demonstrate diligence, relentlessness and resilience to guide the institution forward on all
+fronts.
+This plan is designed to foster a culture of continuous quality improvement and excellence, ensuring that
+the institution not only meets but exceeds standards set by national and international accreditation bodies
+
+-- 84 of 96 --
+
+83
+Appendix-VII
+BRAND ENHANCEMENT PLAN
+
+-- 85 of 96 --
+
+84
+Brand Enhancement Plan for MIET
+Objectives
+Strengthen MIET's Brand Identity: Enhance the institution's reputation and visibility through
+strategic initiatives and outreach activities.
+Deepen Stakeholder Engagement: Build strong relationships with alumni, students, faculty,
+parents, and the broader community.
+Position MIET as a leading institution through	Expand Regional and Global Reach:
+participation in rankings, thought leadership, and regional outreach.
+Key Areas and Elements
+Students are the centre of the universe for MIET and their success is critical to	Student Success:
+automatically amplify brand “MIET”.
+Stakeholder Delight: Maintaining cordial relations with all stakeholders, evincing genuine
+interest in their success and being agile and responsive to their needs is critical for MIET.
+Extending support, providing resources and ensuring 24x7 access to critical services	Support:
+shall be the key.
+Communication: Open, honest and authentic communication should be ensured with easy
+access to the leadership team for all stakeholders.
+Leadership: Conform to the highest ethical and moral standards, leading by example and
+practising servant leadership with the highest standards of governance is expected.
+Community Engagement: Engage effectively with the broader community, show enthusiasm,
+build credibility and demonstrate results through initiatives.
+Implementation Plan
+Table 12 : Implementation Plan
+Alumni
+Engagement
+Alumni
+Relations Cell
+Build a strong
+alumni
+network for
+support and
+advocacy
+Strengthen alumni connect
+through regular updates,
+reunions, and networking
+events
+Branded communication
+showcasing alumni
+success stories
+Phase 1 (6 Months):
+Develop Alumni Portal
+Phase 2 (1 Year):
+Organize Annual
+Alumni Meet
+Phase 3 (Ongoing):
+Regular Communication
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 86 of 96 --
+
+85
+Table 12
+Stakeholder
+Experience
+Management
+Administration/
+HRD
+Improve
+satisfaction
+and loyalty
+among key
+stakeholders
+Appoint a dedicated
+Experience Manager to
+manage interactions with
+students, parents, and
+other stakeholders
+Regular feedback loops
+and satisfaction surveys
+Phase 1 (6 Months):
+Recruit Experience
+Manager
+Phase 2 (1 Year):
+Implement Feedback
+System
+Phase 3 (Ongoing):
+Continuous
+Improvement
+Skilling and
+Lifelong
+Learning
+Create a new
+Centre for Skill
+Development and
+Lifelong Learning/
+Leadership Team
+Demonstrate
+Thought
+Leadership and
+help build
+advanced skills
+and knowledge
+to contribute to
+regional
+development.
+Offer skilling programs
+with industry partners in
+emerging areas (EVs,
+Drones, Factory
+Automation etc.)
+Offer Certificate programs
+and PG Diplomas in
+emerging areas for working
+professionals
+Phase 1
+(Conceptualization and
+Planning - 1 year)
+Community
+and Outreach
+Programs
+Organize marquee events
+at MIET (conclaves,
+hackathons, forums)
+NSS, IQAC
+Enhance
+visibility and
+engagement
+with the
+community
+Host summer training
+programs for school
+students on emerging
+technologies
+Senior Citizen Welfare
+and Community Outreach
+Programs
+Phase 1 (6 Months):
+Event Planning
+Phase 2 (1 Year): First
+Set of Events
+Phase 3 (Ongoing):
+Quarterly Events
+School and
+Student
+Engagement
+Admissions
+Office
+Increase
+awareness and
+attract
+potential
+students
+Go to schools for direct
+engagement and
+awareness campaigns
+Organize open houses and
+engagement programs
+CBSE School
+Teacher Training in
+AI/ML, Emerging
+Technologies
+Phase 1 (6 Months):
+Identify Key Schools
+Phase 2 (1 Year):
+Conduct Engagement
+Programs
+Phase 3 (Ongoing):
+Continuous Outreach
+Marketing
+and Public
+Relations
+Leadership
+Team
+Consistent
+public
+engagement
+and brand
+reinforcement
+Develop a monthly
+calendar of PR activities
+Organize mega activities
+every quarter to keep
+MIET in the public eye
+Branding of MIET's
+success stories across
+platforms
+Phase 1 (3 Months):
+Calendar Setup
+Phase 2 (1 Year):
+Execute PR Activities
+Phase 3 (Ongoing):
+Monitor Impact
+Key Area Deliverables Owner Timelines Justification/
+Comments
+Phase 2
+(Pilot Launch in select
+domains)
+Phase 3
+(Ongoing – Multiple
+Launches and Rollouts)
+
+-- 87 of 96 --
+
+86
+Table 12
+Thought
+Leadership
+and Policy
+Advocacy
+Leadership
+Team
+Phase 1 (6 Months):
+Identify Key Areas for
+Advocacy Position MIET
+as a thought
+leader in
+education and
+policy
+Publish white papers and
+engage in policy advocacy
+Organize and participate
+in panel discussions and
+external forums
+Phase 2 (1 Year):
+Publish Papers and
+Participate
+Phase 3 (Ongoing):
+Continuous Engagement
+International
+Ranking and
+Accreditations
+Participate in rankings
+such as QS and Times
+Higher Education
+IQAC
+Boost MIET's
+national and
+international
+reputation
+Focus on green
+initiatives and UNSDG
+Explore ABET, AASCB
+accreditation frameworks
+Phase 1 (6 Months):
+Prepare for Submissions
+Phase 2 (1 Year):
+Execute Initiatives
+Phase 3 (2-3 Years):
+Operationalize Centers
+Scholarships
+and Financial
+Support
+Leadership
+Team
+Attract and
+support
+talented
+students from
+diverse
+backgrounds
+Launch a scholarship test
+in the name of the founder
+Establish tie-ups with
+NBFCs for education
+loans
+Phase 1 (6 Months):
+Design Scholarship
+Program
+Phase 2 (1 Year):
+Partner with Financial
+Institutions
+Phase 3 (Ongoing):
+Monitor and Adjust
+Digital and
+Social Media
+Engagement
+Social Media
+Team
+Increase
+MIET's digital
+footprint and
+engage with a
+global
+audience
+Launch podcasts and
+YouTube channels to
+reach a broader audience
+Engage social media
+influencers for brand
+promotion
+Participate and celebrate
+all relevant days/events on
+social media
+Phase 1 (3 Months):
+Content Planning
+Phase 2 (6 Months):
+Launch Channels and
+Campaigns
+Phase 3 (Ongoing):
+Continuous Engagement
+Professor of
+Practice and
+Industry
+Linkages
+HRD and
+Administration
+Enhance the
+practical
+learning
+experience for
+students
+Introduce Professor of
+Practice roles, including
+professionals like IAS
+Officers
+Tie-ups with local
+hotels/companies for
+internships and training
+Create a calendar of
+activities to maintain
+brand visibility
+Phase 1 (6 Months):
+Identify and Recruit
+Phase 2 (1 Year):
+Establish Partnerships
+Phase 3 (Ongoing):
+Monitor and Review
+Regular Monitoring
+Phase 2 (Ongoing):
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 88 of 96 --
+
+87
+Remarks
+The private higher education sector in J&K has not enjoyed a favourable perception among the
+broader community. MIET has been able to carve a name for itself by delivering good value and
+attaining “Autonomous Status”.
+There is a significant opportunity to strengthen the brand further owing to lack of competition
+currently, offering an opportunity to pull ahead.
+“Brand Building” will be crucial for MIET to attain the status of a State Private University in the
+region.
+This Brand Enhancement Plan for MIET outlines a comprehensive approach to strengthening the
+institution's brand identity through strategic initiatives in alumni engagement, stakeholder experience
+management, quality of education, outreach, marketing, thought leadership and demonstrated impact.
+
+-- 89 of 96 --
+
+88
+
+-- 90 of 96 --
+
+89
+Appendix-VIII
+SUSTAINABILITY DEVELOPMENT PLAN
+
+-- 91 of 96 --
+
+90
+Sustainability Development Plan
+Objectives
+Sustainable Development: Contribute to achieving the United Nations Sustainable
+Development Goals (UNSDGs) by implementing initiatives aligned with each goal.
+Enhance the quality of life for the MIET	Community and Environmental Well-being:
+community and promote environmental sustainability.
+Key Areas and Elements
+Commitment: MIET needs to demonstrate commitment and leadership in aligning with
+sustainability goals and making their attainment a strategic objective.
+Adequate resources need to be committed to ensuring that the institution can	Resources:
+show the desired outcomes along all sustainability parameters.
+There is an opportunity to take leadership position in the region by planning and	Leadership:
+executing innovative projects in sustainability.
+Partnerships: MIET needs to partner with external organizations and develop capacity to
+undertake projects in areas which are non-core to MIET.
+Implementation Plan
+SDG 3: Good
+Health and Well-
+being
+IQAC/HRD/
+Facilities
+Department/
+Sports
+Committee
+Promote physical
+fitness and well-being
+Create an open gym
+at MIET
+Integrate fitness as a
+key criterion for
+student development
+Mental Health
+Support.
+Faculty Health
+Insurance
+Improved Medical
+Facilities
+Phase 1 (6 Months):
+Plan and Design
+Phase 2 (1 Year):
+Implementation
+Phase 3 (Ongoing):
+Regular Fitness
+Programs
+Table 13 : Implementation Plan
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 92 of 96 --
+
+91
+Table 13
+SDG 4: Quality
+Education
+L&D Plans
+R&D Plans
+TLC
+Student Support
+Encourage students
+from
+underprivileged
+backgrounds through
+scholarships and
+endowments
+Director/
+Academic
+Department
+Heads
+Phase 1 (6
+Months): Identify
+Beneficiaries
+Promote inclusive and
+equitable quality
+education
+Phase 2 (1 Year):
+Scholarship
+Disbursement
+Phase 3
+(Ongoing):
+Monitor and
+Support Students
+SDG 5: Gender
+Equality
+Set up a center for
+women development
+POSH Committee
+Increase enrolment
+for Girl Students
+through scholarships
+CASH
+Committee
+Empower women
+through dedicated
+support and programs
+Phase 1 (6 Months):
+Center
+Establishment
+Phase 2 (1 Year):
+Program Launch
+SDG 6: Clean
+Water and
+Sanitation
+Filter and store 1
+lakh litre of rainwater
+Undertake
+groundwater recharge
+project
+Implement STP of 10
+KLD capacity
+Facilities
+Department
+Phase 1 (6
+Months): Planning
+and Design
+Ensure sustainable
+management of water
+resources
+Phase 2 (1-2
+Years):
+Infrastructure
+Development
+Phase 3 (3 Years):
+Full Operation
+SDG 7:
+Affordable and
+Clean Energy
+50 KVA solar
+capacity installation
+Adopt energy -saving
+mechanisms
+(automated light
+sensors)
+Green Audits and
+Continuous
+Improvement
+IQAC/
+Facilities
+Department
+Promote energy
+efficiency and
+renewable energy
+Phase 1 (6 Months):
+Feasibility Study
+Phase 2 (1 Year):
+Installation and
+Setup
+Phase 3 (2 Years):
+Full
+Operationalization
+SDG 11:
+Sustainable Cities
+and Communities
+Get 3-4 battery-
+operated shuttles on
+campus
+Create EV charging
+infrastructure
+Facilities
+Department
+Phase 1 (6 Months):
+Vendor Selection
+Promote sustainable
+transport and
+infrastructure
+Phase 2 (1 Year):
+Implementation
+Phase 3 (2 Years):
+Full
+Operationalization
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 93 of 96 --
+
+92
+Table 13
+SDG 13: Climate
+Action
+Facilities
+Department/
+NSS
+Committee/
+IQAC
+Combat climate
+change through
+reforestation
+Plant 200 trees at
+MIET over the next 2
+years
+All new construction
+to be centrally air
+conditioned
+Covered pathways
+Increased green cover
+Roof treatment to
+cool temperatures and
+reduce AC
+requirement
+Phase 1 (6 Months):
+Plan and
+Initiate Planting
+Phase 2 (1 Year):
+Tree Planting
+Phase 3 (2 Years):
+Maintenance and
+Monitoring
+SDG 14: Life
+Below Water
+Water Bodies with
+Fish
+Facilities
+Department/
+NSS
+Committee
+Phase 4 (3 years):
+Implementation
+Holistic Campus
+Development
+SDG 15: Life on
+Land
+Tree Houses for Birds
+and Bushes for land
+birds in the region
+Facilities
+Department/
+NSS
+Committee
+Phase 3 (2 Years):
+Implementation
+Holistic Campus
+Development
+SDG 16: Peace,
+Justice, and
+Strong Institutions
+Legal Aid Clinic
+Community Projects
+Digitization and
+Automation for
+Transparency
+School of
+Law
+Phase 1 to 3
+(3 months to 2
+years):
+Implementation
+Social Impact
+SDG 17:
+Partnerships for
+the Goals
+MOUs and Linkages Leadership
+Team
+Phase 1 to 3
+(3 months to 2 years):
+Implementation
+Capacity and
+a	Cap bility
+Enhancement
+Remarks
+Sustainability is a critical domain which is the focus of regulatory bodies, accreditation and
+ranking agencies and of interest to broader society. MIET needs to demonstrate leadership and
+impact in this area.
+The MIET campus offers ample opportunities to undertake innovative projects, which must be
+leveraged by mobilizing faculty and students in the region.
+Sustainability champions must be groomed and an interdisciplinary team must be created to
+drive this functional area for the institution.
+This plan aligns MIET's initiatives with the UNSDGs, facilitating detailed planning and tracking of
+progress towards each goal.
+Key Area Deliverables Owner Timelines Justification/
+Comments
+
+-- 94 of 96 --
+
+
+
+-- 95 of 96 --
+
+Model Institute of Engineering & Technology (Autonomous)
+NAAC “A” Grade Accredited
+Kot Bhalwal, Jammu - 181122.
+M F E W	ob. : 9018312123 ax : 0191-2623181 mail : info@mietjammu.in ebsite : www.mietjammu.in
+
+-- 96 of 96 --
+

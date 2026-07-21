@@ -8,6 +8,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "seed": "tsx src/seed.ts",
+    "seed:strategic": "tsx src/seedStrategicPlan.ts",
+    "sync:pdf": "tsx src/sync/generatePlanSeed.ts",
     "seed:demo": "tsx src/seedDemo.ts",
     "clear:demo": "tsx src/clearDemo.ts"
   },

@@ -27,6 +27,95 @@ export interface AuthMeData {
   designation?: string
 }
 
+export type PlanItemStatus = 'todo' | 'in_progress' | 'done' | 'blocked'
+
+export interface ChecklistItem {
+  id: string
+  label: string
+  done: boolean
+}
+
+export interface PlanItemStats {
+  total: number
+  done: number
+  inProgress: number
+  blocked: number
+  progressPct: number
+}
+
+export interface SubArea {
+  id: string
+  areaId: string
+  slug: string
+  name: string
+  description: string
+  documentRef: string
+  color: string
+  icon: string
+  sortOrder: number
+  stats?: PlanItemStats
+}
+
+export interface SubAreaDetail extends SubArea {
+  items: PlanItem[]
+  stats: PlanItemStats
+}
+
+export interface PlanItem {
+  id: string
+  areaId: string
+  subAreaId: string
+  title: string
+  description: string
+  processOwner: string
+  phase: string
+  priority: TaskPriority
+  status: PlanItemStatus
+  targetDate: string
+  documentRef: string
+  checklist: ChecklistItem[]
+  progressSource: string
+  lastReviewDate: string
+  sortOrder: number
+  createdAt: string
+  updatedAt: string
+  updates?: ProgressUpdate[]
+}
+
+export interface ProgressUpdate {
+  id: string
+  planItemId: string
+  meetingDate: string
+  meetingSource: string
+  status: PlanItemStatus
+  notes: string
+  checklist: ChecklistItem[]
+  reportedBy: number | null
+  reportedByName: string
+  createdAt: string
+}
+
+export interface UpdatePlanItemInput {
+  id: string
+  title?: string
+  description?: string
+  processOwner?: string
+  phase?: string
+  priority?: TaskPriority
+  status?: PlanItemStatus
+  targetDate?: string
+  checklist?: ChecklistItem[]
+}
+
+export interface RecordProgressInput {
+  planItemId: string
+  meetingDate?: string
+  meetingSource?: string
+  status: PlanItemStatus
+  notes?: string
+  checklist?: ChecklistItem[]
+}
+
 export type AreaSlug =
   | 'strategy'
   | 'quality-assurance'

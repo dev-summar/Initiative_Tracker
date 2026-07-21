@@ -1,5 +1,5 @@
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   ChevronLeft,
   ChevronRight,
@@ -15,6 +15,7 @@ import { useAuth } from '../../context/AuthContext'
 import { UserAvatar } from '../common/UserAvatar'
 import { BrandMark } from '../common/BrandLogo'
 import { taskService } from '../../services/taskService'
+import { subAreaService } from '../../services/subAreaService'
 import { useTrackerStore } from '../../store/useTrackerStore'
 
 interface SidebarProps {
@@ -87,15 +88,30 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
   const location = useLocation()
   const collapsed = useTrackerStore((s) => s.sidebarCollapsed)
   const setSidebarCollapsed = useTrackerStore((s) => s.setSidebarCollapsed)
-  const [openTasks, setOpenTasks] = useState<{ areaId: string }[]>([])
+  const [openByArea, setOpenByArea] = useState<Record<string, number>>({})
 
   useEffect(() => {
     taskService
       .list()
-      .then((list) =>
-        setOpenTasks(list.filter((t) => t.status !== 'done').map((t) => ({ areaId: t.areaId }))),
-      )
-      .catch(() => setOpenTasks([]))
+      .then((list) => {
+        const map: Record<string, number> = {}
+        for (const area of AREAS) {
+          map[area.id] = list.filter((t) => t.areaId === area.id && t.status !== 'done').length
+        }
+        setOpenByArea(map)
+      })
+      .catch(() => setOpenByArea({}))
+
+    subAreaService
+      .list('area-strategy')
+      .then((plans) => {
+        const pending = plans.reduce(
+          (n, p) => n + (p.stats?.total ?? 0) - (p.stats?.done ?? 0),
+          0,
+        )
+        setOpenByArea((prev) => ({ ...prev, 'area-strategy': pending || prev['area-strategy'] || 0 }))
+      })
+      .catch(() => {})
   }, [location.pathname])
 
   const { user, logout } = useAuth()
@@ -104,23 +120,11 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
   const displayName = user?.name ?? 'User'
   const displayRole = user?.designation ?? user?.role ?? 'Management'
   const avatarUrl = user?.avatar ?? user?.pi360?.avatar
-
-  const openByArea = useMemo(() => {
-    const map: Record<string, number> = {}
-    for (const area of AREAS) {
-      map[area.id] = openTasks.filter((t) => t.areaId === area.id).length
-    }
-    return map
-  }, [openTasks])
+  const strategyCount = openByArea['area-strategy'] ?? 0
 
   const panel = (
     <div className="flex h-full flex-col bg-[#0f0f0f]">
-      <div
-        className={cn(
-          'flex h-14 shrink-0 items-center gap-2.5 px-4',
-          collapsed && 'justify-center px-2',
-        )}
-      >
+      <div className={cn('flex h-14 shrink-0 items-center gap-2.5 px-4', collapsed && 'justify-center px-2')}>
         <BrandMark size={32} />
         {!collapsed && (
           <span className="truncate text-sm font-semibold tracking-tight text-white">
@@ -149,13 +153,16 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
           <div className="space-y-0.5">
             {AREAS.map((area) => {
               const Icon = getAreaIcon(area.icon)
+              const to = area.slug === 'strategy' ? '/area/strategy' : `/area/${area.slug}`
+              const count =
+                area.slug === 'strategy' ? strategyCount : openByArea[area.id] ?? 0
               return (
                 <SidebarLink
                   key={area.id}
-                  to={`/area/${area.slug}`}
+                  to={to}
                   collapsed={collapsed}
                   label={area.name}
-                  count={openByArea[area.id] ?? 0}
+                  count={count}
                   color={area.color}
                   onNavigate={onMobileClose}
                   icon={

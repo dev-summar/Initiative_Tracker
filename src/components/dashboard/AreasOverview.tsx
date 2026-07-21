@@ -22,7 +22,7 @@ export function AreasOverview({ summaries }: AreasOverviewProps) {
           return (
             <Link
               key={s.area.id}
-              to={`/area/${s.area.slug}`}
+              to={s.area.slug === 'strategy' ? '/area/strategy' : `/area/${s.area.slug}`}
               className="group rounded-[1.25rem] border border-border bg-zinc-50/50 p-5 transition hover:-translate-y-0.5 hover:border-zinc-300 hover:bg-white hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
             >
               <div className="mb-4 flex items-start justify-between gap-2">

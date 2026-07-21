@@ -4,6 +4,8 @@ import { corsMiddleware } from './middleware/cors.js'
 import { requireAuth, requireManager } from './middleware/auth.js'
 import authRoutes from './routes/auth.js'
 import areasRoutes from './routes/areas.js'
+import subAreasRoutes from './routes/subAreas.js'
+import planItemsRoutes from './routes/planItems.js'
 import tasksRoutes from './routes/tasks.js'
 import kpisRoutes from './routes/kpis.js'
 import dashboardRoutes from './routes/dashboard.js'
@@ -39,6 +41,8 @@ export function createApp(): Express {
 
   api.use('/auth', authRoutes)
   api.use('/areas', areasRoutes)
+  api.use('/sub-areas', subAreasRoutes)
+  api.use('/plan-items', planItemsRoutes)
   api.use('/tasks', tasksRoutes)
   api.use('/kpis', kpisRoutes)
   api.use('/dashboard', dashboardRoutes)

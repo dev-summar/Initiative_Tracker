@@ -9,6 +9,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "seed": "npm run seed --prefix backend",
+    "seed:strategic": "npm run seed:strategic --prefix backend",
+    "sync:pdf": "npm run sync:pdf --prefix backend",
     "seed:demo": "npm run seed:demo --prefix backend",
     "clear:demo": "npm run clear:demo --prefix backend"
   },

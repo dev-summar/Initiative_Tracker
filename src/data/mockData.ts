@@ -5,7 +5,7 @@ export const AREAS: Area[] = [
     id: 'area-strategy',
     slug: 'strategy',
     name: 'Strategy',
-    description: 'Long-term planning, OKRs, and institutional growth initiatives.',
+    description: 'MIET Strategic Plan 2024–2030 — objectives, implementation plans, and progress tracking.',
     color: '#A78BFA',
     icon: 'Compass',
   },

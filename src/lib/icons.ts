@@ -1,7 +1,14 @@
 import type { LucideIcon } from 'lucide-react'
 import {
+  BookOpen,
+  Building2,
   Compass,
+  Cpu,
+  FileText,
+  FlaskConical,
   GraduationCap,
+  Leaf,
+  Megaphone,
   Settings,
   ShieldCheck,
   Sparkles,
@@ -15,6 +22,13 @@ const MAP: Record<string, LucideIcon> = {
   Settings,
   Sparkles,
   GraduationCap,
+  Cpu,
+  FlaskConical,
+  BookOpen,
+  Building2,
+  Megaphone,
+  Leaf,
+  FileText,
 }
 
 export function getAreaIcon(name: string): LucideIcon {

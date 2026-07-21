@@ -4,6 +4,8 @@ import { AppLayout } from './components/layout/AppLayout'
 import { ProtectedRoute, GuestRoute } from './components/ProtectedRoute'
 import { DashboardPage } from './pages/Dashboard'
 import { AreaDetailsPage } from './pages/AreaDetails'
+import { StrategyPage } from './pages/StrategyPage'
+import { PlanDetailPage } from './pages/PlanDetailPage'
 import { LoginPage } from './pages/LoginPage'
 
 const basename = (import.meta.env.VITE_BASE_PATH || '').replace(/\/$/, '') || undefined
@@ -28,6 +30,8 @@ export default function App() {
           }
         >
           <Route index element={<DashboardPage />} />
+          <Route path="area/strategy" element={<StrategyPage />} />
+          <Route path="area/strategy/:planSlug" element={<PlanDetailPage />} />
           <Route path="area/:slug" element={<AreaDetailsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

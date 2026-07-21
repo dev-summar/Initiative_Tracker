@@ -1,0 +1,103 @@
+import { useCallback, useEffect, useState } from 'react'
+import { FileText } from 'lucide-react'
+import { useOutletContext } from 'react-router-dom'
+import type { AppOutletContext } from '../components/layout/AppLayout'
+import { Topbar } from '../components/layout/Topbar'
+import { StrategyPlanGrid } from '../components/strategy/StrategyPlanGrid'
+import { ExecutiveDashboard } from '../components/strategy/ExecutiveDashboard'
+import { TableSkeleton } from '../components/common/LoadingSkeleton'
+import { areaService } from '../services/areaService'
+import { subAreaService } from '../services/subAreaService'
+import { planItemService } from '../services/planItemService'
+import type { Area, PlanItem, SubArea } from '../api/types'
+
+const STRATEGY_AREA_ID = 'area-strategy'
+
+export function StrategyPage() {
+  const { openMobileMenu } = useOutletContext<AppOutletContext>()
+  const [area, setArea] = useState<Area | null>(null)
+  const [plans, setPlans] = useState<SubArea[]>([])
+  const [items, setItems] = useState<PlanItem[]>([])
+  const [loading, setLoading] = useState(true)
+
+  const load = useCallback(async () => {
+    setLoading(true)
+    try {
+      const [found, planList, allItems] = await Promise.all([
+        areaService.getBySlug('strategy'),
+        subAreaService.list(STRATEGY_AREA_ID),
+        planItemService.list(undefined, STRATEGY_AREA_ID),
+      ])
+      setArea(found ?? null)
+      setPlans(planList)
+      setItems(allItems)
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    void load()
+  }, [load])
+
+  const totalDone = plans.reduce((n, p) => n + (p.stats?.done ?? 0), 0)
+  const totalItems = plans.reduce((n, p) => n + (p.stats?.total ?? 0), 0)
+  const overallPct = totalItems === 0 ? 0 : Math.round((totalDone / totalItems) * 100)
+
+  return (
+    <div className="min-h-full">
+      <Topbar
+        title={area?.name ?? 'Strategy'}
+        subtitle="MIET Strategic Plan 2024–2030"
+        onMobileMenu={openMobileMenu}
+      />
+
+      <main className="space-y-6 p-4 md:p-6 lg:p-8">
+        <section className="rounded-2xl border border-border bg-gradient-to-br from-violet-50/80 via-sky-50/40 to-white p-5 md:p-6">
+          <p className="text-sm text-ink-muted">
+            Eight implementation plans from the strategic document. Progress is updated from governing body
+            reviews and process-owner submissions.
+          </p>
+          <div className="mt-4 flex flex-wrap items-center gap-4">
+            <div>
+              <p className="text-3xl font-bold tabular-nums text-ink">{overallPct}%</p>
+              <p className="text-xs text-ink-muted">Overall completion</p>
+            </div>
+            <p className="text-sm text-ink-muted">
+              {totalDone} of {totalItems} items completed across {plans.length} plans
+            </p>
+            <div className="ml-auto flex flex-wrap gap-2">
+              <a
+                href="/MIET STRATEGIC PLAN (2024-30) (1).pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-white px-3 py-1.5 text-xs font-medium text-ink hover:bg-zinc-50"
+              >
+                <FileText className="h-3.5 w-3.5" />
+                Strategic Plan PDF
+              </a>
+              <a
+                href="/8th Governing Body Agenda Points.docx.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-white px-3 py-1.5 text-xs font-medium text-ink hover:bg-zinc-50"
+              >
+                <FileText className="h-3.5 w-3.5" />
+                GB Minutes PDF
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {loading ? (
+          <TableSkeleton rows={6} />
+        ) : (
+          <>
+            <ExecutiveDashboard plans={plans} items={items} />
+            <StrategyPlanGrid plans={plans} />
+          </>
+        )}
+      </main>
+    </div>
+  )
+}
