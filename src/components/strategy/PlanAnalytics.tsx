@@ -17,11 +17,41 @@ import { priorityLabel, statusLabel } from '../../lib/utils'
 
 const tooltipStyle = {
   borderRadius: 12,
-  border: 'none',
-  background: '#0f0f0f',
-  color: '#fff',
+  border: '1px solid #e4e4e7',
+  background: '#ffffff',
+  color: '#0f0f0f',
   fontSize: 12,
   padding: '8px 12px',
+  boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+}
+
+function formatCount(value: unknown) {
+  const n = typeof value === 'number' ? value : Number(value)
+  if (!Number.isFinite(n)) return '0'
+  return String(Math.round(n))
+}
+
+function CountTooltip({
+  active,
+  payload,
+  label,
+}: {
+  active?: boolean
+  payload?: Array<{ value?: number | string; name?: string; payload?: { owner?: string; label?: string } }>
+  label?: string
+}) {
+  if (!active || !payload?.length) return null
+  const row = payload[0]
+  const title = row.payload?.owner || row.payload?.label || label || row.name || ''
+  const count = formatCount(row.value)
+  return (
+    <div style={tooltipStyle}>
+      <p className="font-semibold text-ink">{title}</p>
+      <p className="mt-0.5 text-ink-muted">
+        Items: <span className="font-semibold text-ink">{count}</span>
+      </p>
+    </div>
+  )
 }
 
 const PRIORITY_ORDER: TaskPriority[] = ['critical', 'high', 'medium', 'low']
@@ -164,7 +194,7 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
                     <Cell key={entry.name} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(v, n) => [v ?? 0, String(n)]} contentStyle={tooltipStyle} />
+                <Tooltip content={<CountTooltip />} />
               </PieChart>
             </ResponsiveContainer>
           </div>
@@ -195,7 +225,7 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
                     <Cell key={entry.name} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip formatter={(v, n) => [v ?? 0, String(n)]} contentStyle={tooltipStyle} />
+                <Tooltip content={<CountTooltip />} />
               </PieChart>
             </ResponsiveContainer>
           </div>
@@ -208,19 +238,27 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
         <ChartCard title="By owner" subtitle="Items assigned per process owner">
           <div className="h-44 sm:h-52">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={analytics.ownerData} layout="vertical" margin={{ left: 0, right: 8 }}>
+              <BarChart data={analytics.ownerData} layout="vertical" margin={{ left: 4, right: 28, top: 4, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
-                <XAxis type="number" tick={{ fontSize: 10, fill: '#a1a1aa' }} axisLine={false} />
+                <XAxis
+                  type="number"
+                  allowDecimals={false}
+                  domain={[0, (max: number) => Math.max(1, Math.ceil(max))]}
+                  tickCount={Math.min(6, Math.max(...analytics.ownerData.map((d) => d.count), 1) + 1)}
+                  tickFormatter={formatCount}
+                  tick={{ fontSize: 10, fill: '#a1a1aa' }}
+                  axisLine={false}
+                />
                 <YAxis
                   type="category"
                   dataKey="owner"
-                  width={72}
-                  tick={{ fontSize: 8, fill: '#71717a' }}
+                  width={88}
+                  tick={{ fontSize: 10, fill: '#52525b' }}
                   axisLine={false}
                   tickLine={false}
                 />
-                <Tooltip contentStyle={tooltipStyle} />
-                <Bar dataKey="count" name="Items" radius={[0, 6, 6, 0]}>
+                <Tooltip content={<CountTooltip />} cursor={{ fill: '#f4f4f5' }} />
+                <Bar dataKey="count" name="Items" radius={[0, 6, 6, 0]} label={{ position: 'right', fontSize: 11, fill: '#52525b', formatter: formatCount }}>
                   {analytics.ownerData.map((entry) => (
                     <Cell key={entry.owner} fill={entry.fill} />
                   ))}

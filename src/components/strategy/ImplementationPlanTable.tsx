@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 import type { PlanItem, PlanItemStatus } from '../../api/types'
 import { planItemService } from '../../services/planItemService'
 import { PlanItemList, UpdatePlanItemModal } from './PlanItemList'
-import { PriorityBadge, ProcessOwnerVerifiedBadge } from '../common/StatusBadge'
+import { PriorityBadge } from '../common/StatusBadge'
 import { cn, statusLabel } from '../../lib/utils'
 
 const STATUS_OPTIONS: { value: PlanItemStatus; label: string }[] = [
@@ -158,7 +158,6 @@ export function ImplementationPlanTable({ items, accent, onChanged }: Implementa
                       (editable)
                     </span>
                   </th>
-                  <th className="px-3 py-3 font-semibold text-ink sm:px-4">Verified</th>
                   <th className="px-3 py-3 font-semibold text-ink sm:px-4" />
                 </tr>
               </thead>
@@ -178,9 +177,6 @@ export function ImplementationPlanTable({ items, accent, onChanged }: Implementa
                     </td>
                     <td className="px-3 py-3 sm:px-4">
                       <TableStatusSelect item={item} onChanged={onChanged} />
-                    </td>
-                    <td className="px-3 py-3 sm:px-4">
-                      <ProcessOwnerVerifiedBadge item={item} />
                     </td>
                     <td className="px-3 py-3 sm:px-4">
                       <button

@@ -1,11 +1,17 @@
 import { useState } from 'react'
 import { Calendar, CheckCircle2, Circle, Loader2, User } from 'lucide-react'
 import { toast } from 'sonner'
-import type { PlanItem, PlanItemStatus, TaskPriority } from '../../api/types'
+import type { ChecklistItem, PlanItem, PlanItemStatus, TaskPriority } from '../../api/types'
 import { planItemService } from '../../services/planItemService'
 import { Modal } from '../common/Modal'
-import { StatusBadge, PriorityBadge, ProcessOwnerVerifiedBadge } from '../common/StatusBadge'
+import { StatusBadge, PriorityBadge } from '../common/StatusBadge'
 import { cn } from '../../lib/utils'
+
+function withoutProcessOwnerVerify(list: ChecklistItem[]) {
+  return list.filter(
+    (c) => c.id !== 'verify' && !/verified by process owner/i.test(c.label),
+  )
+}
 
 const STATUS_OPTIONS: { value: PlanItemStatus; label: string }[] = [
   { value: 'todo', label: 'Not started' },
@@ -47,7 +53,6 @@ export function PlanItemList({ items, accent, onChanged }: PlanItemListProps) {
                     <div className="flex flex-wrap items-center gap-2">
                       <StatusBadge status={item.status} />
                       <PriorityBadge priority={item.priority} />
-                      <ProcessOwnerVerifiedBadge item={item} />
                       {item.phase && (
                         <span className="rounded-md bg-zinc-100 px-2 py-0.5 text-[11px] font-medium text-ink-muted">
                           {item.phase}
@@ -122,14 +127,12 @@ export function UpdatePlanItemModal({
   const [processOwner, setProcessOwner] = useState(item.processOwner)
   const [notes, setNotes] = useState('')
   const [meetingDate, setMeetingDate] = useState(new Date().toISOString().slice(0, 10))
-  const [checklist, setChecklist] = useState(
-    item.checklist.length > 0
-      ? item.checklist
-      : [
-          { id: 'main', label: item.title, done: item.status === 'done' },
-          { id: 'verify', label: 'Verified by process owner', done: false },
-        ],
-  )
+  const [checklist, setChecklist] = useState(() => {
+    const cleaned = withoutProcessOwnerVerify(item.checklist)
+    return cleaned.length > 0
+      ? cleaned
+      : [{ id: 'main', label: item.title, done: item.status === 'done' }]
+  })
   const [saving, setSaving] = useState(false)
 
   const toggleCheck = (id: string) => {
@@ -145,7 +148,7 @@ export function UpdatePlanItemModal({
         meetingDate,
         meetingSource: 'Manual update via Initiative Tracker',
         notes,
-        checklist,
+        checklist: withoutProcessOwnerVerify(checklist),
       })
       if (processOwner !== item.processOwner || priority !== item.priority) {
         await planItemService.update({ id: item.id, processOwner, priority })

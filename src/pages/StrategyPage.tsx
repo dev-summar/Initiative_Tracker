@@ -4,12 +4,10 @@ import { useOutletContext } from 'react-router-dom'
 import type { AppOutletContext } from '../components/layout/AppLayout'
 import { Topbar } from '../components/layout/Topbar'
 import { StrategyPlanGrid } from '../components/strategy/StrategyPlanGrid'
-import { ExecutiveDashboard } from '../components/strategy/ExecutiveDashboard'
 import { TableSkeleton } from '../components/common/LoadingSkeleton'
 import { areaService } from '../services/areaService'
 import { subAreaService } from '../services/subAreaService'
-import { planItemService } from '../services/planItemService'
-import type { Area, PlanItem, SubArea } from '../api/types'
+import type { Area, SubArea } from '../api/types'
 
 const STRATEGY_AREA_ID = 'area-strategy'
 
@@ -17,20 +15,17 @@ export function StrategyPage() {
   const { openMobileMenu } = useOutletContext<AppOutletContext>()
   const [area, setArea] = useState<Area | null>(null)
   const [plans, setPlans] = useState<SubArea[]>([])
-  const [items, setItems] = useState<PlanItem[]>([])
   const [loading, setLoading] = useState(true)
 
   const load = useCallback(async () => {
     setLoading(true)
     try {
-      const [found, planList, allItems] = await Promise.all([
+      const [found, planList] = await Promise.all([
         areaService.getBySlug('strategy'),
         subAreaService.list(STRATEGY_AREA_ID),
-        planItemService.list(undefined, STRATEGY_AREA_ID),
       ])
       setArea(found ?? null)
       setPlans(planList)
-      setItems(allItems)
     } finally {
       setLoading(false)
     }
@@ -89,14 +84,7 @@ export function StrategyPage() {
           </div>
         </section>
 
-        {loading ? (
-          <TableSkeleton rows={6} />
-        ) : (
-          <>
-            <ExecutiveDashboard plans={plans} items={items} />
-            <StrategyPlanGrid plans={plans} />
-          </>
-        )}
+        {loading ? <TableSkeleton rows={6} /> : <StrategyPlanGrid plans={plans} />}
       </main>
     </div>
   )
