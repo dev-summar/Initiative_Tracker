@@ -1,6 +1,6 @@
 import { Filter, X } from 'lucide-react'
 import type { TaskPriority, TaskStatus } from '../../api/types'
-import { AREAS } from '../../data/mockData'
+import { useAllowedAreas } from '../../lib/areaAccess'
 import { useTrackerStore } from '../../store/useTrackerStore'
 import { priorityLabel, statusLabel, cn } from '../../lib/utils'
 
@@ -17,6 +17,7 @@ export function FilterPanel({ open, onClose, showAreaFilter = true }: FilterPane
   const filters = useTrackerStore((s) => s.filters)
   const setFilters = useTrackerStore((s) => s.setFilters)
   const resetFilters = useTrackerStore((s) => s.resetFilters)
+  const visibleAreas = useAllowedAreas()
 
   if (!open) return null
 
@@ -113,7 +114,7 @@ export function FilterPanel({ open, onClose, showAreaFilter = true }: FilterPane
             Area
           </span>
           <div className="flex flex-wrap gap-2">
-            {AREAS.map((a) => (
+            {visibleAreas.map((a) => (
               <button
                 key={a.id}
                 type="button"

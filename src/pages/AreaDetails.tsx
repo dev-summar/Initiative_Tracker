@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Navigate, useOutletContext, useParams } from 'react-router-dom'
 import type { Area, Kpi, Task } from '../api/types'
+import { useCanAccessArea } from '../lib/areaAccess'
+import { STATUS_CHART_COLORS } from '../lib/design'
 import { areaService } from '../services/areaService'
 import { kpiService } from '../services/kpiService'
 import { taskService } from '../services/taskService'
@@ -15,6 +17,7 @@ import { cn } from '../lib/utils'
 
 export function AreaDetailsPage() {
   const { slug } = useParams<{ slug: string }>()
+  const canAccess = useCanAccessArea(slug ?? '')
   const { openMobileMenu } = useOutletContext<AppOutletContext>()
   const [area, setArea] = useState<Area | null | undefined>(undefined)
   const [kpis, setKpis] = useState<Kpi[]>([])
@@ -50,6 +53,10 @@ export function AreaDetailsPage() {
   useEffect(() => {
     void load()
   }, [load])
+
+  if (!canAccess) {
+    return <Navigate to="/" replace />
+  }
 
   if (area === null) {
     return <Navigate to="/" replace />
@@ -113,10 +120,10 @@ export function AreaDetailsPage() {
                 </div>
                 <div className="flex h-2 overflow-hidden rounded-full bg-zinc-200/80">
                   {[
-                    { value: completed, color: '#14B8A6' },
-                    { value: inProgress, color: '#3B82F6' },
-                    { value: blocked, color: '#F43F5E' },
-                    { value: todo, color: '#D4D4D8' },
+                    { value: completed, color: STATUS_CHART_COLORS.done },
+                    { value: inProgress, color: STATUS_CHART_COLORS.in_progress },
+                    { value: blocked, color: STATUS_CHART_COLORS.blocked },
+                    { value: todo, color: STATUS_CHART_COLORS.todo },
                   ].map(
                     (seg, i) =>
                       seg.value > 0 && (

@@ -22,6 +22,7 @@ import {
   PRIORITY_COLORS,
   STATUS_COLORS,
 } from '../data/mockData'
+import { chartSeriesColor } from '../lib/design'
 
 function uid(prefix: string) {
   return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`
@@ -127,13 +128,13 @@ function buildOverview(tasks: Task[], kpis: Kpi[], activity: ActivityItem[]): Da
     color: PRIORITY_COLORS[p],
   }))
 
-  const areaProgress = AREAS.map((area) => {
+  const areaProgress = AREAS.map((area, i) => {
     const areaTasks = tasks.filter((t) => t.areaId === area.id)
     return {
       name: area.name,
       completed: areaTasks.filter((t) => t.status === 'done').length,
       total: areaTasks.length,
-      color: area.color,
+      color: chartSeriesColor(i),
     }
   })
 

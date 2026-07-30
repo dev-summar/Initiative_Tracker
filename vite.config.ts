@@ -16,10 +16,12 @@ export default defineConfig(({ mode }) => {
     base,
     plugins: [react(), tailwindcss()],
     server: {
+      host: '127.0.0.1',
       port: 5174,
       proxy: {
         '/api': {
-          target: 'http://localhost:3001',
+          // Prefer IPv4 so Windows localhost (::1) vs 127.0.0.1 mismatches don't break the proxy
+          target: 'http://127.0.0.1:3001',
           changeOrigin: true,
         },
       },

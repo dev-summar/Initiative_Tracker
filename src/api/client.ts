@@ -1,4 +1,5 @@
 import type { ApiResponse, AuthMeData, Pi360User } from './types'
+import { withResolvedAreaAccess } from '../lib/areaPermissions'
 
 const SITE_ORIGIN = (import.meta.env.VITE_SITE_ORIGIN || 'https://pi360.net').replace(/\/$/, '')
 const INSTITUTE_ID = import.meta.env.VITE_INSTITUTE_ID ?? 'mietjammu'
@@ -85,11 +86,20 @@ export async function apiRequest<T>(
       ? (JSON.parse(raw) as ApiResponse<T>)
       : { status: 'error', response_code: res.status, message: '' }
   } catch {
+    if (res.status >= 500) {
+      throw new Error(
+        `Could not reach the portal API (HTTP ${res.status}). If developing locally, run npm run dev:api.`,
+      )
+    }
     throw new Error(`The portal API returned an invalid response. (HTTP ${res.status})`)
   }
 
   if (json.status !== 'success') {
-    const err = new Error(json.message || `Request failed (HTTP ${res.status})`) as Error & {
+    const fallback =
+      res.status >= 500
+        ? `Could not reach the portal API (HTTP ${res.status}). If developing locally, run npm run dev:api.`
+        : `Request failed (HTTP ${res.status})`
+    const err = new Error(json.message || fallback) as Error & {
       code?: number
       data?: unknown
     }
@@ -295,13 +305,13 @@ export async function fetchAuthMeWithRetry(maxAttempts = 3): Promise<AuthMeData>
     try {
       const data = await api.get<AuthMeData>('auth/me')
       const stored = userFromLoginStorage()
-      if (data) return mergeAuthWithLogin(data, stored)
-      if (stored) return stored
+      if (data) return withResolvedAreaAccess(mergeAuthWithLogin(data, stored))
+      if (stored) return withResolvedAreaAccess(stored)
       throw new Error('Invalid session')
     } catch (err) {
       lastError = err instanceof Error ? err : new Error('Auth check failed')
       const stored = userFromLoginStorage()
-      if (stored && getToken()) return stored
+      if (stored && getToken()) return withResolvedAreaAccess(stored)
 
       const retryable =
         attempt < maxAttempts - 1 &&
@@ -314,7 +324,7 @@ export async function fetchAuthMeWithRetry(maxAttempts = 3): Promise<AuthMeData>
   }
 
   const stored = userFromLoginStorage()
-  if (stored && getToken()) return stored
+  if (stored && getToken()) return withResolvedAreaAccess(stored)
 
   throw lastError ?? new Error('Auth check failed')
 }

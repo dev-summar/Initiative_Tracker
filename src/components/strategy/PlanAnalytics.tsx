@@ -12,7 +12,7 @@ import {
   YAxis,
 } from 'recharts'
 import type { PlanItem, TaskPriority } from '../../api/types'
-import { cardClass, PRIORITY_CHART_COLORS, STATUS_CHART_COLORS } from '../../lib/design'
+import { cardClass, PRIORITY_CHART_COLORS, STATUS_CHART_COLORS, chartSeriesColor } from '../../lib/design'
 import { priorityLabel, statusLabel } from '../../lib/utils'
 
 const tooltipStyle = {
@@ -124,7 +124,7 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
       .map(([owner, count], i) => ({
         owner: owner.length > 22 ? `${owner.slice(0, 20)}…` : owner,
         count,
-        fill: [accent, '#8B5CF6', '#60A5FA', '#34D399', '#FBBF24', '#FB7185'][i % 6],
+        fill: chartSeriesColor(i),
       }))
 
     const done = statusCounts.done
@@ -230,7 +230,7 @@ export function PlanAnalytics({ items, planName, accent }: PlanAnalyticsProps) {
             </ResponsiveContainer>
           </div>
           <p className="mt-2 text-center text-xs text-ink-muted">
-            <span className="font-semibold text-orange-600">{analytics.openHighPriority}</span> open
+            <span className="font-semibold text-red-600">{analytics.openHighPriority}</span> open
             high/critical items
           </p>
         </ChartCard>

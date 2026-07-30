@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import { FileText } from 'lucide-react'
-import { useOutletContext } from 'react-router-dom'
+import { Navigate, useOutletContext } from 'react-router-dom'
 import type { AppOutletContext } from '../components/layout/AppLayout'
+import { useCanAccessArea } from '../lib/areaAccess'
 import { Topbar } from '../components/layout/Topbar'
 import { StrategyPlanGrid } from '../components/strategy/StrategyPlanGrid'
 import { TableSkeleton } from '../components/common/LoadingSkeleton'
@@ -13,6 +14,7 @@ const STRATEGY_AREA_ID = 'area-strategy'
 
 export function StrategyPage() {
   const { openMobileMenu } = useOutletContext<AppOutletContext>()
+  const canAccess = useCanAccessArea('strategy')
   const [area, setArea] = useState<Area | null>(null)
   const [plans, setPlans] = useState<SubArea[]>([])
   const [loading, setLoading] = useState(true)
@@ -34,6 +36,10 @@ export function StrategyPage() {
   useEffect(() => {
     void load()
   }, [load])
+
+  if (!canAccess) {
+    return <Navigate to="/" replace />
+  }
 
   const totalDone = plans.reduce((n, p) => n + (p.stats?.done ?? 0), 0)
   const totalItems = plans.reduce((n, p) => n + (p.stats?.total ?? 0), 0)

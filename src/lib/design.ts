@@ -13,28 +13,45 @@ export function formatHeaderDate(date = new Date()) {
   })
 }
 
+/** Site-wide chart palette — red, green, and yellow only. */
+export const CHART_PALETTE = {
+  red: '#EF4444',
+  green: '#22C55E',
+  yellow: '#EAB308',
+} as const
+
+export const CHART_SERIES = [CHART_PALETTE.green, CHART_PALETTE.yellow, CHART_PALETTE.red] as const
+
+export function chartSeriesColor(index: number): string {
+  return CHART_SERIES[index % CHART_SERIES.length]
+}
+
+/** Heatmap / completion intensity using the chart palette. */
+export function chartHeatColor(pct: number | null): string {
+  if (pct === null) return '#f4f4f5'
+  if (pct >= 50) return CHART_PALETTE.green
+  if (pct > 0) return CHART_PALETTE.yellow
+  return CHART_PALETTE.red
+}
+
 export const PRIORITY_CHART_COLORS: Record<string, string> = {
-  low: '#94A3B8',
-  medium: '#FBBF24',
-  high: '#F97316',
-  critical: '#EF4444',
+  low: CHART_PALETTE.green,
+  medium: CHART_PALETTE.yellow,
+  high: CHART_PALETTE.red,
+  critical: CHART_PALETTE.red,
 }
 
 export const STATUS_CHART_COLORS: Record<string, string> = {
-  todo: '#A1A1AA',
-  in_progress: '#3B82F6',
-  done: '#10B981',
-  blocked: '#EF4444',
+  todo: CHART_PALETTE.red,
+  in_progress: CHART_PALETTE.yellow,
+  done: CHART_PALETTE.green,
+  blocked: CHART_PALETTE.red,
 }
 
 export const CHART_COLORS = {
-  lavender: '#A78BFA',
-  sky: '#60A5FA',
-  amber: '#FBBF24',
-  gray: '#E4E4E7',
-  rose: '#FB7185',
-  teal: '#5EEAD4',
-  indigo: '#818CF8',
+  red: CHART_PALETTE.red,
+  green: CHART_PALETTE.green,
+  yellow: CHART_PALETTE.yellow,
 }
 
 export const cardClass =

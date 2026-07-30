@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import type { SubArea } from '../../api/types'
+import { chartSeriesColor } from '../../lib/design'
 import { getAreaIcon } from '../../lib/icons'
 
 export function StrategyPlanGrid({ plans }: { plans: SubArea[] }) {
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-      {plans.map((plan) => {
+      {plans.map((plan, i) => {
         const Icon = getAreaIcon(plan.icon)
         const pct = plan.stats?.progressPct ?? 0
+        const chartColor = chartSeriesColor(i)
         return (
           <Link
             key={plan.id}
@@ -39,7 +41,7 @@ export function StrategyPlanGrid({ plans }: { plans: SubArea[] }) {
               <div className="h-1.5 overflow-hidden rounded-full bg-zinc-100">
                 <div
                   className="h-full rounded-full transition-all"
-                  style={{ width: `${pct}%`, backgroundColor: plan.color }}
+                  style={{ width: `${pct}%`, backgroundColor: chartColor }}
                 />
               </div>
             </div>

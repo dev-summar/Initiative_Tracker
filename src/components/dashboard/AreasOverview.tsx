@@ -1,21 +1,27 @@
 import { Link } from 'react-router-dom'
 import type { AreaSummary } from '../../api/types'
 import { getAreaIcon } from '../../lib/icons'
-import { cardClass } from '../../lib/design'
+import { cardClass, chartSeriesColor } from '../../lib/design'
 
 interface AreasOverviewProps {
   summaries: AreaSummary[]
+  heading?: string
 }
 
-export function AreasOverview({ summaries }: AreasOverviewProps) {
+export function AreasOverview({ summaries, heading = 'Areas Overview' }: AreasOverviewProps) {
   return (
     <section className={cardClass + ' p-4 sm:p-6'}>
       <div className="mb-5">
-        <h2 className="text-base font-bold text-ink sm:text-lg">Areas Overview</h2>
-        <p className="text-sm text-ink-muted">Progress across all six operational areas</p>
+        <h2 className="text-base font-bold text-ink sm:text-lg">{heading}</h2>
+        <p className="text-sm text-ink-muted">
+          {summaries.length === 1
+            ? `Progress for ${summaries[0].area.name}`
+            : 'Progress across your assigned operational areas'}
+        </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-3">
-        {summaries.map((s) => {
+        {summaries.map((s, i) => {
+          const chartColor = chartSeriesColor(i)
           const Icon = getAreaIcon(s.area.icon)
           const pct =
             s.totalTasks === 0 ? 0 : Math.round((s.completedTasks / s.totalTasks) * 100)
@@ -43,7 +49,7 @@ export function AreasOverview({ summaries }: AreasOverviewProps) {
                   </div>
                 </div>
                 {s.criticalCount > 0 && (
-                  <span className="rounded-full bg-[#FEF3C7] px-2 py-0.5 text-[10px] font-bold text-[#D97706]">
+                  <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-[10px] font-bold text-yellow-700">
                     {s.criticalCount} critical
                   </span>
                 )}
@@ -51,14 +57,14 @@ export function AreasOverview({ summaries }: AreasOverviewProps) {
               <div className="mb-2 h-2 overflow-hidden rounded-full bg-zinc-200/80">
                 <div
                   className="h-full rounded-full transition-all duration-500"
-                  style={{ width: `${pct}%`, backgroundColor: s.area.color }}
+                  style={{ width: `${pct}%`, backgroundColor: chartColor }}
                 />
               </div>
               <div className="flex justify-between text-xs text-ink-muted">
                 <span>{pct}% complete</span>
                 <span>{s.kpiProgress}% KPI</span>
                 {s.overdueTasks > 0 && (
-                  <span className="font-semibold text-[#FB7185]">{s.overdueTasks} overdue</span>
+                  <span className="font-semibold text-red-500">{s.overdueTasks} overdue</span>
                 )}
               </div>
             </Link>

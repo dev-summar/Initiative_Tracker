@@ -8,6 +8,7 @@ import {
   isOverdue,
 } from '../models/Task.js'
 import { actorName } from '../middleware/auth.js'
+import { denyUnlessAreaAccess, resolveAreaScope, userAllowedAreaIds } from '../middleware/areaAccess.js'
 import { logActivity } from '../services/activityService.js'
 import { newId } from '../utils/id.js'
 import { sendError, sendSuccess } from '../utils/response.js'
@@ -22,8 +23,10 @@ async function getTaskById(id: string) {
 
 router.get('/', async (req, res) => {
   const areaId = String(req.query.area_id ?? '').trim()
-  const filter: Record<string, unknown> = { deletedAt: null }
-  if (areaId) filter.areaId = areaId
+  const scope = resolveAreaScope(req, res, areaId || undefined)
+  if (!scope) return
+
+  const filter: Record<string, unknown> = { deletedAt: null, areaId: { $in: scope } }
 
   const rows = await TaskModel.find(filter).sort({ updatedAt: -1 }).lean()
   const data = rows.map((t) => formatTask(t as Record<string, unknown>))
@@ -39,12 +42,14 @@ router.get('/filtered', async (req, res) => {
   const priorities = String(req.query.priorities ?? '')
     .split(',')
     .filter(Boolean)
-  const areaIds = String(req.query.area_ids ?? '')
+  const requestedAreaIds = String(req.query.area_ids ?? '')
     .split(',')
     .filter(Boolean)
 
-  const filter: Record<string, unknown> = { deletedAt: null }
-  if (areaId) filter.areaId = areaId
+  const scope = resolveAreaScope(req, res, areaId || undefined)
+  if (!scope) return
+
+  const filter: Record<string, unknown> = { deletedAt: null, areaId: { $in: scope } }
 
   const rows = await TaskModel.find(filter).sort({ updatedAt: -1 }).lean()
   let tasks = rows.map((t) => formatTask(t as Record<string, unknown>))
@@ -55,8 +60,10 @@ router.get('/filtered', async (req, res) => {
   if (priorities.length) {
     tasks = tasks.filter((t) => priorities.includes(t.priority))
   }
-  if (areaIds.length) {
-    tasks = tasks.filter((t) => areaIds.includes(t.areaId))
+  if (requestedAreaIds.length) {
+    const allowed = userAllowedAreaIds(req)
+    const scoped = requestedAreaIds.filter((id) => allowed.includes(id))
+    tasks = tasks.filter((t) => scoped.includes(t.areaId))
   }
   if (search) {
     tasks = tasks.filter((t) => {
@@ -76,6 +83,7 @@ router.post('/', async (req, res) => {
 
   const area = await AreaModel.findOne({ id: body.areaId }).lean()
   if (!area) return sendError(res, 422, 'Invalid area.')
+  if (denyUnlessAreaAccess(req, res, body.areaId)) return
 
   const status = body.status ?? 'todo'
   const priority = body.priority ?? 'medium'
@@ -110,6 +118,7 @@ router.put('/update', async (req, res) => {
 
   const existing = await TaskModel.findOne({ id, deletedAt: null })
   if (!existing) return sendError(res, 404, 'Task not found.')
+  if (denyUnlessAreaAccess(req, res, existing.areaId)) return
 
   const merged = {
     areaId: body.areaId ?? existing.areaId,
@@ -123,6 +132,7 @@ router.put('/update', async (req, res) => {
   if (!String(merged.title).trim()) return sendError(res, 422, 'Task title is required.')
   if (!TASK_STATUSES.includes(merged.status)) return sendError(res, 422, 'Invalid status.')
   if (!TASK_PRIORITIES.includes(merged.priority)) return sendError(res, 422, 'Invalid priority.')
+  if (merged.areaId !== existing.areaId && denyUnlessAreaAccess(req, res, merged.areaId)) return
 
   existing.areaId = merged.areaId
   existing.title = merged.title
@@ -155,6 +165,7 @@ router.put('/status', async (req, res) => {
 
   const existing = await TaskModel.findOne({ id, deletedAt: null })
   if (!existing) return sendError(res, 404, 'Task not found.')
+  if (denyUnlessAreaAccess(req, res, existing.areaId)) return
 
   existing.status = status
   await existing.save()
@@ -178,6 +189,7 @@ router.delete('/delete', async (req, res) => {
 
   const existing = await TaskModel.findOne({ id, deletedAt: null })
   if (!existing) return sendError(res, 404, 'Task not found.')
+  if (denyUnlessAreaAccess(req, res, existing.areaId)) return
 
   existing.deletedAt = new Date()
   await existing.save()
@@ -205,6 +217,7 @@ router.post('/import', async (req, res) => {
 
     const area = await AreaModel.findOne({ id: row.areaId }).lean()
     if (!area) continue
+    if (!userAllowedAreaIds(req).includes(row.areaId)) continue
 
     const id = newId('task')
     const dueDate = String(row.dueDate ?? new Date().toISOString().slice(0, 10)).slice(0, 10)

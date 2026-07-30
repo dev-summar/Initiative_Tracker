@@ -6,6 +6,7 @@ import {
   buildPlanRings,
   overallCompletion,
 } from '../../lib/strategyChartData'
+import { CHART_PALETTE, chartHeatColor, chartSeriesColor } from '../../lib/design'
 import { ChartCard } from './charts/chartShared'
 
 interface ExecutiveDashboardProps {
@@ -55,9 +56,9 @@ function CompletionGauge({ pct }: { pct: number }) {
       )}
       <defs>
         <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#6366F1" />
-          <stop offset="50%" stopColor="#8B5CF6" />
-          <stop offset="100%" stopColor="#10B981" />
+          <stop offset="0%" stopColor={CHART_PALETTE.red} />
+          <stop offset="50%" stopColor={CHART_PALETTE.yellow} />
+          <stop offset="100%" stopColor={CHART_PALETTE.green} />
         </linearGradient>
       </defs>
       <line x1={cx} y1={cy} x2={needleX} y2={needleY} stroke="#18181b" strokeWidth={3} strokeLinecap="round" />
@@ -113,7 +114,7 @@ function MultiRingChart({ rings }: { rings: ReturnType<typeof buildPlanRings> })
                 cy={center}
                 r={radius}
                 fill="none"
-                stroke={ring.color}
+                stroke={chartSeriesColor(i)}
                 strokeWidth={ringWidth}
                 strokeDasharray={circumference}
                 strokeDashoffset={offset}
@@ -132,11 +133,11 @@ function MultiRingChart({ rings }: { rings: ReturnType<typeof buildPlanRings> })
         </text>
       </svg>
       <ul className="grid flex-1 gap-1.5 sm:grid-cols-2">
-        {rings.map((ring) => (
+        {rings.map((ring, i) => (
           <li key={ring.id} className="flex items-center gap-2 rounded-lg bg-zinc-50/80 px-2.5 py-1.5">
-            <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
+            <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: chartSeriesColor(i) }} />
             <span className="min-w-0 flex-1 truncate text-xs font-medium text-ink">{ring.name}</span>
-            <span className="text-xs font-bold tabular-nums" style={{ color: ring.color }}>
+            <span className="text-xs font-bold tabular-nums" style={{ color: chartSeriesColor(i) }}>
               {ring.pct}%
             </span>
           </li>
@@ -150,7 +151,8 @@ function BubbleMatrix({ bubbles }: { bubbles: ReturnType<typeof buildBubbleData>
   return (
     <div className="relative h-[220px] w-full sm:h-[280px] md:h-[300px]">
       <svg viewBox="0 0 100 80" className="h-full w-full" preserveAspectRatio="xMidYMid meet">
-        {bubbles.map((b) => {
+        {bubbles.map((b, i) => {
+          const color = chartSeriesColor(i)
           const radius = Math.sqrt(b.size) / 3.2
           return (
             <g key={b.id}>
@@ -158,12 +160,12 @@ function BubbleMatrix({ bubbles }: { bubbles: ReturnType<typeof buildBubbleData>
                 cx={b.x}
                 cy={b.y}
                 r={radius}
-                fill={b.color}
+                fill={color}
                 fillOpacity={0.22}
-                stroke={b.color}
+                stroke={color}
                 strokeWidth={0.6}
               />
-              <circle cx={b.x} cy={b.y} r={radius * (b.pct / 100)} fill={b.color} fillOpacity={0.75} />
+              <circle cx={b.x} cy={b.y} r={radius * (b.pct / 100)} fill={color} fillOpacity={0.75} />
               <text x={b.x} y={b.y - 1} textAnchor="middle" fill="#18181b" fontSize={3.2} fontWeight={600}>
                 {b.pct}%
               </text>
@@ -183,12 +185,7 @@ function ProgressHeatmap({ rows }: { rows: ReturnType<typeof buildHeatmapData> }
   const years = rows[0]?.cells.map((c) => c.year) ?? []
 
   function cellColor(pct: number | null) {
-    if (pct === null) return '#f4f4f5'
-    if (pct >= 75) return '#10B981'
-    if (pct >= 50) return '#34D399'
-    if (pct >= 25) return '#FBBF24'
-    if (pct > 0) return '#FB923C'
-    return '#FECACA'
+    return chartHeatColor(pct)
   }
 
   return (

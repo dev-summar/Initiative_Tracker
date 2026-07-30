@@ -6,8 +6,8 @@ const app = createApp()
 
 async function start() {
   await connectDb()
-  app.listen(env.port, () => {
-    console.log(`Initiative Tracker API listening on http://localhost:${env.port}`)
+  app.listen(env.port, '127.0.0.1', () => {
+    console.log(`Initiative Tracker API listening on http://127.0.0.1:${env.port}`)
   })
 }
 

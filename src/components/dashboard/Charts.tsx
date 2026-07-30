@@ -14,7 +14,7 @@ import {
 } from 'recharts'
 import type { DashboardOverview } from '../../api/types'
 import { priorityLabel, statusLabel } from '../../lib/utils'
-import { cardClass, CHART_COLORS } from '../../lib/design'
+import { cardClass, CHART_COLORS, chartSeriesColor } from '../../lib/design'
 
 interface ChartsProps {
   overview: DashboardOverview
@@ -67,7 +67,7 @@ export function Charts({ overview }: ChartsProps) {
   const trendData = overview.areaProgress.map((a, i) => ({
     name: a.name.split(' ')[0],
     value: a.total === 0 ? 0 : Math.round((a.completed / a.total) * 100),
-    fill: a.color,
+    fill: chartSeriesColor(i),
     index: i,
   }))
 
@@ -125,8 +125,8 @@ export function Charts({ overview }: ChartsProps) {
             <YAxis tick={{ fontSize: 11, fill: '#a1a1aa' }} axisLine={false} tickLine={false} />
             <Tooltip contentStyle={tooltipStyle} />
             <Bar dataKey="completed" name="Completed" radius={[8, 8, 0, 0]}>
-              {overview.areaProgress.map((entry) => (
-                <Cell key={entry.name} fill={entry.color} />
+              {overview.areaProgress.map((entry, i) => (
+                <Cell key={entry.name} fill={chartSeriesColor(i)} />
               ))}
             </Bar>
           </BarChart>
@@ -137,9 +137,9 @@ export function Charts({ overview }: ChartsProps) {
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={trendData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
             <defs>
-              <linearGradient id="lavenderGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={CHART_COLORS.lavender} stopOpacity={0.35} />
-                <stop offset="100%" stopColor={CHART_COLORS.lavender} stopOpacity={0} />
+              <linearGradient id="priorityAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor={CHART_COLORS.yellow} stopOpacity={0.35} />
+                <stop offset="100%" stopColor={CHART_COLORS.yellow} stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
@@ -149,10 +149,10 @@ export function Charts({ overview }: ChartsProps) {
             <Area
               type="monotone"
               dataKey="value"
-              stroke={CHART_COLORS.lavender}
+              stroke={CHART_COLORS.yellow}
               strokeWidth={2.5}
-              fill="url(#lavenderGrad)"
-              dot={{ r: 4, fill: '#fff', stroke: CHART_COLORS.lavender, strokeWidth: 2 }}
+              fill="url(#priorityAreaGrad)"
+              dot={{ r: 4, fill: '#fff', stroke: CHART_COLORS.yellow, strokeWidth: 2 }}
             />
           </AreaChart>
         </ResponsiveContainer>

@@ -8,8 +8,8 @@ import {
   Menu,
   X,
 } from 'lucide-react'
-import { AREAS } from '../../data/mockData'
 import { getAreaIcon } from '../../lib/icons'
+import { useAllowedAreas } from '../../lib/areaAccess'
 import { cn } from '../../lib/utils'
 import { useAuth } from '../../context/AuthContext'
 import { UserAvatar } from '../common/UserAvatar'
@@ -89,18 +89,24 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
   const collapsed = useTrackerStore((s) => s.sidebarCollapsed)
   const setSidebarCollapsed = useTrackerStore((s) => s.setSidebarCollapsed)
   const [openByArea, setOpenByArea] = useState<Record<string, number>>({})
+  const { user, logout } = useAuth()
+  const navigate = useNavigate()
+  const visibleAreas = useAllowedAreas()
+  const canSeeStrategy = visibleAreas.some((a) => a.id === 'area-strategy')
 
   useEffect(() => {
     taskService
       .list()
       .then((list) => {
         const map: Record<string, number> = {}
-        for (const area of AREAS) {
+        for (const area of visibleAreas) {
           map[area.id] = list.filter((t) => t.areaId === area.id && t.status !== 'done').length
         }
         setOpenByArea(map)
       })
       .catch(() => setOpenByArea({}))
+
+    if (!canSeeStrategy) return
 
     subAreaService
       .list('area-strategy')
@@ -112,10 +118,7 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
         setOpenByArea((prev) => ({ ...prev, 'area-strategy': pending || prev['area-strategy'] || 0 }))
       })
       .catch(() => {})
-  }, [location.pathname])
-
-  const { user, logout } = useAuth()
-  const navigate = useNavigate()
+  }, [location.pathname, visibleAreas, canSeeStrategy])
 
   const displayName = user?.name ?? 'User'
   const displayRole = user?.designation ?? user?.role ?? 'Management'
@@ -151,7 +154,7 @@ export function Sidebar({ mobileOpen, onMobileClose }: SidebarProps) {
           )}
           {collapsed && <div className="mb-2 border-t border-white/[0.06]" />}
           <div className="space-y-0.5">
-            {AREAS.map((area) => {
+            {visibleAreas.map((area) => {
               const Icon = getAreaIcon(area.icon)
               const to = area.slug === 'strategy' ? '/area/strategy' : `/area/${area.slug}`
               const count =

@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Link, useOutletContext, useParams } from 'react-router-dom'
+import { Link, Navigate, useOutletContext, useParams } from 'react-router-dom'
 import { ArrowLeft, FileText } from 'lucide-react'
 import type { AppOutletContext } from '../components/layout/AppLayout'
+import { useCanAccessArea } from '../lib/areaAccess'
 import { Topbar } from '../components/layout/Topbar'
 import { ImplementationPlanTable } from '../components/strategy/ImplementationPlanTable'
 import { PlanAnalytics } from '../components/strategy/PlanAnalytics'
@@ -12,6 +13,7 @@ import { getAreaIcon } from '../lib/icons'
 
 export function PlanDetailPage() {
   const { planSlug } = useParams<{ planSlug: string }>()
+  const canAccess = useCanAccessArea('strategy')
   const { openMobileMenu } = useOutletContext<AppOutletContext>()
   const [plan, setPlan] = useState<SubAreaDetail | null>(null)
   const [loading, setLoading] = useState(true)
@@ -32,6 +34,10 @@ export function PlanDetailPage() {
   useEffect(() => {
     void load()
   }, [load])
+
+  if (!canAccess) {
+    return <Navigate to="/" replace />
+  }
 
   const Icon = plan ? getAreaIcon(plan.icon) : FileText
 

@@ -8,10 +8,12 @@ import {
   type LucideIcon,
 } from 'lucide-react'
 import type { DashboardStats } from '../../api/types'
+import { CHART_PALETTE, STATUS_CHART_COLORS } from '../../lib/design'
 import { cn } from '../../lib/utils'
 
 interface StatCardsProps {
   stats: DashboardStats
+  areaCount?: number
 }
 
 type CardTheme = {
@@ -24,46 +26,46 @@ type CardTheme = {
 
 const themes = {
   total: {
-    accent: '#7C3AED',
-    soft: '#F5F3FF',
-    bar: '#A78BFA',
-    badge: '#EDE9FE',
-    badgeText: '#6D28D9',
+    accent: CHART_PALETTE.yellow,
+    soft: '#FEFCE8',
+    bar: CHART_PALETTE.yellow,
+    badge: '#FEF9C3',
+    badgeText: '#A16207',
   },
   done: {
-    accent: '#0D9488',
-    soft: '#F0FDFA',
-    bar: '#14B8A6',
-    badge: '#CCFBF1',
-    badgeText: '#0F766E',
+    accent: CHART_PALETTE.green,
+    soft: '#F0FDF4',
+    bar: CHART_PALETTE.green,
+    badge: '#DCFCE7',
+    badgeText: '#15803D',
   },
   active: {
-    accent: '#2563EB',
-    soft: '#EFF6FF',
-    bar: '#3B82F6',
-    badge: '#DBEAFE',
-    badgeText: '#1D4ED8',
+    accent: CHART_PALETTE.yellow,
+    soft: '#FEFCE8',
+    bar: CHART_PALETTE.yellow,
+    badge: '#FEF9C3',
+    badgeText: '#A16207',
   },
   blocked: {
-    accent: '#E11D48',
-    soft: '#FFF1F2',
-    bar: '#F43F5E',
-    badge: '#FFE4E6',
-    badgeText: '#BE123C',
+    accent: CHART_PALETTE.red,
+    soft: '#FEF2F2',
+    bar: CHART_PALETTE.red,
+    badge: '#FEE2E2',
+    badgeText: '#B91C1C',
   },
   risk: {
-    accent: '#D97706',
-    soft: '#FFFBEB',
-    bar: '#F59E0B',
-    badge: '#FEF3C7',
-    badgeText: '#B45309',
+    accent: CHART_PALETTE.red,
+    soft: '#FEF2F2',
+    bar: CHART_PALETTE.red,
+    badge: '#FEE2E2',
+    badgeText: '#B91C1C',
   },
   completion: {
-    accent: '#6366F1',
-    soft: '#EEF2FF',
-    bar: '#818CF8',
-    badge: '#E0E7FF',
-    badgeText: '#4338CA',
+    accent: CHART_PALETTE.green,
+    soft: '#F0FDF4',
+    bar: CHART_PALETTE.green,
+    badge: '#DCFCE7',
+    badgeText: '#15803D',
   },
 } as const satisfies Record<string, CardTheme>
 
@@ -98,7 +100,7 @@ function StatusMixBar({ stats }: { stats: DashboardStats }) {
         0,
         stats.totalTasks - stats.completedTasks - stats.inProgressTasks - stats.blockedTasks,
       ),
-      color: '#D4D4D8',
+      color: STATUS_CHART_COLORS.todo,
       label: 'To do',
     },
   ]
@@ -232,9 +234,10 @@ function StatCard({
   )
 }
 
-export function StatCards({ stats }: StatCardsProps) {
+export function StatCards({ stats, areaCount = 6 }: StatCardsProps) {
   const total = stats.totalTasks
   const completionPct = pct(stats.completedTasks, total)
+  const areaLabel = areaCount === 1 ? '1 area' : `${areaCount} areas`
 
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6">
@@ -244,7 +247,7 @@ export function StatCards({ stats }: StatCardsProps) {
         label="Total Tasks"
         badge="Portfolio"
         value={stats.totalTasks}
-        subtitle={`${stats.criticalItems} critical item${stats.criticalItems === 1 ? '' : 's'} across 6 areas`}
+        subtitle={`${stats.criticalItems} critical item${stats.criticalItems === 1 ? '' : 's'} across ${areaLabel}`}
         bar={<StatusMixBar stats={stats} />}
         delayClass="animate-fade-up"
       />
@@ -310,7 +313,7 @@ export function StatCards({ stats }: StatCardsProps) {
         badge="Overall"
         value={completionPct}
         suffix="%"
-        subtitle={`${stats.areasOnTrack} of 6 areas on track · KPI avg ${stats.avgKpiProgress}%`}
+        subtitle={`${stats.areasOnTrack} of ${areaCount} area${areaCount === 1 ? '' : 's'} on track · KPI avg ${stats.avgKpiProgress}%`}
         trailing={
           <div className="relative flex h-[52px] w-[52px] items-center justify-center">
             <RingGauge value={completionPct} color={themes.completion.bar} />

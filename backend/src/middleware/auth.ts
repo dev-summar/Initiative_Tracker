@@ -1,5 +1,7 @@
 import type { NextFunction, Request, Response } from 'express'
 import jwt from 'jsonwebtoken'
+import { resolveAllowedEmail } from '../config/allowedEmails.js'
+import { getAllowedAreaIds } from '../config/areaPermissions.js'
 import { env } from '../config/env.js'
 import { sendError } from '../utils/response.js'
 
@@ -16,6 +18,7 @@ declare global {
   namespace Express {
     interface Request {
       user?: AuthUser
+      allowedAreaIds?: string[]
     }
   }
 }
@@ -75,10 +78,13 @@ export function requireAuth(req: Request, res: Response, next: NextFunction) {
       batch: data.batch ?? null,
     }
 
-    const loginEmail = (req.user.username ?? '').trim().toLowerCase()
-    if (!loginEmail || !env.allowedLoginEmails.has(loginEmail)) {
+    const jwtEmail = (req.user.username ?? '').trim().toLowerCase()
+    const allowedEmail = resolveAllowedEmail(jwtEmail)
+    if (!jwtEmail || !allowedEmail) {
       return sendError(res, 403, 'Access is restricted to authorized accounts only.')
     }
+
+    req.allowedAreaIds = getAllowedAreaIds(allowedEmail)
 
     maybeRefreshToken(res, decoded, match[1])
     next()

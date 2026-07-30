@@ -1,14 +1,17 @@
 import { Router } from 'express'
 import { SubAreaModel, formatSubArea } from '../models/SubArea.js'
 import { PlanItemModel, formatPlanItem } from '../models/PlanItem.js'
+import { denyUnlessAreaAccess, resolveAreaScope } from '../middleware/areaAccess.js'
 import { sendError, sendSuccess } from '../utils/response.js'
 
 const router = Router()
 
 router.get('/', async (req, res) => {
   const areaId = String(req.query.area_id ?? '').trim()
-  const filter: Record<string, unknown> = {}
-  if (areaId) filter.areaId = areaId
+  const scope = resolveAreaScope(req, res, areaId || undefined)
+  if (!scope) return
+
+  const filter: Record<string, unknown> = { areaId: { $in: scope } }
 
   const rows = await SubAreaModel.find(filter).sort({ sortOrder: 1, name: 1 }).lean()
   const subAreas = rows.map((r) => formatSubArea(r as Record<string, unknown>))
@@ -59,6 +62,8 @@ router.get('/detail', async (req, res) => {
   if (!row) return sendError(res, 404, 'Plan not found.')
 
   const subArea = formatSubArea(row as Record<string, unknown>)
+  if (denyUnlessAreaAccess(req, res, subArea.areaId)) return
+
   const items = await PlanItemModel.find({ subAreaId: subArea.id, deletedAt: null })
     .sort({ sortOrder: 1, updatedAt: -1 })
     .lean()

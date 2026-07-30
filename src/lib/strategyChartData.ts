@@ -1,5 +1,5 @@
 import type { PlanItem, PlanItemStatus, SubArea, TaskPriority } from '../api/types'
-import { PRIORITY_CHART_COLORS, STATUS_CHART_COLORS } from './design'
+import { PRIORITY_CHART_COLORS, STATUS_CHART_COLORS, chartSeriesColor } from './design'
 import { priorityLabel, statusLabel } from './utils'
 
 const YEARS = [2024, 2025, 2026, 2027, 2028, 2029, 2030] as const
@@ -38,13 +38,13 @@ function planItems(items: PlanItem[], planId: string) {
 export function buildPlanRings(plans: SubArea[]) {
   return [...plans]
     .sort((a, b) => a.sortOrder - b.sortOrder)
-    .map((plan) => ({
+    .map((plan, i) => ({
       id: plan.id,
       name: planShortName(plan.name),
       pct: plan.stats?.progressPct ?? 0,
       done: plan.stats?.done ?? 0,
       total: plan.stats?.total ?? 0,
-      color: plan.color,
+      color: chartSeriesColor(i),
     }))
 }
 
@@ -138,7 +138,7 @@ export function buildSunburstArcs(plans: SubArea[], items: PlanItem[]): Sunburst
         depth,
         startAngle,
         endAngle,
-        color: node.color ?? `hsl(${(depth * 55) % 360} 70% 55%)`,
+        color: node.color ?? chartSeriesColor(depth),
         path: arcPath(r0, r1, startAngle, endAngle),
       })
     }
@@ -220,7 +220,7 @@ export function buildBubbleData(plans: SubArea[]) {
       total,
       done,
       pct,
-      color: plan.color,
+      color: chartSeriesColor(i),
     }
   })
 }

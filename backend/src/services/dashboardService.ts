@@ -4,18 +4,20 @@ import { TaskModel, formatTask, isOverdue } from '../models/Task.js'
 import { recentActivity } from './activityService.js'
 
 const STATUS_COLORS: Record<string, string> = {
-  todo: '#94A3B8',
-  in_progress: '#3B82F6',
+  todo: '#EF4444',
+  in_progress: '#EAB308',
   blocked: '#EF4444',
   done: '#22C55E',
 }
 
 const PRIORITY_COLORS: Record<string, string> = {
-  low: '#94A3B8',
-  medium: '#F59E0B',
-  high: '#F97316',
+  low: '#22C55E',
+  medium: '#EAB308',
+  high: '#EF4444',
   critical: '#EF4444',
 }
+
+const AREA_CHART_COLORS = ['#22C55E', '#EAB308', '#EF4444'] as const
 
 export async function getDashboardOverview(filters?: {
   statuses?: string[]
@@ -37,20 +39,25 @@ export async function getDashboardOverview(filters?: {
   const priorities = filters?.priorities?.filter(Boolean) ?? []
   const areaIds = filters?.areaIds?.filter(Boolean) ?? []
 
+  if (filters?.areaIds !== undefined) {
+    tasks = tasks.filter((t) => areaIds.includes(t.areaId))
+    kpis = kpis.filter((k) => areaIds.includes(k.areaId))
+  } else if (areaIds.length) {
+    tasks = tasks.filter((t) => areaIds.includes(t.areaId))
+    kpis = kpis.filter((k) => areaIds.includes(k.areaId))
+  }
+
+  const areasForStats =
+    filters?.areaIds !== undefined || areaIds.length
+      ? areasFormatted.filter((a) => areaIds.includes(a.id))
+      : areasFormatted
+
   if (statuses.length) {
     tasks = tasks.filter((t) => statuses.includes(t.status))
   }
   if (priorities.length) {
     tasks = tasks.filter((t) => priorities.includes(t.priority))
   }
-  if (areaIds.length) {
-    tasks = tasks.filter((t) => areaIds.includes(t.areaId))
-    kpis = kpis.filter((k) => areaIds.includes(k.areaId))
-  }
-
-  const areasForStats = areaIds.length
-    ? areasFormatted.filter((a) => areaIds.includes(a.id))
-    : areasFormatted
 
   const stats = computeStats(tasks, kpis, areasForStats)
   const areaSummaries = computeAreaSummaries(tasks, kpis, areasForStats)
@@ -70,13 +77,13 @@ export async function getDashboardOverview(filters?: {
     color: PRIORITY_COLORS[p],
   }))
 
-  const areaProgress = areasForStats.map((area) => {
+  const areaProgress = areasForStats.map((area, i) => {
     const areaTasks = tasks.filter((t) => t.areaId === area.id)
     return {
       name: area.name,
       completed: areaTasks.filter((t) => t.status === 'done').length,
       total: areaTasks.length,
-      color: area.color,
+      color: AREA_CHART_COLORS[i % AREA_CHART_COLORS.length],
     }
   })
 
@@ -84,7 +91,10 @@ export async function getDashboardOverview(filters?: {
     stats,
     areaSummaries,
     needsAttention,
-    recentActivity: activity,
+    recentActivity:
+      filters?.areaIds !== undefined || areaIds.length
+        ? activity.filter((a) => areaIds.includes(a.areaId))
+        : activity,
     statusDistribution,
     priorityDistribution,
     areaProgress,

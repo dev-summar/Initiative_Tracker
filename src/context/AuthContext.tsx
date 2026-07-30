@@ -1,7 +1,8 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { clearToken, fetchAuthMeWithRetry, getToken, loginPi360 } from '../api/client'
 import type { AuthMeData } from '../api/types'
-import { isAllowedLoginEmail } from '../lib/allowedEmails'
+import { isAllowedLoginEmail, resolveAllowedLoginEmail } from '../lib/allowedEmails'
+import { withResolvedAreaAccess } from '../lib/areaPermissions'
 
 interface AuthContextValue {
   user: AuthMeData | null
@@ -24,8 +25,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
     try {
       const data = await fetchAuthMeWithRetry(2)
-      setUser(data)
-      return data
+      setUser(withResolvedAreaAccess(data))
+      return withResolvedAreaAccess(data)
     } catch {
       clearToken()
       setUser(null)
@@ -38,19 +39,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [refresh])
 
   const login = useCallback(async (email: string, password: string) => {
-    const normalized = email.trim()
-    if (!isAllowedLoginEmail(normalized)) {
+    const loginEmail = email.trim().toLowerCase()
+    if (!isAllowedLoginEmail(loginEmail)) {
       throw new Error('Access is restricted to authorized accounts only.')
     }
-    await loginPi360(normalized, password)
+    await loginPi360(email.trim(), password)
     const data = await fetchAuthMeWithRetry()
-    if (!isAllowedLoginEmail(data.email || normalized)) {
+    const resolvedEmail =
+      resolveAllowedLoginEmail(data.email ?? '') ??
+      resolveAllowedLoginEmail(loginEmail) ??
+      loginEmail
+    if (!isAllowedLoginEmail(resolvedEmail)) {
       clearToken()
       setUser(null)
       throw new Error('Access is restricted to authorized accounts only.')
     }
-    setUser(data)
-    return data
+    const session = withResolvedAreaAccess({ ...data, email: resolvedEmail })
+    setUser(session)
+    return session
   }, [])
 
   const logout = useCallback(() => {

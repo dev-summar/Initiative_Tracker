@@ -26,6 +26,18 @@ export function createApp(): Express {
     }
   })
 
+  app.get('/', (_req, res) => {
+    res.json({
+      status: 'success',
+      response_code: 200,
+      message: 'Initiative Tracker API. Open the app UI at http://localhost:5174 (not this port).',
+      data: {
+        health: '/api/health',
+        ui: 'http://localhost:5174',
+      },
+    })
+  })
+
   app.get('/api/health', (_req, res) => {
     res.json({
       status: 'success',

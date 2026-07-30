@@ -25,6 +25,8 @@ export interface AuthMeData {
   avatar?: string
   role?: string
   designation?: string
+  /** Area ids the user may access (from API). Omit or empty = all areas (legacy). */
+  allowedAreaIds?: string[]
 }
 
 export type PlanItemStatus = 'todo' | 'in_progress' | 'done' | 'blocked'

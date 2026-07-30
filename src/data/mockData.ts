@@ -414,16 +414,16 @@ export const INITIAL_ACTIVITY: ActivityItem[] = [
 ]
 
 export const STATUS_COLORS: Record<string, string> = {
-  todo: '#94A3B8',
-  in_progress: '#3B82F6',
+  todo: '#EF4444',
+  in_progress: '#EAB308',
   blocked: '#EF4444',
   done: '#22C55E',
 }
 
 export const PRIORITY_COLORS: Record<string, string> = {
-  low: '#94A3B8',
-  medium: '#F59E0B',
-  high: '#F97316',
+  low: '#22C55E',
+  medium: '#EAB308',
+  high: '#EF4444',
   critical: '#EF4444',
 }
 

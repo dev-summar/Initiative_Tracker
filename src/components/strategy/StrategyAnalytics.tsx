@@ -13,7 +13,7 @@ import {
   YAxis,
 } from 'recharts'
 import type { PlanItem, SubArea, TaskPriority } from '../../api/types'
-import { cardClass, PRIORITY_CHART_COLORS, STATUS_CHART_COLORS } from '../../lib/design'
+import { cardClass, PRIORITY_CHART_COLORS, STATUS_CHART_COLORS, chartSeriesColor } from '../../lib/design'
 import { priorityLabel, statusLabel } from '../../lib/utils'
 
 interface StrategyAnalyticsProps {
@@ -116,7 +116,7 @@ export function StrategyAnalytics({ plans, items }: StrategyAnalyticsProps) {
       .map(([phase, count], i) => ({
         phase: phase.length > 28 ? `${phase.slice(0, 26)}…` : phase,
         count,
-        fill: ['#6366F1', '#8B5CF6', '#A78BFA', '#60A5FA', '#34D399', '#FBBF24'][i % 6],
+        fill: chartSeriesColor(i),
       }))
 
     const openHighPriority = items.filter(
@@ -211,7 +211,7 @@ export function StrategyAnalytics({ plans, items }: StrategyAnalyticsProps) {
             </ResponsiveContainer>
           </div>
           <p className="mt-2 text-center text-xs text-ink-muted">
-            <span className="font-semibold text-orange-600">{analytics.openHighPriority}</span> open
+            <span className="font-semibold text-red-600">{analytics.openHighPriority}</span> open
             high/critical items need attention
           </p>
         </ChartCard>
@@ -269,29 +269,29 @@ export function StrategyAnalytics({ plans, items }: StrategyAnalyticsProps) {
                 }
               />
               <Legend wrapperStyle={{ fontSize: 11 }} />
-              <Bar dataKey="done" name="Done" stackId="a" fill="#10B981" />
-              <Bar dataKey="inProgress" name="In progress" stackId="a" fill="#3B82F6" />
-              <Bar dataKey="todo" name="To do" stackId="a" fill="#D4D4D8" />
-              <Bar dataKey="blocked" name="Blocked" stackId="a" fill="#EF4444" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="done" name="Done" stackId="a" fill={STATUS_CHART_COLORS.done} />
+              <Bar dataKey="inProgress" name="In progress" stackId="a" fill={STATUS_CHART_COLORS.in_progress} />
+              <Bar dataKey="todo" name="To do" stackId="a" fill={STATUS_CHART_COLORS.todo} />
+              <Bar dataKey="blocked" name="Blocked" stackId="a" fill={STATUS_CHART_COLORS.blocked} radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
         <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
-          {analytics.planProgress.map((p) => (
+          {analytics.planProgress.map((p, i) => (
             <div
               key={p.fullName}
               className="rounded-xl border border-border bg-zinc-50/60 px-3 py-2"
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="truncate text-xs font-medium text-ink">{p.name}</span>
-                <span className="text-sm font-bold tabular-nums" style={{ color: p.color }}>
+                <span className="text-sm font-bold tabular-nums" style={{ color: chartSeriesColor(i) }}>
                   {p.pct}%
                 </span>
               </div>
               <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-zinc-200">
                 <div
                   className="h-full rounded-full"
-                  style={{ width: `${p.pct}%`, backgroundColor: p.color }}
+                  style={{ width: `${p.pct}%`, backgroundColor: chartSeriesColor(i) }}
                 />
               </div>
             </div>

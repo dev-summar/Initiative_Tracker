@@ -2,6 +2,7 @@ import { Router } from 'express'
 import { AreaModel } from '../models/Area.js'
 import { KpiModel, formatKpi } from '../models/Kpi.js'
 import { actorName } from '../middleware/auth.js'
+import { denyUnlessAreaAccess, resolveAreaScope, userAllowedAreaIds } from '../middleware/areaAccess.js'
 import { logActivity } from '../services/activityService.js'
 import { newId } from '../utils/id.js'
 import { sendError, sendSuccess } from '../utils/response.js'
@@ -16,8 +17,10 @@ async function getKpiById(id: string) {
 
 router.get('/', async (req, res) => {
   const areaId = String(req.query.area_id ?? '').trim()
-  const filter: Record<string, unknown> = { deletedAt: null }
-  if (areaId) filter.areaId = areaId
+  const scope = resolveAreaScope(req, res, areaId || undefined)
+  if (!scope) return
+
+  const filter: Record<string, unknown> = { deletedAt: null, areaId: { $in: scope } }
 
   const rows = await KpiModel.find(filter).sort({ updatedAt: -1 }).lean()
   const data = rows.map((k) => formatKpi(k as Record<string, unknown>))
@@ -32,6 +35,7 @@ router.post('/', async (req, res) => {
 
   const area = await AreaModel.findOne({ id: body.areaId }).lean()
   if (!area) return sendError(res, 422, 'Invalid area.')
+  if (denyUnlessAreaAccess(req, res, body.areaId)) return
 
   const id = newId('kpi')
   const actor = actorName(req.user!)
@@ -60,8 +64,12 @@ router.put('/update', async (req, res) => {
 
   const existing = await KpiModel.findOne({ id, deletedAt: null })
   if (!existing) return sendError(res, 404, 'KPI not found.')
+  if (denyUnlessAreaAccess(req, res, existing.areaId)) return
 
-  existing.areaId = body.areaId ?? existing.areaId
+  const nextAreaId = body.areaId ?? existing.areaId
+  if (nextAreaId !== existing.areaId && denyUnlessAreaAccess(req, res, nextAreaId)) return
+
+  existing.areaId = nextAreaId
   existing.name = body.name ?? existing.name
   existing.value = body.value !== undefined ? Number(body.value) : existing.value
   existing.target = body.target !== undefined ? Number(body.target) : existing.target
@@ -90,6 +98,7 @@ router.delete('/delete', async (req, res) => {
 
   const existing = await KpiModel.findOne({ id, deletedAt: null })
   if (!existing) return sendError(res, 404, 'KPI not found.')
+  if (denyUnlessAreaAccess(req, res, existing.areaId)) return
 
   existing.deletedAt = new Date()
   await existing.save()
@@ -119,6 +128,7 @@ router.post('/import', async (req, res) => {
 
     const area = await AreaModel.findOne({ id: row.areaId }).lean()
     if (!area) continue
+    if (!userAllowedAreaIds(req).includes(row.areaId)) continue
 
     const id = newId('kpi')
     await KpiModel.create({

@@ -2,6 +2,7 @@ import { Router } from 'express'
 import { PLAN_PRIORITIES, PLAN_STATUSES, PlanItemModel, formatPlanItem } from '../models/PlanItem.js'
 import { ProgressUpdateModel, formatProgressUpdate } from '../models/ProgressUpdate.js'
 import { actorName } from '../middleware/auth.js'
+import { denyUnlessAreaAccess, resolveAreaScope } from '../middleware/areaAccess.js'
 import { newId } from '../utils/id.js'
 import { sendError, sendSuccess } from '../utils/response.js'
 
@@ -16,9 +17,11 @@ async function getPlanItemById(id: string) {
 router.get('/', async (req, res) => {
   const subAreaId = String(req.query.sub_area_id ?? '').trim()
   const areaId = String(req.query.area_id ?? '').trim()
-  const filter: Record<string, unknown> = { deletedAt: null }
+  const scope = resolveAreaScope(req, res, areaId || undefined)
+  if (!scope) return
+
+  const filter: Record<string, unknown> = { deletedAt: null, areaId: { $in: scope } }
   if (subAreaId) filter.subAreaId = subAreaId
-  if (areaId) filter.areaId = areaId
 
   const rows = await PlanItemModel.find(filter).sort({ sortOrder: 1, updatedAt: -1 }).lean()
   const data = rows.map((r) => formatPlanItem(r as Record<string, unknown>))
@@ -31,6 +34,7 @@ router.get('/detail', async (req, res) => {
 
   const item = await getPlanItemById(id)
   if (!item) return sendError(res, 404, 'Plan item not found.')
+  if (denyUnlessAreaAccess(req, res, item.areaId)) return
 
   const updates = await ProgressUpdateModel.find({ planItemId: id })
     .sort({ meetingDate: -1, createdAt: -1 })
@@ -49,6 +53,7 @@ router.put('/update', async (req, res) => {
 
   const doc = await PlanItemModel.findOne({ id, deletedAt: null })
   if (!doc) return sendError(res, 404, 'Plan item not found.')
+  if (denyUnlessAreaAccess(req, res, doc.areaId)) return
 
   if (body.title !== undefined) {
     const title = String(body.title).trim()
@@ -95,6 +100,7 @@ router.post('/progress', async (req, res) => {
 
   const doc = await PlanItemModel.findOne({ id: planItemId, deletedAt: null })
   if (!doc) return sendError(res, 404, 'Plan item not found.')
+  if (denyUnlessAreaAccess(req, res, doc.areaId)) return
 
   const meetingDate = String(body.meetingDate ?? new Date().toISOString().slice(0, 10)).trim()
   const status = body.status ?? doc.status

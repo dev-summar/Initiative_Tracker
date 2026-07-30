@@ -17,9 +17,13 @@ function resolveJwtSecret(): string {
 }
 
 const DEFAULT_ALLOWED_EMAILS = [
-  'sahil@mietjammu.in',
+  'sahil.adm@mietjammu.in',
   'rohin.adm@mietjammu.in',
   'summar.adm@mietjammu.in',
+  'navpreet.ash@mietjammu.in',
+  'gurleen.ash@mietjammu.in',
+  'rudraksh.ash@mietjammu.in',
+  'harsimran.ash@mietjammu.in',
 ]
 
 function resolveAllowedEmails(): Set<string> {
